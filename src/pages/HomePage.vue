@@ -3,7 +3,7 @@
     <HeroSection />
     <AboutSection />
     <PracticeAreas />
-    <ConsultationSection />
+    <OnlineConsultationSection />
     <TeamPreview />
   </main>
 </template>
@@ -12,6 +12,6 @@
 import HeroSection from '../components/HeroSection.vue'
 import AboutSection from '../components/AboutSection.vue'
 import PracticeAreas from '../components/PracticeAreas.vue'
-import ConsultationSection from '../components/ConsultationSection.vue'
+import ConsultationSection from '../components/OnlineConsultationSection.vue'
 import TeamPreview from '../components/TeamPreview.vue'
 </script>
