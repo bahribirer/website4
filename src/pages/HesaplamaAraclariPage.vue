@@ -40,7 +40,7 @@
           </select>
 
           <div class="buttons">
-            <button class="primary">HESAPLA</button>
+            <button class="primary" @click="openModal('Araç Değer Kaybı')">HESAPLA</button>
             <button class="secondary">TEMİZLE</button>
           </div>
         </div>
@@ -70,7 +70,7 @@
           <input type="number" placeholder="Tutarı girin" />
 
           <div class="buttons">
-            <button class="primary">HESAPLA</button>
+            <button class="primary" @click="openModal('Vekalet Ücreti')">HESAPLA</button>
             <button class="secondary">TEMİZLE</button>
           </div>
         </div>
@@ -90,7 +90,7 @@
           <label>İşten Çıkış Tarihi:</label>
           <input type="date" />
           <div class="buttons">
-            <button class="brown">HESAPLA</button>
+            <button class="brown" @click="openModal('İhbar Tazminatı')">HESAPLA</button>
           </div>
         </div>
 
@@ -109,7 +109,7 @@
           <label>Brüt Maaş (₺):</label>
           <input type="number" placeholder="Brüt maaş giriniz" />
           <div class="buttons">
-            <button class="brown">HESAPLA</button>
+            <button class="brown" @click="openModal('Kıdem Tazminatı')">HESAPLA</button>
           </div>
         </div>
 
@@ -129,7 +129,7 @@
           <label>Fiyat Bilgisi (₺):</label>
           <input type="number" placeholder="Fiyatı girin" />
           <div class="buttons">
-            <button class="primary">HESAPLA</button>
+            <button class="primary" @click="openModal('Tapu Harcı')">HESAPLA</button>
             <button class="secondary">TEMİZLE</button>
           </div>
         </div>
@@ -145,17 +145,52 @@
           <label>Artırılan Tutar (₺):</label>
           <input type="number" placeholder="Tutar giriniz" />
           <div class="buttons">
-            <button class="light">HESAPLA</button>
+            <button class="light" @click="openModal('Islah Harcı')">HESAPLA</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- 🔹 MODAL -->
+    <div v-if="modalOpen" class="modal-backdrop" @click.self="closeModal">
+      <div class="modal">
+        <button class="close" @click="closeModal"><i class="pi pi-times"></i></button>
+
+        <i class="pi pi-check-circle modal-icon"></i>
+
+        <h2>{{ selectedTool }} Hesaplama</h2>
+        <p>
+          Hesaplama modülü çok yakında aktif olacaktır.  
+          Şu anda sistem geliştirme aşamasındadır.
+        </p>
+
+        <button class="ok-btn" @click="closeModal">Tamam</button>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const modalOpen = ref(false)
+const selectedTool = ref('')
+
+const openModal = (name: string) => {
+  selectedTool.value = name
+  modalOpen.value = true
+}
+
+const closeModal = () => {
+  modalOpen.value = false
+}
+</script>
 
 <style scoped>
+/* ======================================
+   TÜM TASARIM + MODAL UI
+====================================== */
+
 .tools {
   background: #fff;
   padding: 6rem 0 8rem;
@@ -204,13 +239,11 @@
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
 }
 
-/* Koyu kart */
 .card.dark {
   background: #0b1b3f;
   color: #fff;
 }
 
-/* Kart başlık kısmı */
 .card-head {
   display: flex;
   align-items: center;
@@ -231,7 +264,6 @@
   font-size: 1.15rem;
   font-weight: 600;
   color: #0b1b3f;
-  margin: 0;
 }
 
 .card.dark h2 {
@@ -248,7 +280,6 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Input ve Select */
 label {
   font-size: 0.9rem;
   color: #333;
@@ -287,7 +318,6 @@ select:focus {
   margin-top: 1rem;
 }
 
-/* Buton renkleri */
 button {
   flex: 1;
   padding: 0.7rem;
@@ -304,17 +334,9 @@ button {
   color: #fff;
 }
 
-.primary:hover {
-  background: #132a6a;
-}
-
 .secondary {
   background: #eaeaea;
   color: #333;
-}
-
-.secondary:hover {
-  background: #d5d5d5;
 }
 
 .brown {
@@ -322,26 +344,88 @@ button {
   color: #fff;
 }
 
-.brown:hover {
-  background: #8a643f;
-}
-
 .light {
   background: #f4f4f4;
   color: #0b1b3f;
 }
 
-.light:hover {
-  background: #fff;
+/* ======================================
+   MODAL TASARIMI
+====================================== */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.7rem;
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 420px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.25s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-icon {
+  color: #0b1b3f;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.modal h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.modal p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+
+.ok-btn {
+  background: #0b1b3f;
+  color: #fff;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #b01c1c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
   }
-  .grid {
-    gap: 1.5rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
