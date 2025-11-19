@@ -22,11 +22,12 @@
       <!-- 🔹 Grid -->
       <div class="grid">
         <div
-          v-for="(member, index) in teamMembers"
-          :key="index"
-          class="card"
-          @click="openMember(member)"
-        >
+  v-for="(member, index) in teamMembers"
+  :key="index"
+  class="card"
+  @click="goProfile(member.slug)"
+>
+
           <div class="image-wrapper">
             <img :src="member.image" :alt="member.name" />
           </div>
@@ -61,6 +62,11 @@
 import { ref } from 'vue'
 import { teamMembers } from '../data/team'
 import type { TeamMember } from '../data/team'
+import router from '../router'
+
+const goProfile = (slug: string) => {
+  router.push(`/team/${slug}`)
+}
 
 const selectedMember = ref<TeamMember | null>(null)
 const openMember = (member: TeamMember) => (selectedMember.value = member)

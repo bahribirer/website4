@@ -37,7 +37,13 @@ const routes = [
   path: '/hesaplama-araclari',
   name: 'HesaplamaAraclari',
   component: () => import('../pages/HesaplamaAraclariPage.vue')
+},
+{
+  path: '/team/:slug',
+  name: 'TeamMember',
+  component: () => import('../pages/TeamMemberPage.vue')
 }
+
 
 ]
 

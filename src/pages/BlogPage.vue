@@ -114,6 +114,23 @@ const categories = ref([
   { name: 'Bilişim Hukuku', slug: 'bilisim-hukuku' },
   { name: 'Ceza Hukuku', slug: 'ceza-hukuku' },
   { name: 'Gayrimenkul Hukuku', slug: 'gayrimenkul-hukuku' },
+    { name: 'Ticaret Hukuku', slug: 'ticaret-hukuku' },
+      { name: 'İş Hukuku', slug: 'is-hukuku' },
+        { name: 'Miras Hukuku', slug: 'miras-hukuku' },
+          { name: 'İdare Hukuku', slug: 'idare-hukuku' },
+  { name: 'Sağlık Hukuku', slug: 'saglik-hukuku' },
+    { name: 'İcra ve İflas Hukuku', slug: 'icra-ve-iflas-hukuku' },
+      { name: 'Sözleşmeler Hukuku', slug: 'sozlesmeler-hukuku' },
+        { name: 'Vatandaşlık Hukuku', slug: 'vatandaslik-hukuku' },
+          { name: 'Sigorta Hukuku', slug: 'sigorta-hukuku' },
+
+
+
+
+
+
+
+
 ])
 
 const selectedPost = ref<BlogPost | null>(null)
