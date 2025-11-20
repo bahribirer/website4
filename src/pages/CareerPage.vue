@@ -10,7 +10,7 @@
     <!-- İçerik -->
     <div class="container">
       <div class="content">
-        <!-- Sol taraf: metin -->
+        <!-- Sol taraf -->
         <div class="left">
           <h3 class="section-title">BİZE KATILIN</h3>
           <p>
@@ -19,8 +19,7 @@
             dinamik ve yetenekli ekip arkadaşları arıyoruz.
           </p>
           <p>
-            Farklı deneyim seviyelerindeki adaylara, alanlarına göre yapılandırılmış kariyer olanakları
-            sunmaktayız. 
+            Farklı deneyim seviyelerindeki adaylara, alanlarına göre yapılandırılmış kariyer olanakları sunmaktayız.
           </p>
           <p>
             Başvurularınızı özgeçmiş ve açıklayıcı ön yazı ile birlikte
@@ -28,7 +27,7 @@
           </p>
         </div>
 
-        <!-- Sağ taraf: form -->
+        <!-- Sağ taraf: Form -->
         <div class="right">
           <h3 class="form-title">KARİYER ÖN BAŞVURU FORMU</h3>
 
@@ -51,158 +50,236 @@
         </div>
       </div>
     </div>
+
+    <!-- ⭐ PROFESYONEL BAŞVURU POP-UP ⭐ -->
+    <div v-if="showPopup" class="popup-backdrop">
+      <div class="popup">
+        <i class="pi pi-check-circle icon"></i>
+        <h2>Başvurunuz Alındı</h2>
+        <p>Ekibimiz en kısa sürede sizinle iletişime geçecektir.</p>
+        <button @click="showPopup = false">Tamam</button>
+      </div>
+    </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
+import emailjs from "@emailjs/browser";
 
 const form = ref({
-  name: '',
-  email: '',
-  phone: '',
-  message: '',
+  name: "",
+  email: "",
+  phone: "",
+  message: "",
   file: null as File | null
-})
+});
+
+const showPopup = ref(false);
 
 const handleFileUpload = (e: Event) => {
-  const target = e.target as HTMLInputElement
-  form.value.file = target.files ? target.files[0] : null
-}
+  const target = e.target as HTMLInputElement;
+  form.value.file = target.files?.[0] || null;
+};
 
-const handleSubmit = () => {
-  console.log('Başvuru gönderildi:', form.value)
-  alert('Başvurunuz başarıyla alındı. Teşekkür ederiz!')
-}
+const handleSubmit = async () => {
+  try {
+    // Başvuru sana gelsin
+    await emailjs.send(
+      "service_23xayhn",
+      "template_bvwn8p5",
+      {
+        name: form.value.name,
+        email: form.value.email,
+        phone: form.value.phone,
+        message: form.value.message
+      },
+      "FvWfF-9UyWzNMdKFs"
+    );
+
+    // Başvurana otomatik mail gitsin
+    await emailjs.send(
+      "service_23xayhn",
+      "template_6cdsg8d",
+      {
+        name: form.value.name,
+        email: form.value.email,
+        to_email: form.value.email
+      },
+      "FvWfF-9UyWzNMdKFs"
+    );
+
+    showPopup.value = true;
+
+    form.value = {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      file: null
+    };
+  } catch (error) {
+    console.error("EmailJS error:", error);
+    alert("Bir hata oluştu, lütfen tekrar deneyiniz.");
+  }
+};
 </script>
 
 <style scoped>
 .career-page {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #222;
   background: #fff;
 }
 
-/* Hero */
+/* ===== HERO ===== */
 .hero {
   position: relative;
-  height: 40vh;
-  background: url('@/assets/images/banner.webp') center/cover no-repeat;
+  height: 42vh;
+  background: url("@/assets/images/banner.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .overlay {
-  background: rgba(11, 27, 63, 0.6);
-  color: #fff;
+  background: rgba(11, 27, 63, 0.55);
   width: 100%;
   height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.overlay h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-.overlay p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-.overlay a {
+  backdrop-filter: blur(2px);
   color: #fff;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* İçerik */
+.overlay h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+/* ===== CONTAINER ===== */
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 5rem 0;
 }
+
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 3.5rem;
 }
+
+/* ===== LEFT TEXT ===== */
 .left {
   text-align: left;
   color: #444;
+  line-height: 1.8;
 }
+
 .section-title {
   background: #0b1b3f;
   color: #fff;
   display: inline-block;
-  padding: 0.4rem 1rem;
-  border-radius: 4px;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
   font-size: 0.95rem;
   font-weight: 600;
+  letter-spacing: 0.6px;
   margin-bottom: 1rem;
-}
-.left p {
-  margin-bottom: 1rem;
-  line-height: 1.8;
-  font-size: 1rem;
-}
-.left a {
-  color: #b01c1c;
-  font-weight: 500;
 }
 
-/* Form */
-.right {
-  background: #f7f7f7;
-  padding: 2rem 2rem 2.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+.left p {
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
 }
+
+.left strong {
+  color: #0b1b3f;
+}
+
+.left a {
+  color: #b01c1c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ===== FORM CARD ===== */
+.right {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 2rem 3rem;
+  border-radius: 14px;
+  border: 1px solid rgba(11, 27, 63, 0.08);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.08);
+  position: relative;
+}
+
 .form-title {
   color: #0b1b3f;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 2rem;
+  text-align: center;
 }
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.35rem;
 }
+
 .form-row {
   display: flex;
   gap: 1rem;
 }
+
+/* ===== INPUTS ===== */
 input,
 textarea {
   width: 100%;
-  padding: 0.8rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 0.95rem 1.1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
   font-size: 0.95rem;
-  transition: border-color 0.3s;
+  background: #fff;
+  transition: 0.25s ease;
 }
+
 input:focus,
 textarea:focus {
   border-color: #b01c1c;
+  box-shadow: 0 0 0 3px rgba(176, 28, 28, 0.2);
   outline: none;
 }
+
+/* ===== BUTTON ===== */
 button {
-  background: #b01c1c;
+  background: linear-gradient(135deg, #b01c1c, #8c1515);
   color: #fff;
-  padding: 0.9rem;
+  padding: 0.95rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
-  transition: 0.3s;
-}
-button:hover {
-  background: #911818;
+  font-size: 1rem;
+  transition: 0.25s ease;
 }
 
-/* Responsive */
+button:hover {
+  background: linear-gradient(135deg, #8c1515, #b01c1c);
+  transform: translateY(-1px);
+}
+
+/* ======= POP-UP (KALDI) ======= */
+/* Bunu değiştirmedim; şu an zaten şahane. */
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;
@@ -211,7 +288,8 @@ button:hover {
     order: -1;
   }
   .overlay h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 </style>
+

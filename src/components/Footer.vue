@@ -26,9 +26,7 @@
           >
             <i class="pi pi-instagram"></i>
           </a>
-          <a href="mailto:info@peralegal.com.tr" aria-label="Mail">
-            <i class="pi pi-envelope"></i>
-          </a>
+          
         </div>
       </div>
 

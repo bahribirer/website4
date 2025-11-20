@@ -84,7 +84,7 @@ const truncate = (text: string, length: number) =>
 /* === HERO === */
 .hero {
   position: relative;
-  height: 45vh;
+  height: 42vh;
   background: url('@/assets/images/banner.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@ const truncate = (text: string, length: number) =>
 }
 
 .overlay {
-  background: rgba(11, 27, 63, 0.55);
+  background: rgba(11, 27, 63, 0.58);
   width: 100%;
   height: 100%;
   color: #fff;
@@ -102,237 +102,211 @@ const truncate = (text: string, length: number) =>
 }
 
 .overlay h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 1px;
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: .5px;
 }
 
-/* === BAŞLIK === */
+/* === CONTENT === */
 .container {
-  width: 90%;
+  width: 88%;
   max-width: 1300px;
   margin: 0 auto;
-  text-align: center;
   padding: 5rem 0 6rem;
+  text-align: center;
 }
 
 .head {
-  max-width: 800px;
+  max-width: 750px;
   margin: 0 auto 3.5rem;
 }
 
 .subtitle {
   color: #b01c1c;
-  font-size: 0.9rem;
+  font-size: .9rem;
+  letter-spacing: 1.5px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 0.4rem;
 }
 
 .title {
+  font-size: 2.4rem;
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #0b1b3f;
-  margin-bottom: 0.6rem;
+  margin: .4rem 0 .8rem;
 }
 
 .divider {
   width: 70px;
   height: 3px;
   background: #b01c1c;
-  border-radius: 2px;
-  margin: 0.5rem auto 1.6rem;
+  border-radius: 3px;
+  margin: 0.5rem auto 1.7rem;
 }
 
 .desc {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #666;
 }
 
 /* === GRID === */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 2.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 2.4rem;
 }
 
-/* === KART === */
+/* === CARD === */
 .card {
   background: #fff;
-  border-radius: 12px;
-  padding: 2.2rem 1.6rem 1.8rem;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  border-radius: 18px;
+  padding: 2.5rem 1.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 15px 32px rgba(0, 0, 0, 0.06);
+  transition: .3s ease;
   cursor: pointer;
-  text-align: center;
-  overflow: hidden;
   position: relative;
+  text-align: center;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
-  border-color: rgba(176, 28, 28, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(176, 28, 28, 0.5);
 }
 
-/* === Görsel === */
+/* === PHOTO === */
 .image-wrapper {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 1.2rem;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.4rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #b01c1c20;
-  transition: all 0.3s ease;
+  border: 4px solid rgba(176, 28, 28, 0.25);
+  transition: all .3s ease;
+}
+
+.card:hover .image-wrapper {
+  border-color: #b01c1c;
 }
 
 .image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform .4s ease;
 }
 
-.card:hover .image-wrapper img {
-  transform: scale(1.06);
-  border-color: #b01c1c;
+.card:hover img {
+  transform: scale(1.07);
 }
 
-/* === Bilgi Alanı === */
+/* === TEXTS === */
 .info h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.25rem;
   color: #0b1b3f;
-  margin-bottom: 0.3rem;
+  font-weight: 600;
+  margin-bottom: .35rem;
 }
 
 .title-text {
-  font-size: 0.9rem;
+  font-size: .98rem;
   color: #b01c1c;
   font-weight: 600;
-  margin-bottom: 0.2rem;
 }
 
 .expertise {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 0.7rem;
+  font-size: .95rem;
+  margin-top: .2rem;
+  color: #666;
 }
 
 .about {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.6;
+  font-size: .92rem;
+  color: #777;
+  line-height: 1.7;
+  margin-top: 1rem;
 }
 
 /* === MODAL === */
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2000;
-  padding: 1rem;
 }
 
 .modal {
   background: #fff;
-  border-radius: 12px;
-  max-width: 620px;
-  width: 100%;
+  border-radius: 18px;
   padding: 3rem 2rem 2rem;
+  max-width: 640px;
+  width: 100%;
   text-align: center;
-  position: relative;
-  animation: fadeIn 0.3s ease;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeIn .3s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
 }
 
 .modal-img {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  margin-bottom: 1.2rem;
   object-fit: cover;
-  margin-bottom: 1rem;
-  border: 3px solid #b01c1c30;
+  border: 3px solid rgba(176, 28, 28, 0.3);
 }
 
 .modal h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #0b1b3f;
-  margin-bottom: 0.3rem;
+  font-weight: 700;
 }
 
 .modal .title-text {
-  color: #b01c1c;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.modal .expertise {
-  color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-.divider.small {
-  width: 50px;
-  height: 3px;
-  background: #b01c1c;
-  border-radius: 2px;
-  margin: 0.6rem auto 1.3rem;
+  font-size: 1rem;
+  margin-bottom: .4rem;
 }
 
 .about-full {
+  font-size: 1rem;
   color: #555;
-  font-size: 0.95rem;
   line-height: 1.8;
+  margin-top: 1.2rem;
 }
 
 .close {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 18px;
+  right: 18px;
+  font-size: 1.4rem;
   background: transparent;
   border: none;
-  font-size: 1.3rem;
   cursor: pointer;
-  color: #999;
-  transition: color 0.2s;
+  color: #777;
+  transition: .2s;
 }
 
 .close:hover {
   color: #b01c1c;
 }
 
-/* === Animasyon === */
+/* === ANIMATION === */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* === Responsive === */
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .overlay h1 {
-    font-size: 1.9rem;
-  }
-  .title {
-    font-size: 1.9rem;
-  }
-  .card {
-    padding: 2rem 1.4rem;
-  }
+  .overlay h1 { font-size: 2rem; }
+  .title { font-size: 2rem; }
+  .card { padding: 2rem 1.4rem; }
+  .image-wrapper { width: 120px; height: 120px; }
 }
 </style>
+

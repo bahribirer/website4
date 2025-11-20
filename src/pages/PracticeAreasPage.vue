@@ -61,7 +61,7 @@ const goDetail = (title: string) => {
   color: #222;
 }
 
-/* Hero */
+/* === HERO === */
 .hero {
   position: relative;
   height: 45vh;
@@ -72,22 +72,23 @@ const goDetail = (title: string) => {
 }
 
 .overlay {
-  background: rgba(11, 27, 63, 0.55);
-  color: #fff;
+  background: rgba(11, 27, 63, 0.6);
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 .overlay h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-/* İçerik */
+/* === CONTAINER === */
 .container {
   width: 90%;
   max-width: 1300px;
@@ -96,86 +97,140 @@ const goDetail = (title: string) => {
   text-align: center;
 }
 
+/* === HEAD === */
 .head {
-  max-width: 800px;
-  margin: 0 auto 3rem;
+  max-width: 850px;
+  margin: 0 auto 3.5rem;
 }
 
 .subtitle {
   color: #b01c1c;
-  text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.9rem;
-  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  letter-spacing: 1px;
 }
 
 .title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
   color: #0b1b3f;
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 3px;
+  background: linear-gradient(90deg, #b01c1c, #8c1414);
+  margin: 0.8rem auto 1.4rem;
+  border-radius: 4px;
 }
 
 .desc {
   color: #555;
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
-/* Grid */
+/* === GRID === */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 2.6rem;
+  margin-top: 3rem;
 }
 
+/* === CARD === */
 .card {
-  border: 1px solid #e5e5e5;
   background: #fff;
-  padding: 2rem 1.6rem;
-  border-radius: 8px;
+  padding: 2.4rem 1.9rem 2.3rem;
+  border-radius: 14px;
   text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
   cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg,#b01c1c,#7c1515);
+  opacity: 0.7;
 }
 
 .card:hover {
-  border-color: #b01c1c;
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-10px);
+  box-shadow: 0 16px 38px rgba(0,0,0,0.12);
 }
 
+/* Icon */
 .icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #b01c1c15, #b01c1c30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
   color: #b01c1c;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
+/* Card Title */
 .card h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
   color: #0b1b3f;
-  margin-bottom: 0.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.3px;
 }
 
+/* Text */
 .card p {
+  font-size: 1rem;
   color: #555;
-  line-height: 1.7;
-  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 1.3rem;
 }
 
-/* Responsive */
+/* Read more area */
+.card::after {
+  content: "Devamını Oku →";
+  position: absolute;
+  bottom: 1.3rem;
+  left: 1.9rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #b01c1c;
+  opacity: 0.85;
+  transition: opacity 0.25s ease;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .overlay h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .title {
-    font-size: 1.8rem;
-  }
-  .desc {
-    font-size: 0.95rem;
+    font-size: 2rem;
   }
 }
 </style>
+
