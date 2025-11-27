@@ -1,39 +1,64 @@
 <template>
   <section class="practice">
     <div class="container">
-      <!-- 🔹 Başlık -->
+      
+      <!-- Başlık Alanı -->
       <div class="head">
-        <h3 class="subtitle">Pera Legal & Partners</h3>
-        <h2 class="title">Çalışma Alanlarımız</h2>
+        <h3 class="subtitle">{{ t("practice.subtitle") }}</h3>
+        <h2 class="title">{{ t("practice.title") }}</h2>
         <div class="divider"></div>
-        <p class="desc">
-          Müvekkillerimizin ihtiyaç duyduğu hukuki desteği doğru zamanda, doğru yöntemle ve yüksek standartlarda
-          sunabilmek adına deneyimli avukat kadromuzla güvenilir, etkin ve sonuç odaklı çözümler üretiyoruz.
-        </p>
+        <p class="desc">{{ t("practice.desc") }}</p>
       </div>
 
-      <!-- 🔹 Grid Kartlar -->
+      <!-- Grid Kartlar -->
       <div class="grid">
         <div
           v-for="(item, index) in practiceAreas"
           :key="index"
           class="card"
+          @click="goDetail(item.key)"
+          :style="{ backgroundImage: `url(${item.image})` }"
         >
           <div class="icon-wrapper">
             <i class="pi pi-balance-scale"></i>
           </div>
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.description }}</p>
+
+          <h3>{{ t(`areas.${item.key}.title`) }}</h3>
+
+          <p class="excerpt">
+            {{ truncate(t(`areas.${item.key}.desc`), 120) }}
+          </p>
+
+          <span class="read-more" @click.stop="goDetail(item.key)">
+            {{ t("practice.readMore") }}
+          </span>
+
           <span class="underline"></span>
         </div>
       </div>
+
     </div>
   </section>
 </template>
 
+
 <script setup lang="ts">
-import { practiceAreas } from '../data/practiceAreas'
+import { useI18n } from "vue-i18n"
+import { practiceAreas } from "../data/practiceAreas"
+import router from "../router"
+import { slugifyTR } from "../utils/slug"
+
+const { t } = useI18n()
+
+const truncate = (text: string, length: number) =>
+  text.length > length ? text.slice(0, length) + "..." : text
+
+const goDetail = (key: string) => {
+  router.push(`/calisma-alanlarimiz/${key}`)
+}
+
 </script>
+
 
 <style scoped>
 .practice {
@@ -50,7 +75,7 @@ import { practiceAreas } from '../data/practiceAreas'
   text-align: center;
 }
 
-/* 🔹 Başlık alanı */
+/* Başlık alanı */
 .head {
   max-width: 800px;
   margin: 0 auto 3.5rem;
@@ -88,7 +113,7 @@ import { practiceAreas } from '../data/practiceAreas'
   margin-top: 0.5rem;
 }
 
-/* 🔹 Grid düzeni */
+/* Grid düzeni */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -96,77 +121,136 @@ import { practiceAreas } from '../data/practiceAreas'
   margin-top: 2rem;
 }
 
-/* 🔹 Kartlar */
+/* ------------------------------------------------ */
+/* 🔥 PREMIUM KART TASARIMI */
+/* ------------------------------------------------ */
+
 .card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 2.2rem 1.8rem;
-  text-align: left;
-  color: #222;
   position: relative;
-  transition: all 0.35s ease;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 2.2rem 1.8rem;
+  color: #fff;
   overflow: hidden;
-  border: 1px solid transparent;
+ height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: transform .35s ease, box-shadow .35s ease;
+  cursor: pointer;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
-  border-color: rgba(176, 28, 28, 0.15);
-}
-
-/* 🔸 Alt bordür animasyonu */
-.underline {
+/* Fotoğraf üstü blur + film */
+.card::before {
+  content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  background: #b01c1c;
-  transition: width 0.3s ease;
-}
-.card:hover .underline {
-  width: 100%;
+  inset: 0;
+  background: rgba(5, 14, 32, 0.45);
+  backdrop-filter: blur(3px);
+  transition: background .3s ease;
+  z-index: 1;
 }
 
-/* 🔹 İkon alanı */
+.card:hover::before {
+  background: rgba(5, 14, 32, 0.25);
+}
+
+/* Hover zoom */
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.2);
+}
+
+/* İçerik üstte kalmalı */
+.card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* İkon alanı */
 .icon-wrapper {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 50%;
-  background: rgba(176, 28, 28, 0.1);
-  color: #b01c1c;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  margin-bottom: 1.2rem;
-  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  transition: background .3s ease;
 }
 
 .card:hover .icon-wrapper {
-  background: #b01c1c;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
 }
 
-/* 🔹 Kart başlık ve metin */
+/* Başlık */
 .card h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 0.6rem;
-  color: #0b1b3f;
-  line-height: 1.4;
+  margin-bottom: .4rem;
+  color: #fff;
+  line-height: 1.3;
+  max-height: 2.6rem; /* 2 satır */
+  overflow: hidden;
 }
 
-.card p {
-  font-size: 0.95rem;
-  line-height: 1.65;
-  color: #444;
-  margin: 0;
+
+/* Kısaltılmış açıklama */
+.excerpt {
+  font-size: .95rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+  margin-bottom: 0.8rem;
+  max-height: 50px;  /* Türkçe/İngilizce dengeler */
+  overflow: hidden;
 }
 
-/* 🔹 Responsive */
+
+/* Devamını oku */
+.read-more {
+  font-size: .96rem;
+  color: #b01c1c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color .3s ease;.card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: .4rem;
+  color: #fff;
+  line-height: 1.3;
+  max-height: 2.6rem; /* 2 satır */
+  overflow: hidden;
+  margin-top: 0.3rem;
+}
+
+}
+
+.card:hover .read-more {
+  color: #ffdbdb;
+}
+
+/* Alt çizgi animasyonu */
+.underline {
+  margin-top: .8rem;
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #b01c1c;
+  transition: width .3s ease;
+}
+
+.card:hover .underline {
+  width: 40%;
+}
+
+/* Responsive */
 @media (max-width: 992px) {
   .title {
     font-size: 2rem;
@@ -186,4 +270,6 @@ import { practiceAreas } from '../data/practiceAreas'
     font-size: 1.5rem;
   }
 }
+
+
 </style>

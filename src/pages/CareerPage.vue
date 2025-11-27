@@ -1,71 +1,103 @@
 <template>
   <section class="career-page">
     <!-- Hero -->
-    <div class="hero">
+    <div class="hero fade-hero">
       <div class="overlay">
-        <h1>Kariyer</h1>
+        <h1>{{ t("career.hero") }}</h1>
       </div>
     </div>
 
     <!-- İçerik -->
     <div class="container">
       <div class="content">
+
         <!-- Sol taraf -->
         <div class="left">
-          <h3 class="section-title">BİZE KATILIN</h3>
+          <h3 class="section-title">{{ t("career.joinTitle") }}</h3>
+
+          <p v-html="t('career.p1')"></p>
+          <p>{{ t("career.p2") }}</p>
+
           <p>
-            Pera Legal & Partners Hukuk Bürosu olarak, geleceğe yönelik hedefler doğrultusunda
-            <strong>avukat, stajyer avukat</strong> ve <strong>hukuk danışmanı</strong> pozisyonları için
-            dinamik ve yetenekli ekip arkadaşları arıyoruz.
-          </p>
-          <p>
-            Farklı deneyim seviyelerindeki adaylara, alanlarına göre yapılandırılmış kariyer olanakları sunmaktayız.
-          </p>
-          <p>
-            Başvurularınızı özgeçmiş ve açıklayıcı ön yazı ile birlikte
-            <a href="mailto:info@peralegal.com.tr">info@peralegal.com.tr</a> adresine gönderebilirsiniz.
+            {{ t("career.p3") }}
+            <a href="mailto:info@peralegal.com.tr">info@peralegal.com.tr</a>
           </p>
         </div>
 
         <!-- Sağ taraf: Form -->
         <div class="right">
-          <h3 class="form-title">KARİYER ÖN BAŞVURU FORMU</h3>
+          <h3 class="form-title">{{ t("career.formTitle") }}</h3>
 
           <form @submit.prevent="handleSubmit">
             <div class="form-group">
-              <input type="text" placeholder="Adınız Soyadınız *" v-model="form.name" required />
+              <input 
+                type="text" 
+                :placeholder="t('career.name')" 
+                v-model="form.name" 
+                required 
+              />
             </div>
+
             <div class="form-row">
-              <input type="email" placeholder="E-posta Adresiniz *" v-model="form.email" required />
-              <input type="tel" placeholder="Telefon Numaranız *" v-model="form.phone" required />
+              <input 
+                type="email" 
+                :placeholder="t('career.email')" 
+                v-model="form.email" 
+                required 
+              />
+              <input 
+                type="tel" 
+                :placeholder="t('career.phone')" 
+                v-model="form.phone" 
+                required 
+              />
             </div>
+
             <div class="form-group">
-              <textarea placeholder="Mesajınız *" rows="4" v-model="form.message" required></textarea>
+              <textarea 
+                :placeholder="t('career.message')" 
+                rows="4" 
+                v-model="form.message" 
+                required
+              ></textarea>
             </div>
-            <div class="form-group">
-              <input type="file" @change="handleFileUpload" />
-            </div>
-            <button type="submit">Gönder</button>
+
+            <div class="form-group file-upload">
+  <input type="file" id="cvFile" @change="handleFileUpload" />
+  
+  <label for="cvFile" class="file-label">
+    <i class="pi pi-upload"></i>
+    <span>{{ selectedFileName || t("career.file") }}</span>
+  </label>
+</div>
+
+
+            <button type="submit">{{ t("career.send") }}</button>
           </form>
         </div>
+
       </div>
     </div>
 
-    <!-- ⭐ PROFESYONEL BAŞVURU POP-UP ⭐ -->
+    <!-- ⭐ POP-UP ⭐ -->
     <div v-if="showPopup" class="popup-backdrop">
       <div class="popup">
         <i class="pi pi-check-circle icon"></i>
-        <h2>Başvurunuz Alındı</h2>
-        <p>Ekibimiz en kısa sürede sizinle iletişime geçecektir.</p>
-        <button @click="showPopup = false">Tamam</button>
+        <h2>{{ t("career.popupTitle") }}</h2>
+        <p>{{ t("career.popupText") }}</p>
+        <button @click="showPopup = false">{{ t("career.ok") }}</button>
       </div>
     </div>
   </section>
 </template>
 
+
 <script setup lang="ts">
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
 import emailjs from "@emailjs/browser";
+
+const { t } = useI18n();
 
 const form = ref({
   name: "",
@@ -76,15 +108,20 @@ const form = ref({
 });
 
 const showPopup = ref(false);
+const selectedFileName = ref("");
+
 
 const handleFileUpload = (e: Event) => {
   const target = e.target as HTMLInputElement;
-  form.value.file = target.files?.[0] || null;
+  const file = target.files?.[0];
+
+  form.value.file = file || null;
+  selectedFileName.value = file ? file.name : "";
 };
+
 
 const handleSubmit = async () => {
   try {
-    // Başvuru sana gelsin
     await emailjs.send(
       "service_23xayhn",
       "template_bvwn8p5",
@@ -97,7 +134,6 @@ const handleSubmit = async () => {
       "FvWfF-9UyWzNMdKFs"
     );
 
-    // Başvurana otomatik mail gitsin
     await emailjs.send(
       "service_23xayhn",
       "template_6cdsg8d",
@@ -120,10 +156,11 @@ const handleSubmit = async () => {
     };
   } catch (error) {
     console.error("EmailJS error:", error);
-    alert("Bir hata oluştu, lütfen tekrar deneyiniz.");
+    alert(t("career.error"));
   }
 };
 </script>
+
 
 <style scoped>
 .career-page {
@@ -136,7 +173,7 @@ const handleSubmit = async () => {
 .hero {
   position: relative;
   height: 42vh;
-  background: url("@/assets/images/banner.webp") center/cover no-repeat;
+background: url('/src/assets/herosection/kariyer.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,5 +328,113 @@ button:hover {
     font-size: 2rem;
   }
 }
+/* --- Hakkımızda Hero Fade Animasyonu (Blog ile aynı) --- */
+.fade-hero {
+  animation: fadeHero 1.5s ease;
+}
+
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Gizle */
+.file-upload input[type="file"] {
+  display: none;
+}
+
+/* Label tasarımı */
+.file-label {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: 0.25s ease;
+}
+
+.file-label:hover {
+  border-color: #b01c1c;
+  box-shadow: 0 0 0 3px rgba(176, 28, 28, 0.15);
+}
+
+.file-label i {
+  color: #b01c1c;
+  font-size: 1.2rem;
+}
+
+/* === POPUP OVERLAY === */
+.popup-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* === POPUP CARD === */
+.popup {
+  background: #fff;
+  padding: 2rem 2.2rem;
+  border-radius: 14px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+  animation: popupScale 0.25s ease;
+}
+
+.popup .icon {
+  font-size: 3.2rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.popup h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: .6rem;
+  color: #0b1b3f;
+}
+
+.popup p {
+  color: #555;
+  margin-bottom: 1.4rem;
+  font-size: 1rem;
+}
+
+.popup button {
+  background: #b01c1c;
+  color: white;
+  border: none;
+  padding: .85rem 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.popup button:hover {
+  background: #8c1515;
+}
+
+/* Animasyon */
+@keyframes popupScale {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
 </style>
 

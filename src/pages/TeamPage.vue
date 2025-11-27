@@ -1,57 +1,45 @@
 <template>
   <section class="team-page">
     <!-- 🔹 HERO -->
-    <div class="hero">
+    <div class="hero fade-hero">
       <div class="overlay">
-        <h1>Ekibimiz</h1>
+        <h1>{{ t("teamPage.hero") }}</h1>
       </div>
     </div>
 
     <!-- 🔹 İçerik -->
     <div class="container">
       <div class="head">
-        <h3 class="subtitle">Pera Legal & Partners</h3>
-        <h2 class="title">Uzman Kadromuz</h2>
+        <h3 class="subtitle">{{ t("teamPage.subtitle") }}</h3>
+        <h2 class="title">{{ t("teamPage.title") }}</h2>
         <div class="divider"></div>
-        <p class="desc">
-          Alanında uzman, deneyimli ve çözüm odaklı avukatlarımız ile hukukun her alanında müvekkillerimize etkin,
-          güvenilir ve profesyonel destek sunuyoruz.
-        </p>
+        <p class="desc">{{ t("teamPage.desc") }}</p>
       </div>
 
       <!-- 🔹 Grid -->
       <div class="grid">
         <div
-  v-for="(member, index) in teamMembers"
-  :key="index"
-  class="card"
-  @click="goProfile(member.slug)"
->
-
+          v-for="(member, index) in teamMembers"
+          :key="index"
+          class="card"
+          @click="goProfile(member.slug)"
+        >
           <div class="image-wrapper">
-            <img :src="member.image" :alt="member.name" />
+            <img :src="member.image" :alt="t(member.name)" />
           </div>
-          <div class="info">
-            <h3>{{ member.name }}</h3>
-            <p class="title-text">{{ member.title }}</p>
-            <p class="expertise">{{ member.expertise }}</p>
-          </div>
-          <p class="about">{{ truncate(member.about, 120) }}</p>
-        </div>
-      </div>
 
-      <!-- 🔹 Modal -->
-      <div v-if="selectedMember" class="modal-backdrop" @click.self="selectedMember = null">
-        <div class="modal">
-          <button class="close" @click="selectedMember = null">
-            <i class="pi pi-times"></i>
-          </button>
-          <img :src="selectedMember.image" :alt="selectedMember.name" class="modal-img" />
-          <h3>{{ selectedMember.name }}</h3>
-          <p class="title-text">{{ selectedMember.title }}</p>
-          <p class="expertise">{{ selectedMember.expertise }}</p>
-          <div class="divider small"></div>
-          <p class="about-full">{{ selectedMember.about }}</p>
+          <div class="info">
+            <h3>{{ t(member.name) }}</h3>
+            <p class="title-text">{{ t(member.title) }}</p>
+
+            <p v-if="member.expertise" class="expertise">
+              {{ member.expertise }}
+            </p>
+          </div>
+
+          <p class="about">
+            {{ truncate(t(member.about), 120) }}
+          </p>
         </div>
       </div>
     </div>
@@ -59,20 +47,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { teamMembers } from '../data/team'
-import type { TeamMember } from '../data/team'
 import router from '../router'
+
+const { t } = useI18n()
 
 const goProfile = (slug: string) => {
   router.push(`/team/${slug}`)
 }
 
-const selectedMember = ref<TeamMember | null>(null)
-const openMember = (member: TeamMember) => (selectedMember.value = member)
 const truncate = (text: string, length: number) =>
   text.length > length ? text.slice(0, length) + '...' : text
 </script>
+
 
 <style scoped>
 .team-page {
@@ -85,7 +73,7 @@ const truncate = (text: string, length: number) =>
 .hero {
   position: relative;
   height: 42vh;
-  background: url('@/assets/images/banner.webp') center/cover no-repeat;
+background: url('/src/assets/herosection/ekip.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,5 +296,21 @@ const truncate = (text: string, length: number) =>
   .card { padding: 2rem 1.4rem; }
   .image-wrapper { width: 120px; height: 120px; }
 }
+/* --- Hakkımızda Hero Fade Animasyonu (Blog ile aynı) --- */
+.fade-hero {
+  animation: fadeHero 1.5s ease;
+}
+
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 </style>
 

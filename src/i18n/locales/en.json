@@ -1,0 +1,348 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "team": "Our Team",
+    "areas": "Practice Areas",
+    "career": "Career",
+    "blog": "Blog",
+    "contact": "Contact",
+    "tools": "Calculation Tools",
+    "etahsilat": "e-Collection",
+        "uyap":"UYAP",
+            "practice":"Practice Areas"
+
+
+  },
+  "hero": {
+    "toolsTitle": "Calculation Tools",
+    "toolsSubtitle": "Calculate compensation, fees and attorney costs quickly and reliably."
+  },
+  "aboutpage": {
+  "metaYear": "2024 | ISTANBUL",
+  "title": "Pera Legal & Partners",
+  "desc1": "Pera Legal & Partners was founded by experienced lawyers who have served in public legal institutions for over 20 years, together with young, dynamic lawyers with strong academic backgrounds. Our law firm, led by expert founding attorneys and supported by our experienced staff, aims to reach fast, lawful, and accurate results while keeping our clients informed of every development and taking the necessary steps at the right time.",
+  "desc2": "Pera Legal & Partners operates in Beyoğlu. For appointments, suggestions, or complaints, you may use the contact information provided on the Contact page."
+},
+
+
+"footer": {
+  "aboutText": "All information and all intellectual property rights related to the logo on this website belong to Pera Legal & Partners.",
+  "menusTitle": "Main Menu",
+  "menuHome": "Home",
+  "menuTeam": "Our Team",
+  "menuPractice": "Practice Areas",
+  "menuCareer": "Career",
+  "menuBlog": "Blog",
+  "menuContact": "Contact",
+
+  "hoursTitle": "Working Hours",
+  "mon": "Monday: 09.00 – 18.00",
+  "tue": "Tuesday: 09.00 – 18.00",
+  "wed": "Wednesday: 09.00 – 18.00",
+  "thu": "Thursday: 09.00 – 18.00",
+  "fri": "Friday: 09.00 – 18.00",
+
+  "contactTitle": "Contact",
+  "phone": "0212 660 42 79",
+  "email": "info@peralegal.com.tr",
+  "web": "peralegal.com.tr",
+  "address": "Asmalımescit Neighborhood, İstiklal Street, Korsan Dead End, No: 2/8 Beyoğlu / Istanbul",
+
+  "copy": "© Copyright 2025 — Pera Legal & Partners All Rights Reserved"
+},
+"homeHero": {
+  "title": "Deep-rooted experience, reliable solutions",
+  "consultation": {
+  "c1": "Reliable Legal Consultancy",
+  "c2": "Legal Process Management",
+  "c3": "Strategic Legal Solutions"
+}
+
+},
+"practice": {
+  "subtitle": "Pera Legal & Partners",
+  "title": "Our Practice Areas",
+  "desc": "We provide reliable, efficient and result-oriented legal solutions with our experienced team to deliver legal support at the right time, with the right method and at high standards.",
+  "readMore": "Read More →"
+},
+"areas": {
+  "ceza": {
+    "title": "Criminal Law",
+    "desc": "As one of our core areas of expertise, we protect our clients’ rights at every stage of criminal proceedings with the utmost sensitivity required by the field. As strong advocates of justice, we work determinedly to ensure that justice prevails while defending clients against accusations."
+  },
+  "bilişim": {
+    "title": "IT & Cyber Law",
+    "desc": "In today’s rapidly evolving digital world, IT law plays a key role in protecting data privacy, defending against cyberattacks, and establishing the legal framework for digital transactions. We guide our clients safely through the digital landscape while embracing innovation."
+  },
+  "aile": {
+    "title": "Family Law",
+    "desc": "Family Law brings together emotional and legal sensitivity. In matters such as divorce, custody, and property division, we provide legal solutions that respect family values and protect our clients' future."
+  },
+  "ticaret": {
+    "title": "Commercial Law",
+    "desc": "In the fast-changing world of commerce, our primary goal is to offer legal solutions tailored to business needs. From company formation to contract management, we guide our clients at every step and contribute to sustainable commercial growth."
+  },
+  "iş": {
+    "title": "Labor Law",
+    "desc": "We specialize in Labor Law to protect employee rights and ensure fair employer practices. We provide legal guidance to maintain healthy and lawful employment relationships within the dynamic structure of business life."
+  },
+  "gayri": {
+    "title": "Real Estate Law",
+    "desc": "Real estate and property transactions mark important milestones in life. We offer legal support for a broad range of matters such as title deed procedures and lease agreements, helping clients manage their property rights securely."
+  },
+  "miras": {
+    "title": "Inheritance Law",
+    "desc": "Inheritance represents the continuation of family bonds and personal assets. We provide sensitive and fair legal guidance to ensure proper distribution of estates and protect our clients’ rights during inheritance processes."
+  },
+  "idare": {
+    "title": "Administrative Law",
+    "desc": "Administrative Law governs the regulation of public services and the supervision of administrative actions. We provide legal support to protect individual rights and maintain a fair balance between the state and citizens."
+  },
+  "saglık": {
+    "title": "Health Law",
+    "desc": "Healthcare is one of the most fundamental human needs, and health law regulates this critical area. We guide healthcare professionals and institutions in compliance with legal requirements while safeguarding patient rights."
+  },
+  "icra": {
+    "title": "Enforcement & Bankruptcy Law",
+    "desc": "Enforcement and bankruptcy law governs the collection of debts and the regulation of debtors' financial situations. By following current regulations in Türkiye, we offer fast and fair solutions for both creditors and debtors."
+  },
+  "sozlesme": {
+    "title": "Contract Law",
+    "desc": "Contract Law sets the legal framework for agreements between parties. We provide consultancy in the formation, execution, interpretation, amendment, and termination of contracts with our expert legal team."
+  },
+  "vatan": {
+    "title": "Citizenship Law",
+    "desc": "Citizenship Law covers the acquisition, loss, and transfer of citizenship. We assist foreign nationals with residence permits, work permits, family visas, and citizenship applications with a professional and result-oriented approach."
+  },
+  "sigorta": {
+    "title": "Insurance Law",
+    "desc": "We meticulously protect our clients’ rights in disputes arising from insurance contracts. We offer effective representation in matters involving insurance companies, including compensation claims and policy interpretations."
+  }
+
+},
+ "teamPreview": {
+  "subtitle": "FOR YOUR LEGAL SOLUTIONS",
+  "title": "Our Team",
+  "desc": "Our experienced, skilled and well-equipped lawyers at Pera Legal & Partners provide the legal support our clients need with up-to-date knowledge, transparency and a results-oriented mindset.",
+  "button": "Our Team"
+},
+"about": {
+  "heroTitle": "About Us",
+  "heroSubtitle": "Pera Legal & Partners — Trust, Ethics and Solution-Oriented Legal Services",
+
+  "whoWeAreTitle": "Who Are We?",
+  "whoWeAreP1": "Pera Legal & Partners is a corporate law firm offering fast, reliable and result-oriented legal solutions with its team of lawyers specialized in various fields of law.",
+  "whoWeAreP2": "We combine a modern legal approach with ethical values, transparency and strong communication to provide each client with a professional roadmap.",
+
+  "missionTitle": "Our Mission",
+  "missionText": "To provide professional, transparent and solution-oriented legal consultancy that enables clients to make the right decisions in their legal processes.",
+
+  "visionTitle": "Our Vision",
+  "visionText": "To be a reliable, ethical and innovative legal solution partner on both national and international platforms."
+},
+"practicePage": {
+  "hero": "Practice Areas",
+  "subtitle": "Pera Legal & Partners Law Firm",
+  "title": "Practice Areas",
+  "desc": "Here are the main areas in which our expert lawyers provide legal services according to client needs:"
+},
+ "career": {
+    "hero": "Career",
+    "joinTitle": "JOIN US",
+    "p1": "As Pera Legal & Partners Law Firm, we are seeking dynamic and talented team members for the positions of <strong>lawyer, trainee lawyer</strong> and <strong>legal consultant</strong> in line with our future goals.",
+    "p2": "We offer structured career opportunities tailored to the expertise of candidates at different experience levels.",
+    "p3": "You can send your applications with your CV and cover letter to",
+    "formTitle": "CAREER APPLICATION FORM",
+    "name": "Full Name *",
+    "email": "Email Address *",
+    "phone": "Phone Number *",
+    "message": "Your Message *",
+    "send": "Submit",
+    "popupTitle": "Application Received",
+    "popupText": "Our team will contact you as soon as possible.",
+    "ok": "OK",
+    "error": "An error occurred, please try again.",
+      "file": "Choose File"
+
+  },
+  "blog": {
+  "hero": "Blog",
+  "title": "Our Blog Posts",
+  "readMore": "Read More",
+  "categories": "Categories"
+},
+"contact": {
+     "hero": "Contact",
+  "subtitle": "FOR DETAILED INFORMATION",
+  "title": "Get in Touch With Us",
+  "desc": "You can contact us easily using the information below to learn more about our services and working conditions.",
+
+  "addressTitle": "Address",
+  "address": "Asmalımescit Neighborhood, Istiklal Street, Korsan Çıkmazı,<br>No: 2/8 Beyoğlu / Istanbul",
+
+  "phoneTitle": "Phone",
+  "phone": "+90 (212) 660 42 79",
+
+  "emailTitle": "Email",
+  "email": "info@peralegal.com.tr",
+
+  "hoursTitle": "Working Hours",
+  "hours": "Monday – Friday: 09:00 – 18:00"
+},
+
+  "toolsPage": {
+    "heroTitle": "Calculation Tools",
+    "heroSubtitle": "Calculate compensation, fees and attorney costs quickly and reliably.",
+
+    "carLossTitle": "Vehicle Value Loss Calculator",
+    "carValue": "Market Value (₺):",
+    "carValuePlaceholder": "Enter vehicle value",
+    "carKm": "Vehicle Mileage:",
+    "carKmPlaceholder": "Enter mileage",
+    "carYear": "Model Year:",
+    "carYearPlaceholder": "Enter year",
+    "damageCost": "Damage Cost (₺):",
+    "damageCostPlaceholder": "Enter damage cost",
+    "damageLocation": "Damage Location:",
+    "damageLocation1": "Bumpers / Door / Trunk",
+    "damageLocation2": "Hood / Chassis / Pody / Roof",
+    "repeatDamage": "Has the same area been damaged before?",
+    "yes": "Yes",
+    "no": "No",
+
+    "attorneyTitle": "Attorney Fee Calculator",
+    "courtType": "Select Court Type:",
+    "amount": "Enter Amount (₺):",
+    "amountPlaceholder": "Enter amount",
+
+    "noticeTitle": "Notice Compensation Calculator",
+    "grossSalary": "Enter Gross Salary:",
+    "grossSalaryPlaceholder": "Enter gross salary",
+    "startDate": "Start Date:",
+    "endDate": "End Date:",
+
+    "severanceTitle": "Severance Pay Calculator",
+    "severanceStartDate": "Start Date:",
+    "severanceEndDate": "End Date:",
+    "severanceGross": "Gross Salary (₺):",
+    "severanceGrossPlaceholder": "Enter gross salary",
+
+    "tapuTitle": "Title Deed Fee Calculator",
+    "tapuType": "Calculation Type:",
+    "tapuOption1": "Calculate Fee by Sale Price",
+    "tapuOption2": "Calculate Sale Price by Fee",
+    "tapuPrice": "Price Information (₺):",
+    "tapuPricePlaceholder": "Enter price",
+
+    "islahTitle": "Islah Fee Calculator",
+    "islahAmount": "Increased Amount (₺):",
+    "islahAmountPlaceholder": "Enter amount",
+
+    "calculate": "CALCULATE",
+    "clear": "CLEAR",
+
+    "modalTitle": "Calculation",
+    "modalText": "The calculation module will be activated very soon. The system is currently under development.",
+    "ok": "OK"
+  },
+  "popup": {
+  "title": "e-Collection Module",
+  "desc": "The e-collection system will be activated very soon. It is currently under development.",
+  "close": "Close"
+}
+
+,
+"team": {
+  "halil": {
+    "name": "Halil Cenk Akdoğan",
+    "title": "Attorney at Law",
+    "about": "He graduated from Eastern Mediterranean University in 2004. Following his graduation, he first practiced law in İzmir and has been working independently in his own office in Istanbul since 2012. Throughout his career, he has achieved significant success especially in administrative law, family law, commercial law, corporate law, and enforcement & bankruptcy law. His arguments and legal opinions in many cases he won have been adopted by high courts and turned into precedent-setting decisions."
+  },
+
+  "muhammed": {
+    "name": "Muhammed Murat Kaplan",
+    "title": "Attorney at Law",
+    "about": "After completing his legal education at Istanbul Beykent University in 2021, he began his legal internship. Immediately after his internship, he continued his practice independently. He plays an active role particularly in administrative law, civil society law, corporate law, and enforcement & bankruptcy law. He specializes in resolving disputes arising from administrative acts, ensuring compliance for NGOs such as associations and foundations, overseeing business transfers, mergers and liquidations, and the rapid and effective collection of commercial receivables."
+  },
+
+  "recai": {
+    "name": "Recai Aytaç Akbay",
+    "title": "Attorney at Law",
+    "about": "He graduated from Ankara University Faculty of Law in 1982 and began his judicial career as a judge in 1986. During his tenure, he presided over various courts including civil courts of first instance, commercial courts, civil courts of peace, enforcement courts, and high criminal courts. After retiring in 2022 following more than 30 years of judicial service, he began practicing as an attorney, offering clients practical and solution-oriented legal services by combining his long-standing judicial experience with his legal practice."
+  },
+
+  "tolga": {
+    "name": "Tolga Erkoçkar",
+    "title": "Atty. & Mediator",
+    "about": "He completed his secondary education at Mimar Sinan High School and then graduated from Marmara University Faculty of Law. In 2014, he also earned a degree from Marmara University's Faculty of Communication, Department of Journalism. After establishing his own law office, he completed his LL.M. at Kadir Has University. He was later accepted into Galatasaray University's PhD program, where he has completed the coursework and proficiency stages, continuing his dissertation titled 'Employer’s Obligation of Non-Discrimination and Equal Pay for Equal Work'. He provides consultancy mainly in labor law, contract law, and commercial law. He speaks professional-level English and has one published book and one peer-reviewed article."
+  },
+
+  "cansu": {
+    "name": "Cansu Işıksal",
+    "title": "Atty. & Mediator",
+    "about": "She completed her secondary education at Mimar Sinan High School and later graduated from Marmara University Faculty of Law. She also holds a degree from Marmara University Faculty of Communication, Department of Journalism. After completing her legal internship, she founded her own practice and earned her LL.M. from Kadir Has University. She specializes in labor law, contract law, and commercial law and provides consultancy in various areas of private law."
+  },
+
+  "muge": {
+    "name": "Müge Yavuz",
+    "title": "Attorney at Law",
+    "about": "She began her education at VKV Koç Private Primary School and continued at Istanbul Saint Joseph French High School. During her high school years, she attended programs at Paris-Sorbonne University, gaining an international perspective. She graduated from Istanbul Bilgi University Faculty of Law. After gaining experience in leading law firms in Turkey, she joined our firm in 2022. She provides legal services to domestic and international clients mainly in criminal law, IT law, and corporate law. She speaks advanced English and French and has held secretary positions at multiple committees of the Istanbul Bar Association."
+  },
+
+  "hatice": {
+    "name": "Hatice Yazar",
+    "title": "Attorney at Law",
+    "about": "She graduated from Marmara University Faculty of Law in 2015. For over seven years, she has provided legal consultancy to her clients in criminal law, enforcement & bankruptcy law, family law, and labor law."
+  },
+
+  "furkan": {
+    "name": "Furkan Uslu",
+    "title": "Trainee Lawyer",
+    "about": "He graduated from Istanbul Beykent University in 2024. He is currently continuing his compulsory legal internship, gaining experience in practical areas of the profession."
+  },
+
+  "selin": {
+    "name": "Selin Alçık",
+    "title": "Attorney at Law",
+    "about": "She was admitted to Maltepe University Faculty of Law with a scholarship. After graduating, she completed her legal internship in 2024 at one of the leading law firms in Turkey. She speaks advanced English and has specialized in administrative law, enforcement & bankruptcy law, civil law, and corporate law."
+  },
+
+  "hayrun": {
+    "name": "Hayrunnisa Neslihan Varlı",
+    "title": "Attorney at Law",
+    "about": "She completed her undergraduate and graduate studies at Istanbul Beykent University Faculty of Law. With an academic background in private law, she focused particularly on international trade law, transport law, and contract law. She currently resides in Germany and actively practices law in both Turkey and Germany, offering consultancy in private law, international trade law, and immigration law."
+  },
+
+  "hakki": {
+    "name": "Hakkı Taylan Yurtaydın",
+    "title": "Attorney at Law",
+    "about": "He graduated from Marmara University Faculty of Law in 2005. He is currently preparing his LL.M. thesis titled 'Vertical Integration in Energy Companies' at Kadir Has University. He previously played basketball for MTA Ankara and later for Marmara University Faculty of Law, and currently plays for the Istanbul Bar Association Basketball Team. He specializes in commercial law, contract law, civil law, transport law, and CMR. He speaks advanced English."
+  },
+
+  "ata": {
+    "name": "Ata Taşman",
+    "title": "Legal Consultant",
+    "about": "After graduating from Terakki Foundation Schools, he was admitted to the University of Exeter Faculty of Law in the United Kingdom and graduated in 2023. He gained experience in various companies and his own ventures and also served in multiple United Nations organizations. He currently works as a legal consultant, providing comprehensive and solution-oriented services in international contracts and cross-border commercial relations."
+  }
+},
+"teamPage": {
+  "aboutTitle": "About",
+  "hero": "Our Team",
+  "subtitle": "Pera Legal & Partners",
+  "title": "Our Expert Staff",
+  "desc": "With our experienced and solution-oriented attorneys who are experts in their fields, we offer effective, reliable, and professional legal support in all areas of law."
+}
+
+
+
+
+  
+
+
+
+
+
+
+}
+ 

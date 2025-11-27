@@ -1,31 +1,57 @@
 <template>
   <header class="navbar">
     <div class="container">
-      <!-- 🔹 Sol: Logo -->
+      <!-- Logo -->
       <div class="logo">
         <h1>PERA LEGAL<br />& PARTNERS</h1>
       </div>
 
-      <!-- 🔹 Menü -->
+      <!-- Menü -->
       <nav class="menu">
-        <RouterLink to="/" class="menu-item" :class="{ active: isActive('/') }">Ana Sayfa</RouterLink>
-        <RouterLink to="/ekibimiz" class="menu-item" :class="{ active: isActive('/ekibimiz') }">Ekibimiz</RouterLink>
-        <RouterLink
-          to="/calisma-alanlarimiz"
-          class="menu-item"
-          :class="{ active: isActive('/calisma-alanlarimiz') }"
-        >
-          Çalışma Alanlarımız
+        <RouterLink to="/" class="menu-item" :class="{ active: isActive('/') }">
+          {{ t('navbar.home') }}
         </RouterLink>
-        <RouterLink to="/kariyer" class="menu-item" :class="{ active: isActive('/kariyer') }">Kariyer</RouterLink>
-        <RouterLink to="/blog" class="menu-item" :class="{ active: isActive('/blog') }">Blog</RouterLink>
-        <RouterLink to="/iletisim" class="menu-item" :class="{ active: isActive('/iletisim') }">İletişim</RouterLink>
+
+        <RouterLink to="/hakkimizda" class="menu-item" :class="{ active: isActive('/hakkimizda') }">
+          {{ t('navbar.about') }}
+        </RouterLink>
+
+        <RouterLink to="/ekibimiz" class="menu-item" :class="{ active: isActive('/ekibimiz') }">
+          {{ t('navbar.team') }}
+        </RouterLink>
+
+        <RouterLink to="/calisma-alanlarimiz" class="menu-item" :class="{ active: isActive('/calisma-alanlarimiz') }">
+          {{ t('navbar.areas') }}
+        </RouterLink>
+
+        <RouterLink to="/kariyer" class="menu-item" :class="{ active: isActive('/kariyer') }">
+          {{ t('navbar.career') }}
+        </RouterLink>
+
+        <RouterLink to="/blog" class="menu-item" :class="{ active: isActive('/blog') }">
+          {{ t('navbar.blog') }}
+        </RouterLink>
+
+        <RouterLink to="/iletisim" class="menu-item" :class="{ active: isActive('/iletisim') }">
+          {{ t('navbar.contact') }}
+        </RouterLink>
+
         <RouterLink to="/hesaplama-araclari" class="menu-item" :class="{ active: isActive('/hesaplama-araclari') }">
-          Hesaplama Araçları
+          {{ t('navbar.tools') }}
         </RouterLink>
+
+        <span class="menu-item" @click="showPopup = true">
+          {{ t('navbar.etahsilat') }}
+        </span>
       </nav>
 
-      <!-- 🔸 Sağ: UYAP Butonu -->
+      <!-- Dil seçici -->
+      <div class="lang-switch">
+        <span :class="{ active: locale === 'tr' }" @click="changeLang('tr')">TR</span>
+        <span :class="{ active: locale === 'en' }" @click="changeLang('en')">EN</span>
+      </div>
+
+      <!-- UYAP Butonu -->
       <a
         href="https://vatandas.uyap.gov.tr/main/vatandas/giris.jsp"
         target="_blank"
@@ -33,19 +59,93 @@
         class="uyap-btn"
       >
         <i class="pi pi-lock"></i>
-        UYAP Girişi
+        {{ t('navbar.uyap') }}
       </a>
     </div>
   </header>
+
+  <!-- Popup Modal -->
+  <div v-if="showPopup" class="popup-backdrop" @click.self="showPopup = false">
+    <div class="popup">
+      <h2>{{ t('popup.title') }}</h2>
+      <p>{{ t('popup.desc') }}</p>
+      <button class="close-btn" @click="showPopup = false">{{ t('popup.close') }}</button>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
+
 const route = useRoute()
 const isActive = (path: string) => route.path === path
+
+const showPopup = ref(false)
+
+const changeLang = (lang: string) => {
+  locale.value = lang
+  localStorage.setItem('lang', lang)
+}
 </script>
 
+
+
 <style scoped>
+
+/* === POPUP === */
+.popup-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.popup {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 14px;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+.popup h2 {
+  color: #0b1b3f;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.popup p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.close-btn {
+  background: #b01c1c;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background .2s ease;
+}
+
+.close-btn:hover {
+  background: #d32626;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -138,5 +238,30 @@ const isActive = (path: string) => route.path === path
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
   }
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.lang-switch span {
+  cursor: pointer;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.lang-switch span.active {
+  opacity: 1;
+  font-weight: 700;
+  border-bottom: 2px solid #b01c1c;
+  color: #fff;
+}
+
+.lang-switch span:hover {
+  opacity: 1;
 }
 </style>

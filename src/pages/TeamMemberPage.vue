@@ -2,13 +2,13 @@
   <section class="member-detail" v-if="member">
     <div class="container">
 
-      <!-- ÜST PROFİL ALANI -->
+      <!-- ÜST PROFİL -->
       <div class="profile-card">
-        <img :src="member.image" :alt="member.name" class="photo" />
+        <img :src="member.image" :alt="t(member.name)" class="photo" />
 
         <div class="info">
-          <h1>{{ member.name }}</h1>
-          <h3 class="role">{{ member.title }}</h3>
+          <h1>{{ t(member.name) }}</h1>
+          <h3 class="role">{{ t(member.title) }}</h3>
 
           <p v-if="member.expertise" class="expertise">
             {{ member.expertise }}
@@ -16,28 +16,40 @@
         </div>
       </div>
 
-      <!-- ALT DETAY ALANI -->
+      <!-- ALT DETAY -->
       <div class="about-card">
-        <h2>Hakkında</h2>
+        <h2>{{ t('teamPage.aboutTitle') }}</h2>
         <div class="divider"></div>
 
         <p class="about-text">
-          {{ member.about }}
+          {{ t(member.about) }}
         </p>
       </div>
 
     </div>
   </section>
+
+  <!-- Eğer slug hatalıysa -->
+  <section v-else class="not-found">
+    <p>Aradığınız kişi bulunamadı.</p>
+  </section>
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { teamMembers } from '../data/team'
 
+const { t } = useI18n()
 const route = useRoute()
+
+// URL slug
 const slug = route.params.slug as string
-const member = teamMembers.find(m => m.slug === slug)
+
+// teamMembers içinden eşleşen kişi
+const member = teamMembers.find(m => m.slug === slug) || null
 </script>
+
 
 <style scoped>
 .member-detail {
@@ -91,7 +103,6 @@ const member = teamMembers.find(m => m.slug === slug)
 .expertise {
   font-size: 0.95rem;
   color: #555;
-  margin-top: 0.6rem;
 }
 
 /* Hakkında Kartı */
@@ -123,7 +134,6 @@ const member = teamMembers.find(m => m.slug === slug)
   font-size: 1.05rem;
   line-height: 1.9;
   color: #444;
-  white-space: pre-line;
 }
 
 /* Animasyon */
@@ -132,16 +142,11 @@ const member = teamMembers.find(m => m.slug === slug)
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Mobil Uyumu */
+/* Mobil */
 @media (max-width: 768px) {
   .profile-card {
     flex-direction: column;
     text-align: center;
-  }
-
-  .photo {
-    width: 150px;
-    height: 150px;
   }
 }
 </style>

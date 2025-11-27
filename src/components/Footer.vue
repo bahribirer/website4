@@ -5,8 +5,7 @@
       <div class="about">
         <h2 class="brand">PERA LEGAL<br />& PARTNERS</h2>
         <p class="info">
-          Bu internet sitesinde yer alan tüm bilgiler ve logoya ilişkin tüm fikri mülkiyet hakları
-          Pera Legal & Partners’a aittir.
+          {{ t('footer.aboutText') }}
         </p>
 
         <div class="social">
@@ -26,46 +25,44 @@
           >
             <i class="pi pi-instagram"></i>
           </a>
-          
         </div>
       </div>
 
       <!-- Orta: Menü -->
       <div class="links">
-        <h3>Ana Menüler</h3>
+        <h3>{{ t('footer.menusTitle') }}</h3>
         <ul>
-          <li><RouterLink to="/">Ana Sayfa</RouterLink></li>
-          <li><RouterLink to="/ekibimiz">Ekibimiz</RouterLink></li>
-          <li><RouterLink to="/calisma-alanlarimiz">Çalışma Alanlarımız</RouterLink></li>
-          <li><RouterLink to="/kariyer">Kariyer</RouterLink></li>
-          <li><RouterLink to="/blog">Blog</RouterLink></li>
-          <li><RouterLink to="/iletisim">İletişim</RouterLink></li>
+          <li><RouterLink to="/">{{ t('footer.menuHome') }}</RouterLink></li>
+          <li><RouterLink to="/ekibimiz">{{ t('footer.menuTeam') }}</RouterLink></li>
+          <li><RouterLink to="/calisma-alanlarimiz">{{ t('footer.menuPractice') }}</RouterLink></li>
+          <li><RouterLink to="/kariyer">{{ t('footer.menuCareer') }}</RouterLink></li>
+          <li><RouterLink to="/blog">{{ t('footer.menuBlog') }}</RouterLink></li>
+          <li><RouterLink to="/iletisim">{{ t('footer.menuContact') }}</RouterLink></li>
         </ul>
       </div>
 
       <!-- Çalışma Saatleri -->
       <div class="hours">
-        <h3>Çalışma Saatleri</h3>
+        <h3>{{ t('footer.hoursTitle') }}</h3>
         <ul>
-          <li>Pazartesi: 09.00 – 18.00</li>
-          <li>Salı: 09.00 – 18.00</li>
-          <li>Çarşamba: 09.00 – 18.00</li>
-          <li>Perşembe: 09.00 – 18.00</li>
-          <li>Cuma: 09.00 – 18.00</li>
+          <li>{{ t('footer.mon') }}</li>
+          <li>{{ t('footer.tue') }}</li>
+          <li>{{ t('footer.wed') }}</li>
+          <li>{{ t('footer.thu') }}</li>
+          <li>{{ t('footer.fri') }}</li>
         </ul>
       </div>
 
       <!-- İletişim -->
       <div class="contact">
-        <h3>İletişim</h3>
+        <h3>{{ t('footer.contactTitle') }}</h3>
         <ul>
-          <li><i class="pi pi-phone"></i> 0212 660 42 79</li>
-          <li><i class="pi pi-envelope"></i> info@peralegal.com.tr</li>
-          <li><i class="pi pi-globe"></i> peralegal.com.tr</li>
+          <li><i class="pi pi-phone"></i> {{ t('footer.phone') }}</li>
+          <li><i class="pi pi-envelope"></i> {{ t('footer.email') }}</li>
+          <li><i class="pi pi-globe"></i> {{ t('footer.web') }}</li>
           <li>
             <i class="pi pi-map-marker"></i>
-            Asmalımescit Mahallesi, İstiklal Caddesi,<br />
-            Korsan Çıkmazı, No: 2/8 Beyoğlu / İstanbul
+            {{ t('footer.address') }}
           </li>
         </ul>
       </div>
@@ -73,10 +70,14 @@
 
     <!-- Alt Kısım -->
     <div class="bottom">
-      <p>© Copyright 2025 — Pera Legal & Partners Tüm Hakları Saklıdır</p>
+      <p>{{ t('footer.copy') }}</p>
     </div>
   </footer>
 </template>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .footer {

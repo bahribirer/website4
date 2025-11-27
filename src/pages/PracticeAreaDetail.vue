@@ -1,33 +1,47 @@
 <template>
   <section v-if="area" class="practice-detail">
-    <div class="hero">
+    <div class="hero" :style="heroStyle">
       <div class="overlay">
-        <h1>{{ area.title }}</h1>
+        <h1>{{ t(`areas.${key}.title`) }}</h1>
       </div>
     </div>
 
     <div class="container">
       <nav class="breadcrumb">
-        <RouterLink to="/">Ana Sayfa</RouterLink> /
-        <RouterLink to="/calisma-alanlarimiz">Çalışma Alanlarımız</RouterLink> /
-        <span>{{ area.title }}</span>
+        <RouterLink to="/">{{ t("navbar.home") }}</RouterLink> /
+        <RouterLink to="/calisma-alanlarimiz">{{ t("navbar.practice") }}</RouterLink> /
+        <span>{{ t(`areas.${key}.title`) }}</span>
       </nav>
 
-      <h2 class="title">{{ area.title }}</h2>
-      <p class="desc">{{ area.description }}</p>
+      <h2 class="title">{{ t(`areas.${key}.title`) }}</h2>
+      <p class="desc">{{ t(`areas.${key}.desc`) }}</p>
     </div>
   </section>
 </template>
 
+
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 import { practiceAreas } from '../data/practiceAreas'
-import { slugifyTR } from '../utils/slug'
+import { computed } from 'vue'
+import { useI18n } from "vue-i18n"
+import { slugifyTR } from "../utils/slug"
 
+const { t } = useI18n()
 const route = useRoute()
-const slug = String(route.params.slug)
-const area = practiceAreas.find(a => slugifyTR(a.title) === slug)
+
+const key = String(route.params.key)
+
+const area = practiceAreas.find(a => a.key === key)
+
+
+
+// Hero background
+const heroStyle = computed(() => ({
+  background: `url(${area?.image}) center/cover no-repeat`
+}))
 </script>
+
 
 <style scoped>
 .practice-detail {
@@ -40,11 +54,11 @@ const area = practiceAreas.find(a => slugifyTR(a.title) === slug)
 .hero {
   position: relative;
   height: 42vh;
-  background: url('@/assets/images/banner.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .overlay {
   background: rgba(11, 27, 63, 0.58);

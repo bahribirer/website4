@@ -1,32 +1,31 @@
 <template>
   <section class="about">
     <div class="container">
+
       <div class="meta">
         <span class="line"></span>
-        <span class="year">2024 | İSTANBUL</span>
+        <span class="year">{{ t('aboutpage.metaYear') }}</span>
         <span class="line"></span>
       </div>
 
-      <h2 class="title">Pera Legal & Partners</h2>
+      <h2 class="title">{{ t('aboutpage.title') }}</h2>
 
       <p class="desc">
-        Pera Legal & Partners, kimi 20 yılı aşkın süredir hukuk alanında kamu hizmeti ifa etmekte olan deneyimli
-        avukatlarımız ve kimi de genç, dinamik ve başarılarla dolu akademik hayatı olan avukatlarımızın bir araya gelmesi
-        ile birlikte kurulmuştur. Alanlarında uzman olan kurucu avukatlarımız, tecrübeli çalışanlarımız ile birlikte
-        hızlı, yasal ve doğru sonuca ulaşmayı hedefleyen hukuk firmamız, müvekkillerini her gelişmeden haberdar edip
-        güncel tutarak ve atılması gereken adımları doğru zamanda atarak problemleri rahatça çözüme kavuşturmayı
-        hedefler.
+        {{ t('aboutpage.desc1') }}
       </p>
 
       <p class="desc">
-        Pera Legal & Partners, Beyoğlu’nda hizmet vermektedir. Randevu, öneri ve şikayetleriniz için İletişim sayfasında
-        yer alan bilgilerden faydalanabilirsiniz.
+        {{ t('aboutpage.desc2') }}
       </p>
+
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .about {

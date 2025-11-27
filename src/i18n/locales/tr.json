@@ -1,0 +1,336 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "team": "Ekibimiz",
+    "areas": "Çalışma Alanlarımız",
+    "career": "Kariyer",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "tools": "Hesaplama Araçları",
+    "etahsilat": "e-Tahsilat",
+    "uyap":"UYAP",
+    "practice":"Çalışma Alanlarımız"
+  },
+  "hero": {
+    "toolsTitle": "Hesaplama Araçları",
+    "toolsSubtitle": "Tazminat, harç ve vekalet ücretlerinizi hızlı ve güvenilir şekilde hesaplayın."
+  },
+  "aboutpage": {
+  "metaYear": "2024 | İSTANBUL",
+  "title": "Pera Legal & Partners",
+  "desc1": "Pera Legal & Partners, kimi 20 yılı aşkın süredir hukuk alanında kamu hizmeti ifa etmekte olan deneyimli avukatlarımız ve kimi de genç, dinamik ve başarılarla dolu akademik hayatı olan avukatlarımızın bir araya gelmesi ile birlikte kurulmuştur. Alanlarında uzman olan kurucu avukatlarımız, tecrübeli çalışanlarımız ile birlikte hızlı, yasal ve doğru sonuca ulaşmayı hedefleyen hukuk firmamız, müvekkillerini her gelişmeden haberdar edip güncel tutarak ve atılması gereken adımları doğru zamanda atarak problemleri rahatça çözüme kavuşturmayı hedefler.",
+  "desc2": "Pera Legal & Partners, Beyoğlu’nda hizmet vermektedir. Randevu, öneri ve şikayetleriniz için İletişim sayfasında yer alan bilgilerden faydalanabilirsiniz."
+}
+,"footer": {
+  "aboutText": "Bu internet sitesinde yer alan tüm bilgiler ve logoya ilişkin tüm fikri mülkiyet hakları Pera Legal & Partners’a aittir.",
+  "menusTitle": "Ana Menüler",
+  "menuHome": "Ana Sayfa",
+  "menuTeam": "Ekibimiz",
+  "menuPractice": "Çalışma Alanlarımız",
+  "menuCareer": "Kariyer",
+  "menuBlog": "Blog",
+  "menuContact": "İletişim",
+
+  "hoursTitle": "Çalışma Saatleri",
+  "mon": "Pazartesi: 09.00 – 18.00",
+  "tue": "Salı: 09.00 – 18.00",
+  "wed": "Çarşamba: 09.00 – 18.00",
+  "thu": "Perşembe: 09.00 – 18.00",
+  "fri": "Cuma: 09.00 – 18.00",
+
+  "contactTitle": "İletişim",
+  "phone": "0212 660 42 79",
+  "email": "info@peralegal.com.tr",
+  "web": "peralegal.com.tr",
+  "address": "Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı, No: 2/8 Beyoğlu / İstanbul",
+
+  "copy": "© Copyright 2025 — Pera Legal & Partners Tüm Hakları Saklıdır"
+},
+"homeHero": {
+  "title": "Köklü deneyim, güvenilir çözümler"
+},
+"consultation": {
+  "c1": "Güvenilir Hukuki Danışmanlık",
+  "c2": "Hukuki Süreç Yönetimi",
+  "c3": "Stratejik Hukuki Çözümler"
+},
+"practice": {
+  "subtitle": "Pera Legal & Partners",
+  "title": "Çalışma Alanlarımız",
+  "desc": "Müvekkillerimizin ihtiyaç duyduğu hukuki desteği doğru zamanda, doğru yöntemle ve yüksek standartlarda sunabilmek adına deneyimli avukat kadromuzla güvenilir, etkin ve sonuç odaklı çözümler üretiyoruz.",
+  "readMore": "Devamını Oku →"
+},
+"areas": {
+  "ceza": {
+    "title": "Ceza Hukuku",
+    "desc": "Başlıca uzmanlık alanlarımızdan olan Ceza Hukuku’na ilişkin yargılamanın tüm aşamalarında müvekkillerimizin haklarını alanın gerektirdiği hassasiyete uygun şekilde korumaya özen gösteriyoruz. Savunma ve adaletin önemli bir savunucusu olarak, suçlamalarla mücadele ederken adaletin tecelli etmesi için kararlılıkla çalışıyoruz."
+  },
+  "bilişim": {
+    "title": "Bilişim Hukuku",
+    "desc": "Dijital dünyanın hızla geliştiği günümüzde, bilişim hukuku verilerin gizliliğini koruma, siber saldırılara karşı savunma ve dijital işlemlerin yasal çerçevesini oluşturma görevini üstlenir. Bilişim Hukuku’nda, müvekkillerimizi dijital dünyada güvende tutarken, yeniliklere de açık bir şekilde yol gösteriyoruz."
+  },
+  "aile": {
+    "title": "Aile Hukuku",
+    "desc": "Aile Hukuku, duygusal ve hukuksal hassasiyeti bir araya getiren bir alandır. Boşanma, velayet ve mal paylaşımı gibi konularda, aile değerlerine saygı duyarak, müvekkillerimizin geleceğini en iyi şekilde korumak için hukuki çözümler sunuyoruz."
+  },
+  "ticaret": {
+    "title": "Ticaret Hukuku",
+    "desc": "Ticaretin hızla değişen dünyasında, iş dünyasının ihtiyaçlarına uygun hukuki çözümler sunmak temel hedefimizdir. Ticaret Hukuku’nda, şirket kuruluşundan sözleşme yönetimine kadar her adımda müvekkillerimize rehberlik ederek ticaretin büyümesine katkı sağlıyoruz."
+  },
+  "iş": {
+    "title": "İş Hukuku",
+    "desc": "İş dünyasının dinamikleri içerisinde, çalışanların haklarını korumak ve işverenlerin adil bir şekilde yönetilmesini sağlamak amacıyla İş Hukuku alanında uzmanlaştık. İş ilişkilerinin sağlıklı bir şekilde yürümesini temin ederken, iş dünyasına hukuki perspektif sunuyoruz."
+  },
+  "gayri": {
+    "title": "Gayrimenkul Hukuku",
+    "desc": "Mülkiyet ve taşınmaz işlemler, hayatımızın önemli dönemeçlerini oluşturur. Gayrimenkul Hukuku’nda, tapu işlemlerinden kira sözleşmelerine kadar geniş bir yelpazede, müvekkillerimize mülkiyet haklarını güvenle yönetme imkânı sunuyoruz."
+  },
+  "miras": {
+    "title": "Miras Hukuku",
+    "desc": "Miras, aile bağlarının ve kişisel birikimlerin devamlılığını temsil eder. Miras Hukuku’nda, adil ve uygun miras dağılımı sağlamak amacıyla müvekkillerimize danışmanlık yaparken, duygusal hassasiyeti gözetiyoruz."
+  },
+  "idare": {
+    "title": "İdare Hukuku",
+    "desc": "Kamu hizmetlerinin düzenlenmesi ve idari işlemlerin denetimi toplumun refahı için hayati öneme sahiptir. İdare Hukuku’nda, bireylerin haklarını korumak ve devlet ile vatandaş arasında adil bir denge sağlamak adına hukuki destek sunuyoruz."
+  },
+  "saglık": {
+    "title": "Sağlık Hukuku",
+    "desc": "Sağlık hizmetleri insanların temel ihtiyaçlarından biridir ve sağlık hukuku bu alandaki düzenlemeleri kapsar. Sağlık Hukuku’nda, sağlık profesyonellerini ve kurumlarını yasal gerekliliklere uygun biçimde yönlendirirken hastaların haklarını da koruyoruz."
+  },
+  "icra": {
+    "title": "İcra ve İflas Hukuku",
+    "desc": "İcra ve iflas hukuku, borçların tahsil edilmesi ve borçluların mali durumlarının düzenlenmesi için oluşturulmuş bir hukuk dalıdır. Türkiye’deki güncel düzenlemeleri takip ederek alacaklı ve borçlular için hızlı ve adil çözümler sunuyoruz."
+  },
+  "sozlesme": {
+    "title": "Sözleşmeler Hukuku",
+    "desc": "Sözleşmeler hukuku, taraflar arasındaki anlaşmaların yasal çerçevesini belirler. Sözleşmelerin kurulması, ifası, yorumlanması ve feshi gibi konularda uzman ekibimizle etkili hukuki danışmanlık hizmeti sunuyoruz."
+  },
+  "vatan": {
+    "title": "Vatandaşlık Hukuku",
+    "desc": "Vatandaşlık hukuku, kişilerin vatandaşlık kazanması, kaybetmesi ve aktarılması süreçlerini düzenler. Yabancıların oturma ve çalışma izni, aile ikametleri ve vatandaşlık başvurularında profesyonel hukuki destek sağlıyoruz."
+  },
+  "sigorta": {
+    "title": "Sigorta Hukuku",
+    "desc": "Sigorta sözleşmelerinden doğan uyuşmazlıklarda müvekkillerimizin haklarını titizlikle koruyoruz. Sigorta şirketleri ile yaşanan ihtilaflarda poliçe yorumları ve tazminat talepleri konusunda kapsamlı temsil hizmeti sunuyoruz."
+  }
+ 
+
+},
+ "teamPreview": {
+  "subtitle": "HUKUKİ ÇÖZÜMLERİNİZ İÇİN",
+  "title": "Ekibimiz",
+  "desc": "Pera Legal & Partners ekibinde yer alan, konularında uzman, başarılı ve donanımlı avukatlarımız; müvekkillerimize ihtiyaç duydukları hukuki desteği güncel bilgi ve deneyimleriyle güvenilir, şeffaf ve sonuç odaklı bir şekilde sunmaktadır.",
+  "button": "Ekibimiz"
+},
+"about": {
+  "heroTitle": "Hakkımızda",
+  "heroSubtitle": "Pera Legal & Partners — Güven, Etik ve Çözüm Odaklı Hukuk Hizmetleri",
+
+  "whoWeAreTitle": "Biz Kimiz?",
+  "whoWeAreP1": "Pera Legal & Partners, farklı hukuk alanlarında uzmanlaşmış avukat kadrosu ile müvekkillerine hızlı, güvenilir ve sonuç odaklı çözümler sunan kurumsal bir hukuk bürosudur.",
+  "whoWeAreP2": "Modern hukuk yaklaşımını etik değerler, şeffaflık ve güçlü iletişim ile harmanlayarak her müvekkilimize profesyonel bir yol haritası sunuyoruz.",
+
+  "missionTitle": "Misyonumuz",
+  "missionText": "Müvekkillerimizin hukuki süreçlerde doğru kararlar almalarını sağlayacak profesyonel, şeffaf ve çözüm odaklı danışmanlık sunmak.",
+
+  "visionTitle": "Vizyonumuz",
+  "visionText": "Ulusal ve uluslararası alanda güvenilir, etik değerlere bağlı ve yenilikçi bir hukuk çözüm ortağı olmak."
+},
+"practicePage": {
+  "hero": "Çalışma Alanlarımız",
+  "subtitle": "Pera Legal & Partners Hukuk Bürosu",
+  "title": "Çalışma Alanlarımız",
+  "desc": "Müvekkillerimizin talepleri doğrultusunda, konusunda uzman avukatlarımız ile hizmet verdiğimiz başlıca alanlar:"
+},
+
+"career": {
+    "hero": "Kariyer",
+    "joinTitle": "BİZE KATILIN",
+    "p1": "Pera Legal & Partners Hukuk Bürosu olarak, geleceğe yönelik hedefler doğrultusunda <strong>avukat, stajyer avukat</strong> ve <strong>hukuk danışmanı</strong> pozisyonları için dinamik ve yetenekli ekip arkadaşları arıyoruz.",
+    "p2": "Farklı deneyim seviyelerindeki adaylara, alanlarına göre yapılandırılmış kariyer olanakları sunmaktayız.",
+    "p3": "Başvurularınızı özgeçmiş ve açıklayıcı ön yazı ile birlikte",
+    "formTitle": "KARİYER ÖN BAŞVURU FORMU",
+    "name": "Adınız Soyadınız *",
+    "email": "E-posta Adresiniz *",
+    "phone": "Telefon Numaranız *",
+    "message": "Mesajınız *",
+    "send": "Gönder",
+    "popupTitle": "Başvurunuz Alındı",
+    "popupText": "Ekibimiz en kısa sürede sizinle iletişime geçecektir.",
+    "ok": "Tamam",
+    "error": "Bir hata oluştu, lütfen tekrar deneyiniz.",
+      "file": "Dosya Seç"
+},
+
+ "contact": {
+    "hero": "İletişim",
+    "subtitle": "DETAYLI BİLGİ İÇİN",
+    "title": "Bizimle İletişime Geçin",
+    "desc": "Hizmetlerimiz ve çalışma koşullarımız hakkında detaylı bilgi almak için aşağıdaki iletişim bilgilerinden bize ulaşabilirsiniz.",
+    "addressTitle": "Adres",
+    "address": "Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı,<br>No: 2/8 Beyoğlu / İstanbul",
+    "phoneTitle": "Telefon",
+    "phone": "0 (212) 660 42 79",
+    "emailTitle": "E-posta",
+    "email": "info@peralegal.com.tr",
+    "hoursTitle": "Çalışma Saatleri",
+    "hours": "Pazartesi – Cuma: 09.00 – 18.00"
+  },
+
+
+  "toolsPage": {
+  "heroTitle": "Hesaplama Araçları",
+  "heroSubtitle": "Tazminat, harç ve vekalet ücretlerini hızlı ve güvenilir şekilde hesaplayın.",
+
+  "carLossTitle": "Araç Değer Kaybı Hesaplama",
+  "carValue": "Rayiç Değer (₺):",
+  "carValuePlaceholder": "Fiyat girin",
+  "carKm": "Aracın Kilometresi:",
+  "carKmPlaceholder": "KM olarak giriniz",
+  "carYear": "Model Yılı:",
+  "carYearPlaceholder": "Yıl olarak giriniz",
+  "damageCost": "Hasar Bedeli (₺):",
+  "damageCostPlaceholder": "Hasar bedelini girin",
+  "damageLocation": "Hasar Konumu:",
+  "damageLocation1": "Tamponlar / Kapı / Bagaj",
+  "damageLocation2": "Kaput / Şasi / Podye / Tavan",
+  "repeatDamage": "Aynı yerden daha önce hasar aldı mı?",
+  "yes": "Evet",
+  "no": "Hayır",
+
+  "attorneyTitle": "Vekalet Ücreti Hesaplama",
+  "courtType": "Mahkeme Türü Seçin:",
+  "amount": "Tutarı Girin (₺):",
+  "amountPlaceholder": "Tutarı girin",
+
+  "noticeTitle": "İhbar Tazminatı Hesaplama",
+  "grossSalary": "Brüt Maaşınızı Girin:",
+  "grossSalaryPlaceholder": "Brüt maaş giriniz",
+  "startDate": "İşe Giriş Tarihi:",
+  "endDate": "İşten Çıkış Tarihi:",
+
+  "severanceTitle": "Kıdem Tazminatı Hesaplama",
+  "severanceStartDate": "İşe Giriş Tarihi:",
+  "severanceEndDate": "İşten Çıkış Tarihi:",
+  "severanceGross": "Brüt Maaş (₺):",
+  "severanceGrossPlaceholder": "Brüt maaş giriniz",
+
+  "tapuTitle": "Tapu Harcı Hesaplama",
+  "tapuType": "Hesaplama Türü:",
+  "tapuOption1": "Satış Değeri ile Harç Tutarı Hesaplama",
+  "tapuOption2": "Harç Tutarı ile Satış Değeri Hesaplama",
+  "tapuPrice": "Fiyat Bilgisi (₺):",
+  "tapuPricePlaceholder": "Fiyat giriniz",
+
+  "islahTitle": "Islah Harcı Hesaplama",
+  "islahAmount": "Artırılan Tutar (₺):",
+  "islahAmountPlaceholder": "Tutar giriniz",
+
+  "calculate": "HESAPLA",
+  "clear": "TEMİZLE",
+
+  "modalTitle": "Hesaplama",
+  "modalText": "Hesaplama modülü çok yakında aktif olacaktır. Şu anda sistem geliştirme aşamasındadır.",
+  "ok": "Tamam"
+},
+"popup": {
+  "title": "e-Tahsilat Modülü",
+  "desc": "e-Tahsilat sistemi çok yakında aktif olacaktır. Şu anda geliştirme aşamasındadır.",
+  "close": "Kapat"
+},
+"team": {
+  "halil": {
+    "name": "Halil Cenk Akdoğan",
+    "title": "Avukat",
+    "about": "2004 yılında DAÜ’den mezun olmuştur. Mezuniyeti akabinde önce İzmir’de, 2012 yılından itibaren İstanbul’da kendi ofisinde serbest olarak çalışmaya başlamıştır. Meslekte geçirdiği süre boyunca özellikle idare hukuku, aile hukuku, ticaret hukuku, şirketler hukuku ve icra iflas hukuku alanlarında önemli başarılara imza atmıştır. Lehe sonuçlandırdığı birçok davada ileri sürdüğü fikir ve görüşleri, yüksek mahkemelerce içtihat haline getirilmiştir."
+  },
+
+  "muhammed": {
+    "name": "Muhammed Murat Kaplan",
+    "title": "Avukat",
+    "about": "Hukuk eğitimini 2021 yılında İstanbul Beykent Üniversitesinde tamamladıktan sonra avukatlık stajını başlatmıştır. Yasal stajından hemen sonra kendi ofisinde serbest olarak çalışmıştır. Özellikle idare hukuku, sivil toplum hukuku, şirketler hukuku ve icra ve iflas hukuku alanlarında etkin rol oynamaktadır."
+  },
+
+  "recai": {
+    "name": "Recai Aytaç Akbay",
+    "title": "Avukat",
+    "about": "1982 yılında Ankara Üniversitesi Hukuk Fakültesinden mezun olmuştur. 1986 yılında hakimlik mesleğine başlamıştır. Asliye hukuk, ticaret, sulh hukuk, icra hukuk ve ağır ceza mahkemelerinde görev yapmıştır. 2022 yılında emekli olarak avukatlık mesleğine başlamıştır."
+  },
+
+  "tolga": {
+    "name": "Tolga Erkoçkar",
+    "title": "Av. Arb.",
+    "about": "Marmara Üniversitesi Hukuk Fakültesinden mezun olmuş, ardından gazetecilik bölümünü de tamamlamıştır. Yüksek lisansını Kadir Has Üniversitesinde tamamlayıp Galatasaray Üniversitesinde doktora programına kabul edilmiştir. İş hukuku, borçlar hukuku ve ticaret hukuku alanlarında uzmandır."
+  },
+
+  "cansu": {
+    "name": "Cansu Işıksal",
+    "title": "Av. Arb.",
+    "about": "Marmara Üniversitesi Hukuk Fakültesi mezunu olup gazetecilik bölümünde de eğitim almıştır. Kadir Has Üniversitesi Özel Hukuk yüksek lisans programından mezun olmuştur. İş hukuku, borçlar hukuku ve ticaret hukuku alanlarında danışmanlık vermektedir."
+  },
+
+  "muge": {
+    "name": "Müge Yavuz",
+    "title": "Avukat",
+    "about": "Saint Joseph Fransız Lisesi mezunudur. Bilgi Üniversitesi Hukuk Fakültesini başarıyla bitirmiştir. Ceza hukuku, bilişim hukuku ve şirketler hukuku alanlarında yerel ve uluslararası müvekkillere hizmet vermektedir."
+  },
+
+  "hatice": {
+    "name": "Hatice Yazar",
+    "title": "Avukat",
+    "about": "Marmara Üniversitesi Hukuk Fakültesinden mezun olmuştur. Ceza hukuku, icra ve iflas hukuku, aile hukuku ve iş hukuku alanlarında 7 yılı aşkın deneyime sahiptir."
+  },
+
+  "furkan": {
+    "name": "Furkan Uslu",
+    "title": "Stj. Av.",
+    "about": "2024 yılında İstanbul Beykent Üniversitesinden mezun olmuştur. Yasal stajını sürdürmekte olup mesleki pratik alanlarında gelişmektedir."
+  },
+
+  "selin": {
+    "name": "Selin Alçık",
+    "title": "Avukat",
+    "about": "Maltepe Üniversitesi Hukuk Fakültesini burslu kazanmıştır. 2024 yılında stajını tamamlamıştır. İdare hukuku, icra hukuku, medeni hukuk ve şirketler hukuku alanlarında uzmanlaşmaktadır."
+  },
+
+  "hayrun": {
+    "name": "Hayrunnisa Neslihan Varlı",
+    "title": "Avukat",
+    "about": "Beykent Üniversitesi Hukuk Fakültesinde lisans ve yüksek lisans eğitimlerini tamamlamıştır. Almanya’da ikamet etmekte olup uluslararası ticaret, taşıma hukuku ve göç hukuku alanlarında çalışmaktadır."
+  },
+
+  "hakki": {
+    "name": "Hakkı Taylan Yurtaydın",
+    "title": "Avukat",
+    "about": "Marmara Üniversitesi Hukuk Fakültesi mezunudur. Ticaret hukuku, borçlar hukuku, medeni hukuk ve taşıma hukuku alanlarında uzmanlaşmıştır. İleri düzey İngilizce bilmektedir."
+  },
+
+  "ata": {
+    "name": "Ata Taşman",
+    "title": "Hukuk Danışmanı",
+    "about": "Terakki Vakfı Okullarından mezun olduktan sonra Exeter Üniversitesi Hukuk Fakültesini bitirmiştir. Uluslararası sözleşmeler ve sınır ötesi ticaret alanlarında danışmanlık vermektedir."
+  }
+},
+"teamPage": {
+  "aboutTitle": "Hakkında",
+  "hero": "Ekibimiz",
+  "subtitle": "Pera Legal & Partners",
+  "title": "Uzman Kadromuz",
+  "desc": "Alanında uzman, deneyimli ve çözüm odaklı avukatlarımız ile hukukun her alanında müvekkillerimize etkin, güvenilir ve profesyonel destek sunuyoruz."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

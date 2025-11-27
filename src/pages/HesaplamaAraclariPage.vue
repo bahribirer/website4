@@ -1,47 +1,55 @@
 <template>
   <section class="tools">
-    <div class="container">
-      <h1 class="title">Hesaplama Araçları</h1>
-      <p class="subtitle">
-        Pera Legal & Partners tarafından sunulan hesaplama araçlarıyla tazminat, harç ve vekalet ücretlerinizi kolayca hesaplayabilirsiniz.
-      </p>
 
+    <!-- ⭐ HERO SECTION -->
+    <div class="hero fade-hero">
+      <div class="overlay">
+        <h1>{{ t("toolsPage.heroTitle") }}</h1>
+        <p>{{ t("toolsPage.heroSubtitle") }}</p>
+      </div>
+    </div>
+
+    <!-- 🔹 CONTENT -->
+    <div class="container">
       <div class="grid">
+
         <!-- 🔹 Araç Değer Kaybı -->
         <div class="card">
           <div class="card-head">
             <i class="pi pi-car"></i>
-            <h2>Araç Değer Kaybı Hesaplama</h2>
+            <h2>{{ t("toolsPage.carLossTitle") }}</h2>
           </div>
           <div class="divider"></div>
 
-          <label>Rayiç Değer (₺):</label>
-          <input type="number" placeholder="Fiyat girin" />
+          <label>{{ t("toolsPage.carValue") }}</label>
+          <input type="number" :placeholder="t('toolsPage.carValuePlaceholder')" />
 
-          <label>Aracın Kilometresi:</label>
-          <input type="number" placeholder="KM olarak giriniz" />
+          <label>{{ t("toolsPage.carKm") }}</label>
+          <input type="number" :placeholder="t('toolsPage.carKmPlaceholder')" />
 
-          <label>Model Yılı:</label>
-          <input type="number" placeholder="Yıl olarak giriniz" />
+          <label>{{ t("toolsPage.carYear") }}</label>
+          <input type="number" :placeholder="t('toolsPage.carYearPlaceholder')" />
 
-          <label>Hasar Bedeli (₺):</label>
-          <input type="number" placeholder="Hasar bedelini girin" />
+          <label>{{ t("toolsPage.damageCost") }}</label>
+          <input type="number" :placeholder="t('toolsPage.damageCostPlaceholder')" />
 
-          <label>Hasar Konumu:</label>
+          <label>{{ t("toolsPage.damageLocation") }}</label>
           <select>
-            <option>Tamponlar / Kapı / Bagaj</option>
-            <option>Kaput / Şasi / Podye / Tavan</option>
+            <option>{{ t("toolsPage.damageLocation1") }}</option>
+            <option>{{ t("toolsPage.damageLocation2") }}</option>
           </select>
 
-          <label>Aynı Yerden Daha Önce Hasar Aldı mı?</label>
+          <label>{{ t("toolsPage.repeatDamage") }}</label>
           <select>
-            <option>Evet</option>
-            <option>Hayır</option>
+            <option>{{ t("toolsPage.yes") }}</option>
+            <option>{{ t("toolsPage.no") }}</option>
           </select>
 
           <div class="buttons">
-            <button class="primary" @click="openModal('Araç Değer Kaybı')">HESAPLA</button>
-            <button class="secondary">TEMİZLE</button>
+            <button class="primary" @click="openModal(t('toolsPage.carLossTitle'))">
+              {{ t("toolsPage.calculate") }}
+            </button>
+            <button class="secondary">{{ t("toolsPage.clear") }}</button>
           </div>
         </div>
 
@@ -49,11 +57,11 @@
         <div class="card">
           <div class="card-head">
             <i class="pi pi-briefcase"></i>
-            <h2>Vekalet Ücreti Hesaplama</h2>
+            <h2>{{ t("toolsPage.attorneyTitle") }}</h2>
           </div>
           <div class="divider"></div>
 
-          <label>Mahkeme Türü Seçin:</label>
+          <label>{{ t("toolsPage.courtType") }}</label>
           <select>
             <option>İcra Takipleri</option>
             <option>İcra Mahkemeleri</option>
@@ -66,12 +74,14 @@
             <option>İdare ve Vergi Mahkemeleri (Duruşmasız)</option>
           </select>
 
-          <label>Tutarı Girin (₺):</label>
-          <input type="number" placeholder="Tutarı girin" />
+          <label>{{ t("toolsPage.amount") }}</label>
+          <input type="number" :placeholder="t('toolsPage.amountPlaceholder')" />
 
           <div class="buttons">
-            <button class="primary" @click="openModal('Vekalet Ücreti')">HESAPLA</button>
-            <button class="secondary">TEMİZLE</button>
+            <button class="primary" @click="openModal(t('toolsPage.attorneyTitle'))">
+              {{ t("toolsPage.calculate") }}
+            </button>
+            <button class="secondary">{{ t("toolsPage.clear") }}</button>
           </div>
         </div>
 
@@ -79,18 +89,23 @@
         <div class="card">
           <div class="card-head">
             <i class="pi pi-calendar"></i>
-            <h2>İhbar Tazminatı Hesaplama</h2>
+            <h2>{{ t("toolsPage.noticeTitle") }}</h2>
           </div>
           <div class="divider"></div>
 
-          <label>Brüt Maaşınızı Girin:</label>
-          <input type="number" placeholder="Brüt maaşınızı girin" />
-          <label>İşe Giriş Tarihi:</label>
+          <label>{{ t("toolsPage.grossSalary") }}</label>
+          <input type="number" :placeholder="t('toolsPage.grossSalaryPlaceholder')" />
+
+          <label>{{ t("toolsPage.startDate") }}</label>
           <input type="date" />
-          <label>İşten Çıkış Tarihi:</label>
+
+          <label>{{ t("toolsPage.endDate") }}</label>
           <input type="date" />
+
           <div class="buttons">
-            <button class="brown" @click="openModal('İhbar Tazminatı')">HESAPLA</button>
+            <button class="brown" @click="openModal(t('toolsPage.noticeTitle'))">
+              {{ t("toolsPage.calculate") }}
+            </button>
           </div>
         </div>
 
@@ -98,18 +113,23 @@
         <div class="card">
           <div class="card-head">
             <i class="pi pi-clock"></i>
-            <h2>Kıdem Tazminatı Hesaplama</h2>
+            <h2>{{ t("toolsPage.severanceTitle") }}</h2>
           </div>
           <div class="divider"></div>
 
-          <label>İşe Giriş Tarihi:</label>
+          <label>{{ t("toolsPage.severanceStartDate") }}</label>
           <input type="date" />
-          <label>İşten Çıkış Tarihi:</label>
+
+          <label>{{ t("toolsPage.severanceEndDate") }}</label>
           <input type="date" />
-          <label>Brüt Maaş (₺):</label>
-          <input type="number" placeholder="Brüt maaş giriniz" />
+
+          <label>{{ t("toolsPage.severanceGross") }}</label>
+          <input type="number" :placeholder="t('toolsPage.severanceGrossPlaceholder')" />
+
           <div class="buttons">
-            <button class="brown" @click="openModal('Kıdem Tazminatı')">HESAPLA</button>
+            <button class="brown" @click="openModal(t('toolsPage.severanceTitle'))">
+              {{ t("toolsPage.calculate") }}
+            </button>
           </div>
         </div>
 
@@ -117,20 +137,24 @@
         <div class="card">
           <div class="card-head">
             <i class="pi pi-home"></i>
-            <h2>Tapu Harcı Hesaplama</h2>
+            <h2>{{ t("toolsPage.tapuTitle") }}</h2>
           </div>
           <div class="divider"></div>
 
-          <label>Hesaplama Türü:</label>
+          <label>{{ t("toolsPage.tapuType") }}</label>
           <select>
-            <option>Satış Değeri ile Harç Tutarı Hesaplama</option>
-            <option>Harç Tutarı ile Satış Değeri Hesaplama</option>
+            <option>{{ t("toolsPage.tapuOption1") }}</option>
+            <option>{{ t("toolsPage.tapuOption2") }}</option>
           </select>
-          <label>Fiyat Bilgisi (₺):</label>
-          <input type="number" placeholder="Fiyatı girin" />
+
+          <label>{{ t("toolsPage.tapuPrice") }}</label>
+          <input type="number" :placeholder="t('toolsPage.tapuPricePlaceholder')" />
+
           <div class="buttons">
-            <button class="primary" @click="openModal('Tapu Harcı')">HESAPLA</button>
-            <button class="secondary">TEMİZLE</button>
+            <button class="primary" @click="openModal(t('toolsPage.tapuTitle'))">
+              {{ t("toolsPage.calculate") }}
+            </button>
+            <button class="secondary">{{ t("toolsPage.clear") }}</button>
           </div>
         </div>
 
@@ -138,43 +162,48 @@
         <div class="card dark">
           <div class="card-head">
             <i class="pi pi-percentage"></i>
-            <h2>Islah Harcı Hesaplama</h2>
+            <h2>{{ t("toolsPage.islahTitle") }}</h2>
           </div>
           <div class="divider light"></div>
 
-          <label>Artırılan Tutar (₺):</label>
-          <input type="number" placeholder="Tutar giriniz" />
+          <label>{{ t("toolsPage.islahAmount") }}</label>
+          <input type="number" :placeholder="t('toolsPage.islahAmountPlaceholder')" />
+
           <div class="buttons">
-            <button class="light" @click="openModal('Islah Harcı')">HESAPLA</button>
+            <button class="light" @click="openModal(t('toolsPage.islahTitle'))">
+              {{ t("toolsPage.calculate") }}
+            </button>
           </div>
         </div>
+
       </div>
     </div>
 
-    <!-- 🔹 MODAL -->
+    <!-- MODAL -->
     <div v-if="modalOpen" class="modal-backdrop" @click.self="closeModal">
       <div class="modal">
         <button class="close" @click="closeModal"><i class="pi pi-times"></i></button>
 
         <i class="pi pi-check-circle modal-icon"></i>
 
-        <h2>{{ selectedTool }} Hesaplama</h2>
-        <p>
-          Hesaplama modülü çok yakında aktif olacaktır.  
-          Şu anda sistem geliştirme aşamasındadır.
-        </p>
+        <h2>{{ t("toolsPage.modalTitle") }}</h2>
+        <p>{{ t("toolsPage.modalText") }}</p>
 
-        <button class="ok-btn" @click="closeModal">Tamam</button>
+        <button class="ok-btn" @click="closeModal">{{ t("toolsPage.ok") }}</button>
       </div>
     </div>
+
   </section>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
+
+const { t } = useI18n()
 
 const modalOpen = ref(false)
-const selectedTool = ref('')
+const selectedTool = ref("")
 
 const openModal = (name: string) => {
   selectedTool.value = name
@@ -186,14 +215,68 @@ const closeModal = () => {
 }
 </script>
 
+
 <style scoped>
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 38vh;
+  background: url('/src/assets/herosection') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(11, 27, 63, 0.65);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+.overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.overlay p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Fade-in animasyon */
+.fade-hero {
+  animation: fadeHero 1.5s ease;
+}
+
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* ======================================
-   TÜM TASARIM + MODAL UI
+   TEMA + GRID
 ====================================== */
 
 .tools {
   background: #fff;
-  padding: 6rem 0 8rem;
+  padding: 4rem 0 7rem;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -214,14 +297,12 @@ const closeModal = () => {
   font-size: 1rem;
 }
 
-/* Grid düzeni */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.2rem;
 }
 
-/* Kart */
 .card {
   background: #fff;
   border-radius: 14px;
@@ -350,7 +431,7 @@ button {
 }
 
 /* ======================================
-   MODAL TASARIMI
+   MODAL
 ====================================== */
 
 .modal-backdrop {
@@ -428,4 +509,13 @@ button {
     transform: translateY(0);
   }
 }
+/* HERO sonrası ilk container boşluk bırakmasın */
+.tools .container {
+  margin-top: 0 !important;
+  padding-top: 2rem; /* istersen 0 yapabilirsin */
+}
+.tools {
+  padding-top: 0 !important;
+}
+
 </style>

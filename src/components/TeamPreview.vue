@@ -1,30 +1,33 @@
 <template>
   <section class="team-preview">
     <div class="container">
+      
       <!-- Sol Başlık -->
       <div class="left">
-        <h3 class="subtitle">HUKUKİ ÇÖZÜMLERİNİZ İÇİN</h3>
-        <h2 class="title">Ekibimiz</h2>
+        <h3 class="subtitle">{{ t("teamPreview.subtitle") }}</h3>
+        <h2 class="title">{{ t("teamPreview.title") }}</h2>
       </div>
 
       <!-- Orta Açıklama -->
       <div class="middle">
-        <p>
-          Pera Legal & Partners ekibinde yer alan, konularında uzman, başarılı ve donanımlı avukatlarımız;
-          müvekkillerimize ihtiyaç duydukları hukuki desteği güncel bilgi ve deneyimleriyle güvenilir, şeffaf ve
-          sonuç odaklı bir şekilde sunmaktadır.
-        </p>
+        <p>{{ t("teamPreview.desc") }}</p>
       </div>
 
       <!-- Sağ Buton -->
       <div class="right">
-        <RouterLink to="/ekibimiz" class="btn">Ekibimiz</RouterLink>
+        <RouterLink to="/ekibimiz" class="btn">
+          {{ t("teamPreview.button") }}
+        </RouterLink>
       </div>
+
     </div>
   </section>
 </template>
+<script setup lang="ts">
+import { useI18n } from "vue-i18n"
 
-<script setup lang="ts"></script>
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .team-preview {

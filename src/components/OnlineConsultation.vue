@@ -3,23 +3,26 @@
     <div class="container">
       <div class="card dark">
         <span class="number">01</span>
-        <h3>Güvenilir Hukuki Danışmanlık</h3>
+        <h3>{{ t('consultation.c1') }}</h3>
       </div>
 
       <div class="card red">
         <span class="number">02</span>
-        <h3>Hukuki Süreç Yönetimi</h3>
+        <h3>{{ t('consultation.c2') }}</h3>
       </div>
 
       <div class="card light">
         <span class="number">03</span>
-        <h3>Stratejik Hukuki Çözümler</h3>
+        <h3>{{ t('consultation.c3') }}</h3>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .consultation {

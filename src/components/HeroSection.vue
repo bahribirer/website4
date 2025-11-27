@@ -2,13 +2,17 @@
   <section class="hero">
     <div class="overlay">
       <div class="content">
-        <h1>Köklü deneyim, güvenilir çözümler</h1>
+        <h1>{{ t('homeHero.title') }}</h1>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .hero {

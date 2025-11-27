@@ -1,35 +1,39 @@
 <template>
   <section class="practice-page">
-    <!-- Hero Bölümü -->
-    <div class="hero">
+
+    <!-- 🌙 HERO -->
+    <div class="hero fade-hero">
       <div class="overlay">
-        <h1>Çalışma Alanlarımız</h1>
+        <h1>{{ t("practicePage.hero") }}</h1>
       </div>
     </div>
 
-    <!-- İçerik -->
+    <!-- 🌙 İçerik -->
     <div class="container">
       <div class="head">
-        <h3 class="subtitle">Pera Legal & Partners Hukuk Bürosu</h3>
-        <h2 class="title">Çalışma Alanlarımız</h2>
-        <p class="desc">
-          Müvekkillerimizin talepleri doğrultusunda, konusunda uzman avukatlarımız ile hizmet verdiğimiz başlıca alanlar:
-        </p>
+        <h3 class="subtitle">{{ t("practicePage.subtitle") }}</h3>
+        <h2 class="title">{{ t("practicePage.title") }}</h2>
+        <p class="desc">{{ t("practicePage.desc") }}</p>
       </div>
 
-      <!-- Grid Kartlar -->
+      <!-- 🌙 Grid Kartlar -->
       <div class="grid">
         <div
           v-for="(area, index) in practiceAreas"
           :key="index"
           class="card"
-          @click="goDetail(area.title)"
+          @click="goDetail(area.key)"
+           :data-read="t('practice.readMore')"
         >
           <div class="icon">
             <i class="pi pi-briefcase"></i>
           </div>
-          <h3>{{ area.title }}</h3>
-          <p>{{ truncate(area.description, 200) }}</p>
+
+          <!-- Başlık -->
+          <h3>{{ t(`areas.${area.key}.title`) }}</h3>
+
+          <!-- Açıklama -->
+          <p>{{ truncate(t(`areas.${area.key}.desc`), 200) }}</p>
         </div>
       </div>
     </div>
@@ -37,21 +41,24 @@
 </template>
 
 <script setup lang="ts">
-import { practiceAreas } from '../data/practiceAreas'
-import { useRouter } from 'vue-router'
-import { slugifyTR } from '../utils/slug'
+import { useI18n } from "vue-i18n"
+import { practiceAreas } from "../data/practiceAreas"
+import { useRouter } from "vue-router"
+import { slugifyTR } from "../utils/slug"
 
+const { t } = useI18n()
 const router = useRouter()
 
-// Uzun açıklamaları kısaltmak için
+// Metin kısaltıcı
 const truncate = (text: string, length: number) =>
-  text.length > length ? text.slice(0, length) + '...' : text
+  text.length > length ? text.slice(0, length) + "..." : text
 
-// Tıklanınca detay sayfasına yönlendir
-const goDetail = (title: string) => {
-  const slug = slugifyTR(title)
-  router.push(`/calisma-alanlarimiz/${slug}`)
+// Detay sayfasına yönlendirme
+const goDetail = (key: string) => {
+  router.push(`/calisma-alanlarimiz/${key}`)
 }
+
+
 </script>
 
 <style scoped>
@@ -65,7 +72,7 @@ const goDetail = (title: string) => {
 .hero {
   position: relative;
   height: 45vh;
-  background: url('@/assets/images/banner.webp') center/cover no-repeat;
+background: url('/src/assets/herosection/alan.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,7 +215,7 @@ const goDetail = (title: string) => {
 
 /* Read more area */
 .card::after {
-  content: "Devamını Oku →";
+  content: attr(data-read);
   position: absolute;
   bottom: 1.3rem;
   left: 1.9rem;
@@ -232,5 +239,21 @@ const goDetail = (title: string) => {
     font-size: 2rem;
   }
 }
+/* --- Hakkımızda Hero Fade Animasyonu (Blog ile aynı) --- */
+.fade-hero {
+  animation: fadeHero 1.5s ease;
+}
+
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 </style>
 

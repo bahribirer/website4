@@ -1,61 +1,48 @@
 <template>
   <section class="contact-page">
     <!-- HERO -->
-    <div class="hero">
+    <div class="hero fade-hero">
       <div class="overlay">
-        <h1>İletişim</h1>
-        
+        <h1>{{ t("contact.hero") }}</h1>
       </div>
     </div>
 
     <!-- CONTENT -->
     <div class="container">
       <div class="head">
-        <h3 class="subtitle">DETAYLI BİLGİ İÇİN</h3>
-        <h2 class="title">Bizimle İletişime Geçin</h2>
-        <p class="desc">
-          Hizmetlerimiz ve çalışma koşullarımız hakkında detaylı bilgi almak için aşağıda yer alan iletişim
-          bilgilerini kullanarak bizimle kolayca iletişime geçebilirsiniz.
-        </p>
+        <h3 class="subtitle">{{ t("contact.subtitle") }}</h3>
+        <h2 class="title">{{ t("contact.title") }}</h2>
+        <p class="desc">{{ t("contact.desc") }}</p>
       </div>
 
-      <!-- İLETİŞİM KARTLARI -->
+      <!-- Cards -->
       <div class="grid">
         <div class="card">
           <i class="pi pi-map-marker"></i>
-          <h3>Adres</h3>
-          <p>
-            Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı,<br />
-            No: 2/8 Beyoğlu / İstanbul
-          </p>
+          <h3>{{ t("contact.addressTitle") }}</h3>
+          <p v-html="t('contact.address')"></p>
         </div>
 
         <div class="card">
           <i class="pi pi-phone"></i>
-          <h3>Telefon</h3>
-          <p>0 (212) 660 42 79</p>
+          <h3>{{ t("contact.phoneTitle") }}</h3>
+          <p>{{ t("contact.phone") }}</p>
         </div>
 
         <div class="card">
           <i class="pi pi-envelope"></i>
-          <h3>E-posta</h3>
-          <p>info@peralegal.com.tr</p>
+          <h3>{{ t("contact.emailTitle") }}</h3>
+          <p>{{ t("contact.email") }}</p>
         </div>
 
         <div class="card">
           <i class="pi pi-clock"></i>
-          <h3>Çalışma Saatleri</h3>
-          <p>
-            Pazartesi: 09.00 – 18.00<br />
-            Salı: 09.00 – 18.00<br />
-            Çarşamba: 09.00 – 18.00<br />
-            Perşembe: 09.00 – 18.00<br />
-            Cuma: 09.00 – 18.00
-          </p>
+          <h3>{{ t("contact.hoursTitle") }}</h3>
+          <p v-html="t('contact.hours')"></p>
         </div>
       </div>
 
-      <!-- HARİTA -->
+      <!-- Map -->
       <div class="map">
         <iframe
           src="https://www.google.com/maps?q=Pera%20Legal%20%26%20Partners%2C%20Beyo%C4%9Flu%2F%C4%B0stanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -63,16 +50,18 @@
           height="380"
           style="border:0;"
           allowfullscreen
-
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+</script>
+
 
 <style scoped>
 .contact-page {
@@ -85,7 +74,7 @@
 .hero {
   position: relative;
   height: 45vh;
-  background: url('@/assets/images/banner.webp') center/cover no-repeat;
+background: url('/src/assets/herosection/iletişim.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,4 +172,21 @@
     font-size: 1.8rem;
   }
 }
+
+/* --- Hakkımızda Hero Fade Animasyonu (Blog ile aynı) --- */
+.fade-hero {
+  animation: fadeHero 1.5s ease;
+}
+
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 </style>
