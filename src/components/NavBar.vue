@@ -1,51 +1,29 @@
 <template>
   <header class="navbar">
     <div class="container">
+
       <!-- Logo -->
       <div class="logo">
         <h1>PERA LEGAL<br />& PARTNERS</h1>
       </div>
 
-      <!-- Menü -->
+      <!-- Masaüstü Menü -->
       <nav class="menu">
-        <RouterLink to="/" class="menu-item" :class="{ active: isActive('/') }">
-          {{ t('navbar.home') }}
-        </RouterLink>
-
-        <RouterLink to="/hakkimizda" class="menu-item" :class="{ active: isActive('/hakkimizda') }">
-          {{ t('navbar.about') }}
-        </RouterLink>
-
-        <RouterLink to="/ekibimiz" class="menu-item" :class="{ active: isActive('/ekibimiz') }">
-          {{ t('navbar.team') }}
-        </RouterLink>
-
-        <RouterLink to="/calisma-alanlarimiz" class="menu-item" :class="{ active: isActive('/calisma-alanlarimiz') }">
-          {{ t('navbar.areas') }}
-        </RouterLink>
-
-        <RouterLink to="/kariyer" class="menu-item" :class="{ active: isActive('/kariyer') }">
-          {{ t('navbar.career') }}
-        </RouterLink>
-
-        <RouterLink to="/blog" class="menu-item" :class="{ active: isActive('/blog') }">
-          {{ t('navbar.blog') }}
-        </RouterLink>
-
-        <RouterLink to="/iletisim" class="menu-item" :class="{ active: isActive('/iletisim') }">
-          {{ t('navbar.contact') }}
-        </RouterLink>
-
-        <RouterLink to="/hesaplama-araclari" class="menu-item" :class="{ active: isActive('/hesaplama-araclari') }">
-          {{ t('navbar.tools') }}
-        </RouterLink>
+        <RouterLink to="/" class="menu-item" :class="{ active: isActive('/') }">{{ t('navbar.home') }}</RouterLink>
+        <RouterLink to="/hakkimizda" class="menu-item" :class="{ active: isActive('/hakkimizda') }">{{ t('navbar.about') }}</RouterLink>
+        <RouterLink to="/ekibimiz" class="menu-item" :class="{ active: isActive('/ekibimiz') }">{{ t('navbar.team') }}</RouterLink>
+        <RouterLink to="/calisma-alanlarimiz" class="menu-item" :class="{ active: isActive('/calisma-alanlarimiz') }">{{ t('navbar.areas') }}</RouterLink>
+        <RouterLink to="/kariyer" class="menu-item" :class="{ active: isActive('/kariyer') }">{{ t('navbar.career') }}</RouterLink>
+        <RouterLink to="/blog" class="menu-item" :class="{ active: isActive('/blog') }">{{ t('navbar.blog') }}</RouterLink>
+        <RouterLink to="/iletisim" class="menu-item" :class="{ active: isActive('/iletisim') }">{{ t('navbar.contact') }}</RouterLink>
+        <RouterLink to="/hesaplama-araclari" class="menu-item" :class="{ active: isActive('/hesaplama-araclari') }">{{ t('navbar.tools') }}</RouterLink>
 
         <span class="menu-item" @click="showPopup = true">
           {{ t('navbar.etahsilat') }}
         </span>
       </nav>
 
-      <!-- Dil seçici -->
+      <!-- Dil Seçici -->
       <div class="lang-switch">
         <span :class="{ active: locale === 'tr' }" @click="changeLang('tr')">TR</span>
         <span :class="{ active: locale === 'en' }" @click="changeLang('en')">EN</span>
@@ -61,8 +39,35 @@
         <i class="pi pi-lock"></i>
         {{ t('navbar.uyap') }}
       </a>
+
+      <!-- Hamburger Menü -->
+      <div class="hamburger" @click="mobileOpen = !mobileOpen">
+        <i class="pi pi-bars"></i>
+      </div>
+
     </div>
   </header>
+
+  <!-- 📱 Mobil Menü -->
+  <nav class="mobile-menu" v-if="mobileOpen">
+    <RouterLink to="/" @click="mobileOpen = false">{{ t('navbar.home') }}</RouterLink>
+    <RouterLink to="/hakkimizda" @click="mobileOpen = false">{{ t('navbar.about') }}</RouterLink>
+    <RouterLink to="/ekibimiz" @click="mobileOpen = false">{{ t('navbar.team') }}</RouterLink>
+    <RouterLink to="/calisma-alanlarimiz" @click="mobileOpen = false">{{ t('navbar.areas') }}</RouterLink>
+    <RouterLink to="/kariyer" @click="mobileOpen = false">{{ t('navbar.career') }}</RouterLink>
+    <RouterLink to="/blog" @click="mobileOpen = false">{{ t('navbar.blog') }}</RouterLink>
+    <RouterLink to="/iletisim" @click="mobileOpen = false">{{ t('navbar.contact') }}</RouterLink>
+    <RouterLink to="/hesaplama-araclari" @click="mobileOpen = false">{{ t('navbar.tools') }}</RouterLink>
+
+    <span @click="showPopup = true; mobileOpen = false">
+      {{ t('navbar.etahsilat') }}
+    </span>
+
+    <div class="mobile-lang">
+      <span :class="{ active: locale === 'tr' }" @click="changeLang('tr'); mobileOpen = false">TR</span>
+      <span :class="{ active: locale === 'en' }" @click="changeLang('en'); mobileOpen = false">EN</span>
+    </div>
+  </nav>
 
   <!-- Popup Modal -->
   <div v-if="showPopup" class="popup-backdrop" @click.self="showPopup = false">
@@ -80,11 +85,12 @@ import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
-
 const route = useRoute()
+
 const isActive = (path: string) => route.path === path
 
 const showPopup = ref(false)
+const mobileOpen = ref(false)
 
 const changeLang = (lang: string) => {
   locale.value = lang
@@ -92,10 +98,7 @@ const changeLang = (lang: string) => {
 }
 </script>
 
-
-
 <style scoped>
-
 /* === POPUP === */
 .popup-backdrop {
   position: fixed;
@@ -104,7 +107,7 @@ const changeLang = (lang: string) => {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2000;
+  z-index: 3000;
 }
 
 .popup {
@@ -138,14 +141,13 @@ const changeLang = (lang: string) => {
   padding: 0.6rem 1.4rem;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: 500;
-  transition: background .2s ease;
 }
 
 .close-btn:hover {
   background: #d32626;
 }
 
+/* === NAVBAR === */
 .navbar {
   position: fixed;
   top: 0;
@@ -153,7 +155,7 @@ const changeLang = (lang: string) => {
   width: 100%;
   background: #0b1b3f;
   color: #fff;
-  z-index: 1000;
+  z-index: 2000;
   padding: 1rem 0;
   font-family: 'Playfair Display', serif;
 }
@@ -167,7 +169,7 @@ const changeLang = (lang: string) => {
   justify-content: space-between;
 }
 
-/* 🔹 Logo */
+/* Logo */
 .logo h1 {
   font-size: 1.2rem;
   line-height: 1.4;
@@ -175,10 +177,9 @@ const changeLang = (lang: string) => {
   color: #ffffff;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
-/* 🔹 Menü */
+/* Masaüstü Menü */
 .menu {
   display: flex;
   align-items: center;
@@ -203,7 +204,7 @@ const changeLang = (lang: string) => {
   padding-bottom: 2px;
 }
 
-/* 🔹 UYAP Butonu */
+/* UYAP Button */
 .uyap-btn {
   display: inline-flex;
   align-items: center;
@@ -215,31 +216,14 @@ const changeLang = (lang: string) => {
   font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
   white-space: nowrap;
 }
 
 .uyap-btn:hover {
   background: #d32424;
-  transform: translateY(-1px);
 }
 
-.uyap-btn i {
-  font-size: 0.95rem;
-}
-
-/* 🔹 Mobil görünüm */
-@media (max-width: 992px) {
-  .menu {
-    display: flex;
-  }
-
-  .uyap-btn {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
-  }
-}
-
+/* Dil seçici */
 .lang-switch {
   display: flex;
   gap: 0.6rem;
@@ -252,16 +236,70 @@ const changeLang = (lang: string) => {
   opacity: 0.8;
   transition: 0.2s;
   font-weight: 500;
+  color: #fff;
 }
 
 .lang-switch span.active {
   opacity: 1;
-  font-weight: 700;
   border-bottom: 2px solid #b01c1c;
-  color: #fff;
+  font-weight: 700;
 }
 
-.lang-switch span:hover {
-  opacity: 1;
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+/* === MOBİL GÖRÜNÜM === */
+@media (max-width: 992px) {
+  .menu,
+  .lang-switch,
+  .uyap-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0b1b3f;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    z-index: 2500;
+  }
+
+  .mobile-menu a,
+  .mobile-menu span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .mobile-menu a:hover,
+  .mobile-menu span:hover {
+    opacity: 0.7;
+  }
+
+  .mobile-lang {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .mobile-lang span {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+  }
 }
 </style>
