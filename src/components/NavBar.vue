@@ -273,7 +273,7 @@ const changeLang = (lang: string) => {
   }
 
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 0;
     width: 100%;
@@ -282,7 +282,7 @@ const changeLang = (lang: string) => {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
-    z-index: 1200;
+    z-index: 3000;
   }
 
   .mobile-menu a,
