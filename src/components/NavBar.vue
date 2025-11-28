@@ -106,7 +106,7 @@ const changeLang = (lang: string) => {
 }
 </script>
 
-<style scoped>
+<style>
 /* === POPUP === */
 .popup-backdrop {
   position: fixed;
