@@ -27,10 +27,20 @@ import Footer from '../components/Footer.vue'
   padding-top: 70px; /* Navbar yüksekliği */
 }
 
+.page-content {
+  flex: 1;
+  padding-top: 70px;
+  min-height: calc(100vh - 70px); /* Footer her zaman aşağı itilsin */
+  display: block;
+}
+
+
 /* 🔹 Mobilde navbar biraz daha kısa olabilir */
 @media (max-width: 992px) {
   .page-content {
     padding-top: 60px;
+    min-height: calc(100vh - 60px);
   }
 }
+
 </style>
