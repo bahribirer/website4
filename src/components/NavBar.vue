@@ -230,23 +230,38 @@ const changeLang = (lang: string) => {
 
 /* 🔹 Mobil görünüm */
 @media (max-width: 992px) {
-  .container {
-    flex-wrap: wrap; /* ⭐ Elemanlar alta geçsin */
-    gap: 0.8rem;
-  }
-
-  .logo {
-    width: 100%;
-    text-align: center;
-  }
-
-  .lang-switch {
-    order: 2;
+  .menu {
+    display: flex;
   }
 
   .uyap-btn {
-    order: 3;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
   }
 }
 
+.lang-switch {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.lang-switch span {
+  cursor: pointer;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.lang-switch span.active {
+  opacity: 1;
+  font-weight: 700;
+  border-bottom: 2px solid #b01c1c;
+  color: #fff;
+}
+
+.lang-switch span:hover {
+  opacity: 1;
+}
 </style>
