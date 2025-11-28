@@ -59,6 +59,16 @@
     <RouterLink to="/iletisim" @click="mobileOpen = false">{{ t('navbar.contact') }}</RouterLink>
     <RouterLink to="/hesaplama-araclari" @click="mobileOpen = false">{{ t('navbar.tools') }}</RouterLink>
 
+    <a
+        href="https://vatandas.uyap.gov.tr/main/vatandas/giris.jsp"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="uyap-btn"
+      >
+        <i class="pi pi-lock"></i>
+        {{ t('navbar.uyap') }}
+      </a>
+
     <span @click="showPopup = true; mobileOpen = false">
       {{ t('navbar.etahsilat') }}
     </span>
@@ -301,5 +311,24 @@ const changeLang = (lang: string) => {
     cursor: pointer;
     font-size: 1rem;
   }
+
+  .mobile-uyap-btn {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #b01c1c;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mobile-uyap-btn:hover {
+  background: #d32626;
+}
+
 }
 </style>
