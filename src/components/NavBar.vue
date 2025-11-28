@@ -58,7 +58,9 @@
     <RouterLink to="/blog" @click="mobileOpen = false">{{ t('navbar.blog') }}</RouterLink>
     <RouterLink to="/iletisim" @click="mobileOpen = false">{{ t('navbar.contact') }}</RouterLink>
     <RouterLink to="/hesaplama-araclari" @click="mobileOpen = false">{{ t('navbar.tools') }}</RouterLink>
-
+    <span @click="showPopup = true; mobileOpen = false">
+      {{ t('navbar.etahsilat') }}
+    </span>
     <a
         href="https://vatandas.uyap.gov.tr/main/vatandas/giris.jsp"
         target="_blank"
@@ -68,10 +70,6 @@
         <i class="pi pi-lock"></i>
         {{ t('navbar.uyap') }}
       </a>
-
-    <span @click="showPopup = true; mobileOpen = false">
-      {{ t('navbar.etahsilat') }}
-    </span>
 
     <div class="mobile-lang">
       <span :class="{ active: locale === 'tr' }" @click="changeLang('tr'); mobileOpen = false">TR</span>
