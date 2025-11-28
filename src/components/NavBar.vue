@@ -282,7 +282,7 @@ const changeLang = (lang: string) => {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
-    z-index: 2500;
+    z-index: 1200;
   }
 
   .mobile-menu a,
