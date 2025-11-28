@@ -296,7 +296,7 @@ const openEtahsilat = () => {
 
 /* === MOBİL MENÜ === */
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 100%; /* navbar'ın altı */
   left: 0;
   width: 100%;
