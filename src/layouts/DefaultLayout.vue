@@ -13,7 +13,7 @@ import Navbar from '../components/NavBar.vue'
 import Footer from '../components/Footer.vue'
 </script>
 
-<style scoped>
+<style>
 .layout {
   display: flex;
   flex-direction: column;
