@@ -296,17 +296,18 @@ const openEtahsilat = () => {
 
 /* === MOBİL MENÜ === */
 .mobile-menu {
-  position: fixed;
-  top: 100%; /* navbar'ın altı */
+  position: absolute !important;
+  top: 70px;
   left: 0;
   width: 100%;
   background: #0b1b3f;
-  padding: 1.2rem 2rem 1.8rem;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  gap: 1.3rem;
+  z-index: 1200; /* 3000 çok fazla */
 }
+
 
 .mobile-menu a,
 .mobile-menu .mobile-link {
