@@ -63,7 +63,7 @@
         href="https://vatandas.uyap.gov.tr/main/vatandas/giris.jsp"
         target="_blank"
         rel="noopener noreferrer"
-        class="uyap-btn"
+       class="mobile-uyap-btn"
       >
         <i class="pi pi-lock"></i>
         {{ t('navbar.uyap') }}
