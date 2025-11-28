@@ -273,17 +273,23 @@ const changeLang = (lang: string) => {
   }
 
   .mobile-menu {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #0b1b3f;
-    padding: 1.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    z-index: 3000;
-  }
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: #0b1b3f;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  z-index: 1500; /* ÖNEMLİ */
+}
+
+.page-content {
+  padding-bottom: 200px; /* footer yüksekliği kadar */
+}
+
+
 
   .mobile-menu a,
   .mobile-menu span {
