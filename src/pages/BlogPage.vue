@@ -151,7 +151,7 @@ const truncate = (text: string, length: number) =>
 .hero {
   position: relative;
   height: 45vh;
-  background: url('@/assets/images/banner.webp') center/cover no-repeat;
+  background: url('/src/assets/herosection/blog.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

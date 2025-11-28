@@ -222,7 +222,7 @@ const closeModal = () => {
 .hero {
   position: relative;
   height: 38vh;
-  background: url('/src/assets/herosection') center/cover no-repeat;
+  background: url('/src/assets/herosection/hesap.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
