@@ -276,7 +276,7 @@ const closeModal = () => {
 
 .tools {
   background: #fff;
-  padding: 4rem 0 7rem;
+  padding: 4rem 0 2rem;
   font-family: 'Poppins', sans-serif;
 }
 
