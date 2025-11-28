@@ -273,7 +273,7 @@ const changeLang = (lang: string) => {
   }
 
   .mobile-menu {
-    position: fixed;
+    position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
