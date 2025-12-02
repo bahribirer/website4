@@ -1,36 +1,29 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-// Sayfalar
+// layout
+import DefaultLayout from '../layouts/DefaultLayout.vue'
+
+// sayfalar
 import HomePage from '../pages/HomePage.vue'
-const ContactPage = () => import('../pages/ContactPage.vue')
-const TeamPage = () => import('../pages/TeamPage.vue')
-const PracticeAreasPage = () => import('../pages/PracticeAreasPage.vue')
 
 const routes = [
-  { path: '/', name: 'Home', component: HomePage },
-
-  { path: '/hakkimizda', name: 'Hakkimizda', component: () => import('../pages/Hakkimizda.vue') },
-  { path: '/ekibimiz', name: 'Team', component: TeamPage },
-  { path: '/team/:slug', name: 'TeamMember', component: () => import('../pages/TeamMemberPage.vue') },
-
-  { path: '/calisma-alanlarimiz', name: 'PracticeAreas', component: PracticeAreasPage },
   {
-    path: '/calisma-alanlarimiz/:key',
-    name: 'PracticeAreaDetail',
-    component: () => import('../pages/PracticeAreaDetail.vue')
+    path: '/',
+    component: DefaultLayout,
+    children: [
+      { path: '', name: 'Home', component: HomePage },
+      { path: 'hakkimizda', component: () => import('../pages/Hakkimizda.vue') },
+      { path: 'ekibimiz', component: () => import('../pages/TeamPage.vue') },
+      { path: 'team/:slug', component: () => import('../pages/TeamMemberPage.vue') },
+      { path: 'calisma-alanlarimiz', component: () => import('../pages/PracticeAreasPage.vue') },
+      { path: 'calisma-alanlarimiz/:key', component: () => import('../pages/PracticeAreaDetail.vue') },
+      { path: 'kariyer', component: () => import('../pages/CareerPage.vue') },
+      { path: 'iletisim', component: () => import('../pages/ContactPage.vue') },
+      { path: 'blog', component: () => import('../pages/BlogPage.vue') },
+      { path: 'hesaplama-araclari', component: () => import('../pages/HesaplamaAraclariPage.vue') },
+    ],
   },
 
-  { path: '/kariyer', name: 'CareerPage', component: () => import('../pages/CareerPage.vue') },
-  { path: '/iletisim', name: 'ContactPage', component: ContactPage },
-  { path: '/blog', name: 'BlogPage', component: () => import('../pages/BlogPage.vue') },
-
-  {
-    path: '/hesaplama-araclari',
-    name: 'HesaplamaAraclari',
-    component: () => import('../pages/HesaplamaAraclariPage.vue')
-  },
-
-  // ❗ EN SONDA OLMALI ❗
   { path: '/:pathMatch(.*)*', redirect: '/' }
 ]
 
