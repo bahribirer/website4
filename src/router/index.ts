@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 
 // layout
 import DefaultLayout from '../layouts/DefaultLayout.vue'
@@ -28,9 +28,6 @@ const routes = [
 ]
 
 export default createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
-  scrollBehavior() {
-    return { top: 0 }
-  }
 })
