@@ -74,7 +74,7 @@ const { t } = useI18n();
 .hero {
   position: relative;
   height: 45vh;
-background: url('@/assets/herosection/iletisim.jpg');
+background: url('/src/assets/herosection/iletisim.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
