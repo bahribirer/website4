@@ -72,7 +72,7 @@ const goDetail = (key: string) => {
 .hero {
   position: relative;
   height: 45vh;
-background: url('/src/assets/herosection/alan.jpg') center/cover no-repeat;
+background: url('/assets/herosection/alan.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -24,12 +24,14 @@
 
       <!-- PREMIUM FOTO KOLAJ -->
       <div class="photo-collage">
-        <div class="big-image" :style="{ backgroundImage: `url(${h1})` }"></div>
-
+<div class="big-image" :style="{ backgroundImage: 'url(/assets/hak/h1.webp)' }"></div>
         <div class="small-images">
-          <div class="img" :style="{ backgroundImage: `url(${h2})` }"></div>
-          <div class="img" :style="{ backgroundImage: `url(${h3})` }"></div>
-          <div class="img" :style="{ backgroundImage: `url(${h4})` }"></div>
+          
+
+<div class="img" :style="{ backgroundImage: 'url(/assets/hak/h2.jpg)' }"></div>
+<div class="img" :style="{ backgroundImage: 'url(/assets/hak/h3.jpg)' }"></div>
+<div class="img" :style="{ backgroundImage: 'url(/assets/hak/h4.jpg)' }"></div>
+
         </div>
       </div>
 
@@ -53,10 +55,7 @@
 
 <script setup lang="ts">
 import { useI18n } from "vue-i18n"
-import h1 from '../assets/hak/h1.webp'
-import h2 from '../assets/hak/h2.jpg'
-import h3 from '../assets/hak/h3.jpg'
-import h4 from '../assets/hak/h4.jpg'
+
 
 const { t } = useI18n()
 </script>
@@ -72,7 +71,7 @@ const { t } = useI18n()
 .hero {
   position: relative;
   height: 45vh;
-  background: url('/src/assets/herosection/hakkimizda.png') center/cover no-repeat;
+  background: url('/assets/herosection/hakkimizda.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

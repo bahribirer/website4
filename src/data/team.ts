@@ -7,18 +7,7 @@ export interface TeamMember {
   slug: string
 }
 
-import halilImg from '../assets/person/halil.webp'
-import muhImg from '../assets/person/muh.webp'
-import recImg from '../assets/person/recai.webp'
-import tolImg from '../assets/person/tolga.webp'
-import canImg from '../assets/person/cansu.webp'
-import mugImg from '../assets/person/muge.webp'
-import hatImg from '../assets/person/hatice.webp'
-import furImg from '../assets/person/furkan.webp'
-import selImg from '../assets/person/selin.webp'
-import hakImg from '../assets/person/hakki.webp'
-import hayImg from '../assets/person/hayrun.webp'
-import ataImg from '../assets/person/ata.webp'
+
 
 
 
@@ -37,84 +26,84 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'team.halil.name',
     title: 'team.halil.title',
-    image: halilImg,
-    slug: 'halil-cenk-akdogan',
+image: "/assets/person/halil.webp",    
+slug: 'halil-cenk-akdogan',
     about: 'team.halil.about'
   },
   {
     name: 'team.muhammed.name',
     title: 'team.muhammed.title',
-    image: muhImg,
+    image: "/assets/person/muh.webp",
     slug: 'muhammed-murat-kaplan',
     about: 'team.muhammed.about'
   },
   {
     name: 'team.recai.name',
     title: 'team.recai.title',
-    image: recImg,
+    image: "/assets/person/recai.webp",
     slug: 'recai-aytac-akbay',
     about: 'team.recai.about'
   },
   {
     name: 'team.tolga.name',
     title: 'team.tolga.title',
-    image: tolImg,
+    image: "/assets/person/tolga.webp",
     slug: 'tolga-erkockar',
     about: 'team.tolga.about'
   },
   {
     name: 'team.cansu.name',
     title: 'team.cansu.title',
-    image: canImg,
+    image: "/assets/person/cansu.webp",
     slug: 'cansu-ısıksal',
     about: 'team.cansu.about'
   },
   {
     name: 'team.muge.name',
     title: 'team.muge.title',
-    image: mugImg,
+    image: "/assets/person/muge.webp",
     slug: 'muge-yavuz',
     about: 'team.muge.about'
   },
   {
     name: 'team.hatice.name',
     title: 'team.hatice.title',
-    image: hatImg,
+    image: "/assets/person/hatice.webp",
     slug: 'hatice-yazar',
     about: 'team.hatice.about'
   },
   {
     name: 'team.furkan.name',
     title: 'team.furkan.title',
-    image: furImg,
+    image: "/assets/person/furkan.webp",
     slug: 'furkan-uslu',
     about: 'team.furkan.about'
   },
   {
     name: 'team.selin.name',
     title: 'team.selin.title',
-    image: selImg,
+    image: "/assets/person/selin.webp",
     slug: 'selin-alcık',
     about: 'team.selin.about'
   },
   {
     name: 'team.hayrun.name',
     title: 'team.hayrun.title',
-    image: hayImg,
+    image: "/assets/person/hayrun.webp",
     slug: 'hayrunnisa-neslihan-varli',
     about: 'team.hayrun.about'
   },
   {
     name: 'team.hakki.name',
     title: 'team.hakki.title',
-    image: hakImg,
+    image: "/assets/person/hakki.webp",
     slug: 'hakki-taylan-yurtaydın',
     about: 'team.hakki.about'
   },
   {
     name: 'team.ata.name',
     title: 'team.ata.title',
-    image: ataImg,
+    image: "/assets/person/ata.webp",
     slug: 'ata-tasman',
     about: 'team.ata.about'
   }

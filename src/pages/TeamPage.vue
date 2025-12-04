@@ -73,7 +73,7 @@ const truncate = (text: string, length: number) =>
 .hero {
   position: relative;
   height: 42vh;
-background: url('/src/assets/herosection/ekip.jpg') center/cover no-repeat;
+background: url('/assets/herosection/ekip.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
