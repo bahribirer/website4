@@ -62,7 +62,7 @@
           <li><i class="pi pi-globe"></i> {{ t('footer.web') }}</li>
           <li>
             <i class="pi pi-map-marker"></i>
-            {{ t('contact.address') }}
+            {{ t('footer.address') }}
           </li>
         </ul>
       </div>
