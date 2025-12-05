@@ -3,43 +3,47 @@
     <!-- HERO -->
     <div class="hero fade-hero">
       <div class="overlay">
-        <h1>{{ t("contact.hero") }}</h1>
+        <h1>İletişim</h1>
       </div>
     </div>
 
     <!-- CONTENT -->
     <div class="container">
       <div class="head">
-        <h3 class="subtitle">{{ t("contact.subtitle") }}</h3>
-        <h2 class="title">{{ t("contact.title") }}</h2>
-        <p class="desc">{{ t("contact.desc") }}</p>
+        <h3 class="subtitle">DETAYLI BİLGİ İÇİN</h3>
+        <h2 class="title">Bizimle İletişime Geçin</h2>
+        <p class="desc">
+          Hizmetlerimiz ve çalışma koşullarımız hakkında detaylı bilgi almak için aşağıdaki iletişim bilgilerinden bize ulaşabilirsiniz.
+        </p>
       </div>
 
       <!-- Cards -->
       <div class="grid">
         <div class="card">
           <i class="pi pi-map-marker"></i>
-          <h3>{{ t("contact.addressTitle") }}</h3>
-          <p v-html="t('contact.address')"></p>
+          <h3>Adres</h3>
+          <p>
+            Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı,<br />
+            No: 2/8 Beyoğlu / İstanbul
+          </p>
         </div>
 
         <div class="card">
           <i class="pi pi-phone"></i>
-          <h3>{{ t("contact.phoneTitle") }}</h3>
-          <p>{{ t("contact.phone") }}</p>
+          <h3>Telefon</h3>
+          <p>0 (212) 660 42 79</p>
         </div>
 
         <div class="card">
-  <i class="pi pi-envelope"></i>
-  <h3>{{ t("contact.emailTitle") }}</h3>
-  <p>info@peralegal.com.tr</p>
-</div>
-
+          <i class="pi pi-envelope"></i>
+          <h3>E-posta</h3>
+          <p>info@peralegal.com.tr</p>
+        </div>
 
         <div class="card">
           <i class="pi pi-clock"></i>
-          <h3>{{ t("contact.hoursTitle") }}</h3>
-          <p v-html="t('contact.hours')"></p>
+          <h3>Çalışma Saatleri</h3>
+          <p>Pazartesi – Cuma: 09.00 – 18.00</p>
         </div>
       </div>
 
@@ -59,10 +63,7 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-const { t } = useI18n();
 </script>
-
 
 <style scoped>
 .contact-page {
@@ -71,15 +72,15 @@ const { t } = useI18n();
   background: #fff;
 }
 
-/* HERO */
 .hero {
   position: relative;
   height: 45vh;
-background: url('/assets/herosection/iletisim.jpg') center/cover no-repeat;
+  background: url('/assets/herosection/iletisim.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .overlay {
   background: rgba(11, 27, 63, 0.6);
   width: 100%;
@@ -89,12 +90,12 @@ background: url('/assets/herosection/iletisim.jpg') center/cover no-repeat;
   align-items: center;
   justify-content: center;
 }
+
 .overlay h1 {
   font-size: 2.4rem;
   font-weight: 600;
 }
 
-/* CONTENT */
 .container {
   width: 90%;
   max-width: 1300px;
@@ -126,13 +127,13 @@ background: url('/assets/herosection/iletisim.jpg') center/cover no-repeat;
   margin: 0 auto 3rem;
 }
 
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
 }
+
 .card {
   border: 1px solid #e5e5e5;
   border-radius: 10px;
@@ -140,41 +141,36 @@ background: url('/assets/herosection/iletisim.jpg') center/cover no-repeat;
   background: #fff;
   transition: all 0.3s ease;
 }
+
 .card:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transform: translateY(-5px);
 }
+
 .card i {
   color: #b01c1c;
   font-size: 2.2rem;
   margin-bottom: 1rem;
 }
+
 .card h3 {
   color: #0b1b3f;
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.6rem;
 }
+
 .card p {
   color: #555;
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
-/* MAP */
 .map iframe {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .overlay h1 {
-    font-size: 1.8rem;
-  }
-}
-
-/* --- Hakkımızda Hero Fade Animasyonu (Blog ile aynı) --- */
 .fade-hero {
   animation: fadeHero 1.5s ease;
 }
@@ -189,5 +185,4 @@ background: url('/assets/herosection/iletisim.jpg') center/cover no-repeat;
     transform: scale(1);
   }
 }
-
 </style>
