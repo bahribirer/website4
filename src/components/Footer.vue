@@ -62,7 +62,7 @@
           <li><i class="pi pi-globe"></i> {{ t('footer.web') }}</li>
           <li>
             <i class="pi pi-map-marker"></i>
-            {{ t('footer.address') }}
+            {{ t('contact.address') }}
           </li>
         </ul>
       </div>
@@ -74,6 +74,7 @@
     </div>
   </footer>
 </template>
+
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
