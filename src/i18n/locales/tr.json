@@ -21,8 +21,8 @@
   "title": "Pera Legal & Partners",
   "desc1": "Pera Legal & Partners, kimi 20 yılı aşkın süredir hukuk alanında kamu hizmeti ifa etmekte olan deneyimli avukatlarımız ve kimi de genç, dinamik ve başarılarla dolu akademik hayatı olan avukatlarımızın bir araya gelmesi ile birlikte kurulmuştur. Alanlarında uzman olan kurucu avukatlarımız, tecrübeli çalışanlarımız ile birlikte hızlı, yasal ve doğru sonuca ulaşmayı hedefleyen hukuk firmamız, müvekkillerini her gelişmeden haberdar edip güncel tutarak ve atılması gereken adımları doğru zamanda atarak problemleri rahatça çözüme kavuşturmayı hedefler.",
   "desc2": "Pera Legal & Partners, Beyoğlu’nda hizmet vermektedir. Randevu, öneri ve şikayetleriniz için İletişim sayfasında yer alan bilgilerden faydalanabilirsiniz."
-}
-,"footer": {
+},
+"footer": {
   "aboutText": "Bu internet sitesinde yer alan tüm bilgiler ve logoya ilişkin tüm fikri mülkiyet hakları Pera Legal & Partners’a aittir.",
   "menusTitle": "Ana Menüler",
   "menuHome": "Ana Sayfa",
@@ -41,12 +41,13 @@
 
   "contactTitle": "İletişim",
   "phone": "0212 660 42 79",
-  "email": "info@@peralegal.com.tr",
+  "email": "info@peralegal.com.tr",
   "web": "peralegal.com.tr",
-    "address": "Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı,<br>No: 2/8 Beyoğlu / İstanbul",
+  "address": "Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı,<br>No: 2/8 Beyoğlu / İstanbul",
 
   "copy": "© Copyright 2025 — Pera Legal & Partners Tüm Hakları Saklıdır"
-},
+}
+,
 "homeHero": {
   "title": "Köklü deneyim, güvenilir çözümler"
 },
