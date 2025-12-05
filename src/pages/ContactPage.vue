@@ -30,10 +30,11 @@
         </div>
 
         <div class="card">
-          <i class="pi pi-envelope"></i>
-          <h3>{{ t("contact.emailTitle") }}</h3>
-          <p>{{ t("contact.email") }}</p>
-        </div>
+  <i class="pi pi-envelope"></i>
+  <h3>{{ t("contact.emailTitle") }}</h3>
+  <p>info@peralegal.com.tr</p>
+</div>
+
 
         <div class="card">
           <i class="pi pi-clock"></i>
