@@ -61,9 +61,10 @@
           <li><i class="pi pi-envelope"></i> {{ t('footer.email') }}</li>
           <li><i class="pi pi-globe"></i> {{ t('footer.web') }}</li>
           <li>
-            <i class="pi pi-map-marker"></i>
-            {{ t('footer.address') }}
-          </li>
+  <i class="pi pi-map-marker"></i>
+  <span v-html="t('footer.address')"></span>
+</li>
+
         </ul>
       </div>
     </div>

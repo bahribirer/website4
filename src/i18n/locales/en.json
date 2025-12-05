@@ -54,14 +54,14 @@
 }
 ,
 "homeHero": {
-  "title": "Deep-rooted experience, reliable solutions",
-  "consultation": {
+  "title": "Deep-rooted experience, reliable solutions"
+},
+"consultation": {
   "c1": "Reliable Legal Consultancy",
   "c2": "Legal Process Management",
   "c3": "Strategic Legal Solutions"
-}
-
 },
+
 "practice": {
   "subtitle": "Pera Legal & Partners",
   "title": "Our Practice Areas",
