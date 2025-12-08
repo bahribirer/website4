@@ -35,7 +35,6 @@
           <li><RouterLink to="/">{{ t('footer.menuHome') }}</RouterLink></li>
           <li><RouterLink to="/ekibimiz">{{ t('footer.menuTeam') }}</RouterLink></li>
           <li><RouterLink to="/calisma-alanlarimiz">{{ t('footer.menuPractice') }}</RouterLink></li>
-          <li><RouterLink to="/kariyer">{{ t('footer.menuCareer') }}</RouterLink></li>
           <li><RouterLink to="/blog">{{ t('footer.menuBlog') }}</RouterLink></li>
           <li><RouterLink to="/iletisim">{{ t('footer.menuContact') }}</RouterLink></li>
         </ul>

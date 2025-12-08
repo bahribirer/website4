@@ -20,9 +20,6 @@
         <RouterLink to="/calisma-alanlarimiz" class="menu-item" :class="{ active: isActive('/calisma-alanlarimiz') }">
           {{ t('navbar.areas') }}
         </RouterLink>
-        <RouterLink to="/kariyer" class="menu-item" :class="{ active: isActive('/kariyer') }">
-          {{ t('navbar.career') }}
-        </RouterLink>
         <RouterLink to="/blog" class="menu-item" :class="{ active: isActive('/blog') }">
           {{ t('navbar.blog') }}
         </RouterLink>
@@ -74,7 +71,6 @@
       <RouterLink to="/hakkimizda" @click="closeMobile">{{ t('navbar.about') }}</RouterLink>
       <RouterLink to="/ekibimiz" @click="closeMobile">{{ t('navbar.team') }}</RouterLink>
       <RouterLink to="/calisma-alanlarimiz" @click="closeMobile">{{ t('navbar.areas') }}</RouterLink>
-      <RouterLink to="/kariyer" @click="closeMobile">{{ t('navbar.career') }}</RouterLink>
       <RouterLink to="/blog" @click="closeMobile">{{ t('navbar.blog') }}</RouterLink>
       <RouterLink to="/iletisim" @click="closeMobile">{{ t('navbar.contact') }}</RouterLink>
       <RouterLink to="/hesaplama-araclari" @click="closeMobile">{{ t('navbar.tools') }}</RouterLink>

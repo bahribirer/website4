@@ -41,7 +41,7 @@
 
   "contactTitle": "İletişim",
   "phone": "0212 660 42 79",
-  "email": "info@peralegal.com.tr",
+  "email": "info@peralegal.com.tr ",
   "web": "peralegal.com.tr",
 "address": "Asmalımescit Neighborhood, Istiklal Street, Korsan Cul-de-sac,<br>No: 2/8 Beyoğlu / Istanbul",
 "addressLine1": "Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı",
@@ -321,7 +321,37 @@
   "subtitle": "Pera Legal & Partners",
   "title": "Uzman Kadromuz",
   "desc": "Alanında uzman, deneyimli ve çözüm odaklı avukatlarımız ile hukukun her alanında müvekkillerimize etkin, güvenilir ve profesyonel destek sunuyoruz."
+},
+"blog": {
+  "heroTitle": "Blog",
+  "sectionTitle": "Blog Yazılarımız",
+  "readMore": "Devamını Oku",
+  "categories": "Kategoriler",
+
+  "months": {
+    "Ekim": "Ekim",
+    "Eylül": "Eylül"
+  },
+
+  "categoriesList": {
+    "ceza": "Ceza Hukuku",
+    "bilişim": "Bilişim Hukuku",
+    "aile": "Aile Hukuku",
+    "ticaret": "Ticaret Hukuku",
+    "iş": "İş Hukuku",
+    "gayri": "Gayrimenkul Hukuku",
+    "miras": "Miras Hukuku",
+    "idare": "İdare Hukuku",
+    "saglık": "Sağlık Hukuku",
+    "icra": "İcra ve İflas Hukuku",
+    "sozlesme": "Sözleşmeler Hukuku",
+    "vatan": "Vatandaşlık Hukuku",
+    "sigorta": "Sigorta Hukuku"
+  }
 }
+
+
+
 }
 
 

@@ -46,7 +46,7 @@
 
   "contactTitle": "Contact",
   "phone": "0212 660 42 79",
-  "email": "info@peralegal.com.tr",
+  "email": "info@peralegal.com.tr ",
   "web": "peralegal.com.tr",
 "address": "Asmalımescit Neighborhood, Istiklal Street, Korsan Cikmazi,\nNo: 2/8 Beyoğlu / Istanbul",
 "addressLine1": "Asmalimescit Neighborhood, Istiklal Street, Korsan Dead End",
@@ -170,12 +170,7 @@
       "file": "Choose File"
 
   },
-  "blog": {
-  "hero": "Blog",
-  "title": "Our Blog Posts",
-  "readMore": "Read More",
-  "categories": "Categories"
-},
+ 
 "contact": {
      "hero": "Contact",
   "subtitle": "FOR DETAILED INFORMATION",
@@ -336,7 +331,37 @@
   "subtitle": "Pera Legal & Partners",
   "title": "Our Expert Staff",
   "desc": "With our experienced and solution-oriented attorneys who are experts in their fields, we offer effective, reliable, and professional legal support in all areas of law."
+},
+"blog": {
+  "heroTitle": "Blog",
+  "sectionTitle": "Our Blog Posts",
+  "readMore": "Read More",
+  "categories": "Categories",
+
+  "months": {
+    "Ekim": "October",
+    "Eylül": "September"
+  },
+
+  "categoriesList": {
+  "ceza": "Criminal Law",
+  "bilişim": "IT Law",
+  "aile": "Family Law",
+  "ticaret": "Commercial Law",
+  "iş": "Labour Law",
+  "gayri": "Real Estate Law",
+  "miras": "Inheritance Law",
+  "idare": "Administrative Law",
+  "saglık": "Health Law",
+  "icra": "Enforcement & Bankruptcy Law",
+  "sozlesme": "Contracts Law",
+  "vatan": "Citizenship Law",
+  "sigorta": "Insurance Law"
 }
+
+}
+
+
 
 
 

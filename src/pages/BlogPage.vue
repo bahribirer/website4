@@ -3,14 +3,14 @@
     <!-- 🔹 Hero -->
     <div class="hero">
       <div class="overlay fade-in">
-        <h1>Blog</h1>
+        <h1>{{ t('blog.heroTitle') }}</h1>
       </div>
     </div>
 
     <!-- 🔹 İçerik -->
     <div class="container content">
       <div class="left">
-        <h2 class="section-title">Blog Yazılarımız</h2>
+        <h2 class="section-title">{{ t('blog.sectionTitle') }}</h2>
 
         <!-- Blog Kartları -->
         <div class="posts">
@@ -21,14 +21,14 @@
           >
             <div class="date">
               <span class="day">{{ post.dateDay }}</span>
-              <span class="month">{{ post.dateMonth }}</span>
+              <span class="month">{{ t(`blog.months.${post.dateMonth}`) }}</span>
             </div>
 
             <div class="info">
               <h3>{{ post.title }}</h3>
               <p>{{ truncate(post.summary, 250) }}</p>
               <button class="read-btn" @click="openPost(post)">
-                Devamını Oku
+                {{ t('blog.readMore') }}
               </button>
             </div>
           </div>
@@ -50,10 +50,10 @@
       <!-- 🔹 Sağ Sidebar -->
       <aside class="sidebar">
         <div class="categories">
-          <h3>Kategoriler</h3>
+          <h3>{{ t('blog.categories') }}</h3>
           <ul>
             <li v-for="(cat, i) in categories" :key="i" @click="goToCategory(cat.slug)">
-              {{ cat.name }}
+              {{ t(`blog.categoriesList.${cat.slug}`) }}
             </li>
           </ul>
         </div>
@@ -65,7 +65,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 const router = useRouter()
 
 interface BlogPost {
@@ -76,62 +78,47 @@ interface BlogPost {
   dateMonth: string
 }
 
+/* ----------------------------------------------------------
+   BLOG POSTLAR (Dil destekli metinler i18n JSON'a taşınabilir)
+-----------------------------------------------------------*/
 const posts = ref<BlogPost[]>([
   {
     title: 'Emlak Vergisi Rayiç Bedeller Hakkında İptal Davası',
     summary:
-      'Türkiye’deki taşınmaz maliklerinin her yıl ödemekle yükümlü olduğu emlak vergisinin hesaplanmasında, taşınmazların emlak rayiç değerleri esas alınmaktadır. Bu değerler, Vergi Usul Kanunu uyarınca takdir komisyonları tarafından belirlenmektedir. 2025 yılında yapılan değerleme çalışmaları ile birlikte bazı bölgelerde %1400’e varan artışlar görülmüştür...',
-    fullText: `Türkiye’deki taşınmaz maliklerinin her yıl ödemekle yükümlü olduğu emlak vergisinin hesaplanmasında, taşınmazların emlak rayiç değerleri esas alınmaktadır. Emlak rayiç değerleri ise, 213 sayılı Vergi Usul Kanunu (“VUK”) uyarınca takdir komisyonları tarafından belirlenen gayrimenkul metrekare birim fiyatı üzerinden her dört yılda bir tespit edilmektedir.
-
-Bu kapsamda 2025 yılında yürütülen değerleme çalışmaları da tamamlandı. Takdir komisyonlarının belirlediği arsa ve arazi birim değerleri, ilgililere başvuru üzerine ve ayrıca Muhtarlık ve Belediyelerde ilan edilerek duyurulmaya başladı.
-
-Takdir edilen emlak rayiç değerlerinde ciddi bir artış gözlemlendi. Örneğin İstanbul için %1400’e varan artış oranları söz konusu. Bu durum emlak vergisi yükünün de artması anlamına geliyor. Fakat artışın fahiş olduğunu düşünenler için yeni rayiç değerlere karşı itiraz yolu açık.
-
-İtiraz için vergi mahkemelerinde iptal davası açmak gerekiyor. Şayet dava neticesinde takdir komisyonunun kararı iptal edilirse, karara konu cadde/sokak ya da ilgili bölgede bulunan tüm mükellefler etkilenecek.
-
-Dava açmak için yasal süre kural olarak takdir komisyonu kararının öğrenilme tarihinden itibaren otuz gündür. Öğrenme tarihi ise kararın ilgili belediye veya muhtarlıkta ilan edildiği tarih olarak kabul edilmektedir. Otuz günlük itiraz süresinin son gününün adli tatile -20 Temmuz 2025 ila 31 Ağustos 2025- denk gelmesi halinde 7 Eylül 2025 tarihine kadar dava açmak mümkün olacak. Dolayısıyla, ilgililerin her belediye/muhtarlık özelinde ilan sürecini ayrıca takip etmesinde büyük fayda bulunuyor.
-
-Yeni rayiç değerler 2026 yılı için uygulanacak ve müteakip 2027-2028-2029 yılları için yeniden değerleme oranının yarısı nispetinde artırılacak.`,
+      'Türkiye’deki taşınmaz maliklerinin her yıl ödemekle yükümlü olduğu emlak vergisinin hesaplanmasında...',
+    fullText: `Türkiye’deki taşınmaz maliklerinin her yıl ödemekle yükümlü olduğu emlak vergisinin...`,
     dateDay: '08',
-    dateMonth: 'Ekim',
+    dateMonth: 'Ekim', 
   },
   {
     title: 'Velayeti Elinde Bulundurmayan Eş Aleyhine İştirak Nafakası',
     summary:
-      'Evlilik birliğinin sona ermesiyle, velayeti elinde bulundurmayan eşin müşterek çocuğun eğitim, sağlık ve bakım giderlerine katkı sağlaması zorunludur. Bu katkı, iştirak nafakası olarak adlandırılır. Türk Medeni Kanunu’nun 182. maddesi kapsamında hakim, çocuğun menfaati gereği resen de iştirak nafakasına hükmedebilir...',
-    fullText: `Evlilik birliğinin boşanma, ayrılık ya da butlanı ile sona ermesiyle müşterek çocuk için velayeti elinde bulundurmayan eş aleyhine, müşterek çocuğun eğitim, sağlık ve bakım giderlerinin karşılanması için iştirak nafakasına hükmolunur.
-
-Anne ve baba, çocuklarının eğitim, sağlık ve bakım ihtiyaçlarını müştereken maddi ve manevi yüklenmek zorundadır. Boşanma davası ile birlikte karı ve koca evlilik birliğini sonlandırırken, müşterek çocuğun bakım, eğitim ve sağlık konularındaki ihtiyaçları bakımından tarafların sorumlulukları devam etmektedir.
-
-Yargıtay kararları uyarınca iştirak nafakası, eğitim giderlerini de kapsamakta olup, ayrıca okul, servis, yemek giderleri gibi yükümlülüklerin ayrı hükme bağlanması usule aykırı kabul edilmektedir.`,
+      'Evlilik birliğinin sona ermesiyle, velayeti elinde bulundurmayan eşin müşterek çocuğun eğitim...',
+    fullText: `Evlilik birliğinin boşanma, ayrılık ya da butlanı ile sona ermesiyle müşterek çocuk için...`,
     dateDay: '30',
     dateMonth: 'Eylül',
   },
 ])
 
+/* ----------------------------------------------------------
+   KATEGORİLER (Slug bazlı, dil desteği key ile geliyor)
+-----------------------------------------------------------*/
 const categories = ref([
-  { name: 'Aile Hukuku', slug: 'aile-hukuku' },
-  { name: 'Bilişim Hukuku', slug: 'bilisim-hukuku' },
-  { name: 'Ceza Hukuku', slug: 'ceza-hukuku' },
-  { name: 'Gayrimenkul Hukuku', slug: 'gayrimenkul-hukuku' },
-    { name: 'Ticaret Hukuku', slug: 'ticaret-hukuku' },
-      { name: 'İş Hukuku', slug: 'is-hukuku' },
-        { name: 'Miras Hukuku', slug: 'miras-hukuku' },
-          { name: 'İdare Hukuku', slug: 'idare-hukuku' },
-  { name: 'Sağlık Hukuku', slug: 'saglik-hukuku' },
-    { name: 'İcra ve İflas Hukuku', slug: 'icra-ve-iflas-hukuku' },
-      { name: 'Sözleşmeler Hukuku', slug: 'sozlesmeler-hukuku' },
-        { name: 'Vatandaşlık Hukuku', slug: 'vatandaslik-hukuku' },
-          { name: 'Sigorta Hukuku', slug: 'sigorta-hukuku' },
-
-
-
-
-
-
-
-
+  { slug: 'ceza' },
+  { slug: 'bilişim' },
+  { slug: 'aile' },
+  { slug: 'ticaret' },
+  { slug: 'iş' },
+  { slug: 'gayri' },
+  { slug: 'miras' },
+  { slug: 'idare' },
+  { slug: 'saglık' },
+  { slug: 'icra' },
+  { slug: 'sozlesme' },
+  { slug: 'vatan' },
+  { slug: 'sigorta' }
 ])
+
 
 const selectedPost = ref<BlogPost | null>(null)
 const openPost = (post: BlogPost) => (selectedPost.value = post)
@@ -140,6 +127,7 @@ const goToCategory = (slug: string) => router.push(`/calisma-alanlarimiz/${slug}
 const truncate = (text: string, length: number) =>
   text.length > length ? text.slice(0, length) + '...' : text
 </script>
+
 
 <style scoped>
 .blog-page {
