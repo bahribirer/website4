@@ -53,23 +53,7 @@
       </div>
 
       <!-- İletişim -->
-      <div class="contact">
-        <h3>{{ t('footer.contactTitle') }}</h3>
-        <ul>
-          <li><i class="pi pi-phone"></i> {{ t('footer.phone') }}</li>
-          <li><i class="pi pi-envelope"></i> {{ t('footer.email') }}</li>
-          <li><i class="pi pi-globe"></i> {{ t('footer.web') }}</li>
-         <li>
-  <i class="pi pi-map-marker"></i>
-  <div class="address-text">
-    {{ t('footer.addressLine1') }}<br>
-    {{ t('footer.addressLine2') }}
-  </div>
-</li>
-
-
-        </ul>
-      </div>
+  
     </div>
 
     <!-- Alt Kısım -->
