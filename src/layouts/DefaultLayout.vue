@@ -1,12 +1,11 @@
 <template>
-  <div class="layout">
-    <Navbar />
-    <main class="page-content">
-      <RouterView />
-    </main>
-    <Footer />
-  </div>
+  <Navbar />
+  <main>
+    <RouterView />
+  </main>
+  <Footer />
 </template>
+
 
 <script setup>
 import Navbar from '../components/NavBar.vue'
