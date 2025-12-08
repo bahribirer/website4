@@ -28,7 +28,7 @@
 
 "footer": {
   "aboutText": "All information and all intellectual property rights related to the logo on this website belong to Pera Legal & Partners.",
-  
+
   "menusTitle": "Main Menu",
   "menuHome": "Home",
   "menuTeam": "Our Team",
@@ -46,15 +46,15 @@
 
   "contactTitle": "Contact",
   "phone": "0212 660 42 79",
-  "email": "info@peralegal.com.tr ",
+  "email": "info@peralegal.com.tr",
   "web": "peralegal.com.tr",
-"address": "Asmalimescit Neighborhood, Istiklal Street, Korsan Cikmazi, No: 2/8 Beyoglu / Istanbul",
-"addressLine1": "Asmalimescit Neighborhood, Istiklal Street, Korsan Dead End",
-"addressLine2": "No: 2/8 Beyoglu / Istanbul",
 
+  "addressLine1": "Asmalimescit Neighborhood, Istiklal Street, Korsan Cikmazi",
+  "addressLine2": "No: 2/8 Beyoglu / Istanbul",
 
   "copy": "© Copyright 2025 — Pera Legal & Partners All Rights Reserved"
 }
+
 ,
 "homeHero": {
   "title": "Deep-rooted experience, reliable solutions"

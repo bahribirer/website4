@@ -23,8 +23,9 @@
   "desc2": "Pera Legal & Partners, Beyoğlu’nda hizmet vermektedir. Randevu, öneri ve şikayetleriniz için İletişim sayfasında yer alan bilgilerden faydalanabilirsiniz."
 },
 "footer": {
-  "aboutText": "Bu internet sitesinde yer alan tüm bilgiler ve logoya ilişkin tüm fikri mülkiyet hakları Pera Legal & Partners’a aittir.",
-  "menusTitle": "Ana Menüler",
+  "aboutText": "Bu web sitesindeki logo ile ilgili tüm bilgi ve fikri mülkiyet hakları Pera Legal & Partners’a aittir.",
+
+  "menusTitle": "Ana Menü",
   "menuHome": "Ana Sayfa",
   "menuTeam": "Ekibimiz",
   "menuPractice": "Çalışma Alanlarımız",
@@ -41,14 +42,15 @@
 
   "contactTitle": "İletişim",
   "phone": "0212 660 42 79",
-  "email": "info@peralegal.com.tr ",
+  "email": "info@peralegal.com.tr",
   "web": "peralegal.com.tr",
-"address": "Asmalımescit Neighborhood, Istiklal Street, Korsan Cul-de-sac,<br>No: 2/8 Beyoğlu / Istanbul",
-"addressLine1": "Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı",
-"addressLine2": "No: 2/8 Beyoğlu / İstanbul",
 
-  "copy": "© Copyright 2025 — Pera Legal & Partners Tüm Hakları Saklıdır"
+  "addressLine1": "Asmalımescit Mahallesi, İstiklal Caddesi, Korsan Çıkmazı",
+  "addressLine2": "No: 2/8 Beyoğlu / İstanbul",
+
+  "copy": "© Telif Hakkı 2025 — Pera Legal & Partners Tüm Hakları Saklıdır"
 }
+
 ,
 "homeHero": {
   "title": "Köklü deneyim, güvenilir çözümler"
