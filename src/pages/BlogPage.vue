@@ -12,38 +12,11 @@
       <div class="left">
         <h2 class="section-title">{{ t('blog.sectionTitle') }}</h2>
 
-        <!-- Blog Kartları -->
-        <div class="posts">
-          <div
-            v-for="(post, i) in posts"
-            :key="i"
-            class="post-card"
-          >
-            <div class="date">
-              <span class="day">{{ post.dateDay }}</span>
-              <span class="month">{{ t(`blog.months.${post.dateMonth}`) }}</span>
-            </div>
-
-            <div class="info">
-              <h3>{{ post.title }}</h3>
-              <p>{{ truncate(post.summary, 250) }}</p>
-              <button class="read-btn" @click="openPost(post)">
-                {{ t('blog.readMore') }}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div v-if="selectedPost" class="modal-backdrop" @click.self="selectedPost = null">
-          <div class="modal">
-            <button class="close" @click="selectedPost = null">
-              <i class="pi pi-times"></i>
-            </button>
-            <h2>{{ selectedPost.title }}</h2>
-            <div class="divider"></div>
-            <p class="full-text">{{ selectedPost.fullText }}</p>
-          </div>
+        <!-- YAKINDA GELİYOR BOX -->
+        <div class="coming-soon-box">
+          <i class="pi pi-clock"></i>
+          <h2>{{ t('blog.comingSoonTitle') }}</h2>
+          <p>{{ t('blog.comingSoonDesc') }}</p>
         </div>
       </div>
 
@@ -64,41 +37,11 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
 const { t } = useI18n()
 const router = useRouter()
-
-interface BlogPost {
-  title: string
-  summary: string
-  fullText: string
-  dateDay: string
-  dateMonth: string
-}
-
-/* ----------------------------------------------------------
-   BLOG POSTLAR (Dil destekli metinler i18n JSON'a taşınabilir)
------------------------------------------------------------*/
-const posts = ref<BlogPost[]>([
-  {
-    title: 'Emlak Vergisi Rayiç Bedeller Hakkında İptal Davası',
-    summary:
-      'Türkiye’deki taşınmaz maliklerinin her yıl ödemekle yükümlü olduğu emlak vergisinin hesaplanmasında...',
-    fullText: `Türkiye’deki taşınmaz maliklerinin her yıl ödemekle yükümlü olduğu emlak vergisinin...`,
-    dateDay: '08',
-    dateMonth: 'Ekim', 
-  },
-  {
-    title: 'Velayeti Elinde Bulundurmayan Eş Aleyhine İştirak Nafakası',
-    summary:
-      'Evlilik birliğinin sona ermesiyle, velayeti elinde bulundurmayan eşin müşterek çocuğun eğitim...',
-    fullText: `Evlilik birliğinin boşanma, ayrılık ya da butlanı ile sona ermesiyle müşterek çocuk için...`,
-    dateDay: '30',
-    dateMonth: 'Eylül',
-  },
-])
 
 /* ----------------------------------------------------------
    KATEGORİLER (Slug bazlı, dil desteği key ile geliyor)
@@ -119,15 +62,8 @@ const categories = ref([
   { slug: 'sigorta' }
 ])
 
-
-const selectedPost = ref<BlogPost | null>(null)
-const openPost = (post: BlogPost) => (selectedPost.value = post)
 const goToCategory = (slug: string) => router.push(`/calisma-alanlarimiz/${slug}`)
-
-const truncate = (text: string, length: number) =>
-  text.length > length ? text.slice(0, length) + '...' : text
 </script>
-
 
 <style scoped>
 .blog-page {
@@ -139,7 +75,7 @@ const truncate = (text: string, length: number) =>
 .hero {
   position: relative;
   height: 45vh;
-background: url('/assets/herosection/blog.jpg') center/cover no-repeat;
+  background: url('/assets/herosection/blog.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,14 +97,8 @@ background: url('/assets/herosection/blog.jpg') center/cover no-repeat;
   letter-spacing: 1px;
 }
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(1.05);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 /* İçerik */
@@ -200,108 +130,37 @@ background: url('/assets/herosection/blog.jpg') center/cover no-repeat;
   margin-top: 0.6rem;
 }
 
-/* Blog Kartları */
-.post-card {
-  display: flex;
-  gap: 1.2rem;
+/* COMING SOON UI */
+.coming-soon-box {
   background: #f9fafc;
-  padding: 1.6rem;
-  border-radius: 10px;
-  margin-bottom: 1.8rem;
-  border: 1px solid #eee;
-  transition: 0.3s ease;
-}
-.post-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-}
-.date {
-  background: #b01c1c;
-  color: #fff;
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
+  border: 1px solid #e5e8ef;
+  padding: 3rem 2rem;
+  border-radius: 14px;
   text-align: center;
-}
-.date .day {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.date .month {
-  font-size: 0.9rem;
-}
-.info h3 {
-  color: #0b1b3f;
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-.info p {
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-.read-btn {
-  background: #b01c1c;
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.read-btn:hover {
-  background: #8c1414;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease;
 }
 
-/* Modal */
-.modal-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  z-index: 2000;
-}
-.modal {
-  background: #fff;
-  border-radius: 12px;
-  padding: 2.2rem;
-  max-width: 800px;
-  width: 100%;
-  position: relative;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-.modal h2 {
-  color: #0b1b3f;
-  font-size: 1.5rem;
+.coming-soon-box i {
+  font-size: 3rem;
+  color: #b01c1c;
   margin-bottom: 1rem;
 }
-.divider {
-  width: 80px;
-  height: 3px;
-  background: #b01c1c;
-  margin: 0 auto 1.5rem;
+
+.coming-soon-box h2 {
+  color: #0b1b3f;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
 }
-.full-text {
-  color: #444;
+
+.coming-soon-box p {
+  color: #555;
   font-size: 1rem;
-  line-height: 1.8;
-  white-space: pre-line;
-}
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-  color: #666;
-}
-.close:hover {
-  color: #b01c1c;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Sidebar */
