@@ -8,7 +8,7 @@
       playsinline 
       class="bg-video"
     >
-      <source src="/videos/videosafari.mp4" type="video/mp4" />
+      <source src="/videos/peralegal.mp4" type="video/mp4" />
     </video>
 
     <div class="overlay"></div>
