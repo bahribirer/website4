@@ -10,12 +10,12 @@
 
         <div class="social">
           <a
-            href="https://x.com/peralegal"
+            href="https://www.linkedin.com/company/pera-legal-partners/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X (Twitter)"
           >
-            <i class="pi pi-twitter"></i>
+            <i class="pi pi-linkedin"></i>
           </a>
           <a
             href="https://www.instagram.com/peralegalpartners/"

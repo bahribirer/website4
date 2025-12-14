@@ -125,44 +125,61 @@ const goDetail = (key: string) => {
 /* 🔥 PREMIUM KART TASARIMI */
 /* ------------------------------------------------ */
 
+/* 🔥 Kart ana yapı */
 .card {
   position: relative;
   border-radius: 16px;
   padding: 2.2rem 1.8rem;
   color: #fff;
   overflow: hidden;
- height: 360px;
+  height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  cursor: pointer;
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  transition: transform .35s ease, box-shadow .35s ease;
-  cursor: pointer;
+  /* Başta foto görünmesin */
+  background-image: none;
 }
 
-/* Fotoğraf üstü blur + film */
+/* 🔥 Fotoğrafa soldan slide-in efekti */
 .card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(5, 14, 32, 0.45);
-  backdrop-filter: blur(3px);
-  transition: background .3s ease;
-  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Foto başlangıçta solda görünmez */
+  transform: translateX(-100%);
+  transition: transform .55s ease-out;
+
+  /* Vue inline style’dan gelen backgroundImage’i burada kullanmak için */
+  background-image: inherit;
 }
 
+/* Hover — fotoğraf içeri kayar */
 .card:hover::before {
-  background: rgba(5, 14, 32, 0.25);
+  transform: translateX(0);
 }
 
-/* Hover zoom */
-.card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 16px 34px rgba(0,0,0,0.2);
+/* 📌 Fotoğraf karanlık filtre */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 14, 32, 0.55);
+  z-index: 1;
+  transition: background .35s ease;
+}
+
+.card:hover::after {
+  background: rgba(5, 14, 32, 0.25);
 }
 
 /* İçerik üstte kalmalı */
@@ -171,72 +188,39 @@ const goDetail = (key: string) => {
   z-index: 2;
 }
 
-/* İkon alanı */
+/* 🔥 BAŞTA sadece başlık gözüksün, diğerleri gizli */
+.excerpt,
+.read-more,
 .icon-wrapper {
-  width: 55px;
-  height: 55px;
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  transition: background .3s ease;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity .4s ease, transform .4s ease;
 }
 
+/* Hover’da fade-in + yukarı kayma */
+.card:hover .excerpt,
+.card:hover .read-more,
 .card:hover .icon-wrapper {
-  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* Başlık */
+/* Başlık her zaman görünsün ama hafif animasyon eklenebilir */
 .card h3 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 600;
   margin-bottom: .4rem;
   color: #fff;
   line-height: 1.3;
-  max-height: 2.6rem; /* 2 satır */
-  overflow: hidden;
+  transition: transform .4s ease;
 }
 
-
-/* Kısaltılmış açıklama */
-.excerpt {
-  font-size: .95rem;
-  line-height: 1.6;
-  color: #e6e6e6;
-  margin-bottom: 0.8rem;
-  max-height: 50px;  /* Türkçe/İngilizce dengeler */
-  overflow: hidden;
+/* Hover’da başlık da biraz yükselir */
+.card:hover h3 {
+  transform: translateY(-4px);
 }
 
-
-/* Devamını oku */
-.read-more {
-  font-size: .96rem;
-  color: #b01c1c;
-  font-weight: 600;
-  cursor: pointer;
-  transition: color .3s ease;.card h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: .4rem;
-  color: #fff;
-  line-height: 1.3;
-  max-height: 2.6rem; /* 2 satır */
-  overflow: hidden;
-  margin-top: 0.3rem;
-}
-
-}
-
-.card:hover .read-more {
-  color: #ffdbdb;
-}
-
-/* Alt çizgi animasyonu */
+/* Alt çizgi */
 .underline {
   margin-top: .8rem;
   display: block;
@@ -245,6 +229,11 @@ const goDetail = (key: string) => {
   background: #b01c1c;
   transition: width .3s ease;
 }
+
+.card:hover .underline {
+  width: 40%;
+}
+
 
 .card:hover .underline {
   width: 40%;

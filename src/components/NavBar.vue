@@ -3,8 +3,14 @@
     <div class="navbar-inner">
       <!-- Logo -->
       <div class="logo">
-        <h1>PERA LEGAL<br />& PARTNERS</h1>
-      </div>
+  <RouterLink to="/" class="logo-group">
+        <img src="/assets/hak/logo1.png" alt="Pera Legal Secondary Logo" class="second-logo" />
+
+    <img src="/assets/hak/logo.png" alt="Pera Legal Logo" />
+  </RouterLink>
+</div>
+
+
 
       <!-- Masaüstü Menü -->
       <nav class="menu">
@@ -201,6 +207,35 @@ const openEtahsilat = () => {
   align-items: center;
   justify-content: space-between;
 }
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* İki logo arası boşluk */
+  margin-left: -20px;
+}
+
+.logo img {
+  height: 65px;
+  width: auto;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+  background: transparent !important;
+}
+
+.second-logo {
+  height: 55px;    /* İkinci logonun boyutunu biraz daha ufak yapabilirsin */
+  width: auto;
+  opacity: 0.95;   /* Daha soft dursun istersen */
+  transition: 0.2s ease;
+}
+
+.second-logo:hover {
+  opacity: 1;
+}
+
+
 
 /* Logo */
 .logo h1 {

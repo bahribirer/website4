@@ -19,10 +19,10 @@
     "toolsSubtitle": "Calculate compensation, fees and attorney costs quickly and reliably."
   },
   "aboutpage": {
-  "metaYear": "2024 | ISTANBUL",
+  "metaYear": "2025  ISTANBUL",
   "title": "Pera Legal & Partners",
-  "desc1": "Pera Legal & Partners was founded by experienced lawyers who have served in public legal institutions for over 20 years, together with young, dynamic lawyers with strong academic backgrounds. Our law firm, led by expert founding attorneys and supported by our experienced staff, aims to reach fast, lawful, and accurate results while keeping our clients informed of every development and taking the necessary steps at the right time.",
-  "desc2": "Pera Legal & Partners operates in Beyoğlu. For appointments, suggestions, or complaints, you may use the contact information provided on the Contact page."
+  "desc1": "Pera Legal & Partners is a law firm established through the collaboration of experienced attorneys who have provided public legal services for over 20 years and young, dynamic lawyers distinguished by their strong academic backgrounds. With the professional experience of our founding partners and a collaborative team approach, we prioritize providing our clients with clear, transparent, and up-to-date information throughout every stage of the legal process.Together with our team of specialized attorneys and experienced staff, we act in a lawful, diligent, and timely manner in every case to ensure that legal proceedings are managed effectively. We keep our clients informed at each stage, carefully plan the necessary steps, and aim to resolve legal matters in an efficient and reliable way.",
+  "desc2": "Pera Legal & Partners located in the Beyoğlu / Taksim area of Istanbul. For appointment requests, suggestions, or inquiries, please refer to the contact details available on our Contact page."
 },
 
 
@@ -68,7 +68,7 @@
 "practice": {
   "subtitle": "Pera Legal & Partners",
   "title": "Our Practice Areas",
-  "desc": "We provide reliable, efficient and result-oriented legal solutions with our experienced team to deliver legal support at the right time, with the right method and at high standards.",
+  "desc": "We aim to provide the legal support our clients require by carefully considering the specific circumstances of each case and applying the appropriate legal methods at the right time. With our experienced team of attorneys, we conduct legal processes in a transparent, diligent, and law-compliant manner, focusing on delivering reliable and effective solutions.Across all our practice areas, we keep our clients informed throughout the legal process and place particular emphasis on anticipating legal risks and planning the necessary steps in a timely manner.",
   "readMore": "Read More →"
 },
 "areas": {
@@ -129,7 +129,8 @@
  "teamPreview": {
   "subtitle": "FOR YOUR LEGAL SOLUTIONS",
   "title": "Our Team",
-  "desc": "Our experienced, skilled and well-equipped lawyers at Pera Legal & Partners provide the legal support our clients need with up-to-date knowledge, transparency and a results-oriented mindset.",
+  "desc": "The attorneys at Pera Legal & Partners consist of legal professionals who are specialized in their respective practice areas and distinguished by their professional experience and up-to-date knowledge of legal developments. Our team is committed to providing the legal support our clients require in a transparent, diligent, and law-compliant manner.",
+  "desc2":"In every matter, our attorneys act in accordance with current legislation and established case law, aiming to ensure that legal processes are conducted effectively while keeping clients informed throughout each stage of the process.",
   "button": "Our Team"
 },
 "about": {
@@ -137,14 +138,29 @@
   "heroSubtitle": "Pera Legal & Partners — Trust, Ethics and Solution-Oriented Legal Services",
 
   "whoWeAreTitle": "Who Are We?",
-  "whoWeAreP1": "Pera Legal & Partners is a corporate law firm offering fast, reliable and result-oriented legal solutions with its team of lawyers specialized in various fields of law.",
-  "whoWeAreP2": "We combine a modern legal approach with ethical values, transparency and strong communication to provide each client with a professional roadmap.",
+  "whoWeAreP1": "Pera Legal & Partners is an Istanbul-based law firm located in the Beyoğlu / Taksim area, providing legal consultancy and attorney services to both domestic and foreign individuals and legal entities. With a team of attorneys specialized in various fields of law, the firm aims to offer comprehensive legal support covering both commercial activities and individual legal matters.The firm primarily advises clients in areas such as corporate law, commercial law, employment law, and contract law, while also representing clients in dispute resolution processes, including litigation and alternative dispute resolution mechanisms. In every matter, we adopt a careful and predictable approach in line with applicable legislation and established case law, taking into account the specific circumstances of each case.",
+  "whoWeAreP2": "Pera Legal & Partners acts in accordance with the principles of transparency and professional diligence at every stage of the legal process, with the aim of delivering reliable and sustainable legal solutions to its clients.",
 
   "missionTitle": "Our Mission",
   "missionText": "To provide professional, transparent and solution-oriented legal consultancy that enables clients to make the right decisions in their legal processes.",
 
   "visionTitle": "Our Vision",
-  "visionText": "To be a reliable, ethical and innovative legal solution partner on both national and international platforms."
+  "visionText": "To be a reliable, ethical and innovative legal solution partner on both national and international platforms.",
+  "visionBlockTitle": "Our Foundation and Vision",
+  "visionBlockP1": "Pera Legal & Partners was founded by Attorney Cenk Akdoğan with the aim of providing careful, predictable, and effective legal solutions to the legal needs of both domestic and foreign clients, in accordance with current legislation and professional ethical standards. From the beginning, the firm has adopted a professional approach anchored in transparency, diligence, and strong communication throughout all legal processes.",
+  "visionBlockP2": "The firm aims to accurately assess legal risks in every matter and to keep clients clearly informed at each stage of their legal procedures. Our objective is to contribute to the proper and sustainable management of legal disputes and consultancy matters in accordance with the law.",
+  "visionBlockP3": "Since its establishment, Pera Legal & Partners has consistently upheld its commitment to professional ethics, a reliable working methodology, and a collaborative team culture. By supporting the continuous professional development of its attorneys and following current legal practices closely, the firm maintains a vision of delivering high-quality legal services in line with the principles of the rule of law, justice, and social responsibility.",
+  "valuesTitle": "Our Values",
+
+  "value1Title": "Trust and Transparency",
+  "value1Text": "We prioritize clear, understandable, and consistent communication with our clients throughout legal processes. By providing regular updates at every stage, we aim to share legal risks and available options in a transparent manner.",
+
+  "value2Title": "Professional Diligence and Ethical Approach",
+  "value2Text": "In all our work, we act in strict compliance with professional rules, ethical principles, and the rule of law. Each matter is handled with care, taking into account the specific circumstances of the case and applicable legislation.",
+
+  "value3Title": "Expertise and Continuous Development",
+  "value3Text": "We support the professional development of our attorneys and closely follow current legal developments. By continuously updating our knowledge in line with evolving legislation and practice, we aim to deliver high-quality legal services to our clients."
+
 },
 "practicePage": {
   "hero": "Practice Areas",
@@ -292,7 +308,7 @@
   "muge": {
     "name": "Müge Yavuz",
     "title": "Attorney at Law",
-    "about": "She is a graduate of Saint Joseph French High School. She successfully completed her studies at Bilgi University Faculty of Law. She provides services to local and international clients in the fields of criminal law, information technology law, and corporate law."
+    "about": "Attorney Müge Yavuz began her education at V.K.V. Koç Private Primary School and continued at Istanbul Saint Joseph French High School. During her high school years, she gained an international perspective by taking various courses at Paris-Sorbonne University. She successfully completed her studies at Istanbul Bilgi University Faculty of Law, having achieved high success in the university entrance exam.Following her experience at leading law firms in Turkey, she founded Müge Yavuz Law Office in 2022. She provides legal support to local and international clients in many areas of law, primarily Criminal Law, Information Technology Law, and Corporate Law. Fluent in English and French, she also served as the Secretary General of the European Union Commission and the Deputy Secretary General of the Maritime Law Commission of the Istanbul Bar Association between 2021-2022, contributing to numerous important projects."
   },
 
   "hatice": {

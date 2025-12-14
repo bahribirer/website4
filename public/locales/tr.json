@@ -17,10 +17,10 @@
     "toolsSubtitle": "Tazminat, harç ve vekalet ücretlerinizi hızlı ve güvenilir şekilde hesaplayın."
   },
   "aboutpage": {
-  "metaYear": "2024 | İSTANBUL",
+  "metaYear": "2025  İSTANBUL",
   "title": "Pera Legal & Partners",
-  "desc1": "Pera Legal & Partners, kimi 20 yılı aşkın süredir hukuk alanında kamu hizmeti ifa etmekte olan deneyimli avukatlarımız ve kimi de genç, dinamik ve başarılarla dolu akademik hayatı olan avukatlarımızın bir araya gelmesi ile birlikte kurulmuştur. Alanlarında uzman olan kurucu avukatlarımız, tecrübeli çalışanlarımız ile birlikte hızlı, yasal ve doğru sonuca ulaşmayı hedefleyen hukuk firmamız, müvekkillerini her gelişmeden haberdar edip güncel tutarak ve atılması gereken adımları doğru zamanda atarak problemleri rahatça çözüme kavuşturmayı hedefler.",
-  "desc2": "Pera Legal & Partners, Beyoğlu’nda hizmet vermektedir. Randevu, öneri ve şikayetleriniz için İletişim sayfasında yer alan bilgilerden faydalanabilirsiniz."
+  "desc1": "Pera Legal & Partners, kimi 20 yılı aşkın süredir hukuk alanında kamu hizmeti ifa eden deneyimli avukatlar ile akademik başarılarıyla öne çıkan genç ve dinamik hukukçuların bir araya gelmesiyle kurulmuş bir hukuk bürosudur. Kurucu avukatlarımızın mesleki tecrübesi ve ekip çalışması anlayışıyla, müvekkillerimize hukuki süreçler boyunca açık, anlaşılır ve güncel bilgi sunmayı esas alırız.Alanlarında uzman avukatlarımız ve tecrübeli çalışma ekibimizle, her dosyada hukuka uygun, dikkatli ve zamanında hareket ederek sürecin sağlıklı şekilde ilerlemesini hedefleriz. Müvekkillerimizi her aşamada bilgilendirir, atılması gereken adımları doğru zamanda planlayarak hukuki sorunların etkin biçimde yönetilmesini amaçlarız.",
+  "desc2": "Pera Legal & Partners, İstanbul Beyoğlu / Taksim bölgesinde faaliyet göstermektedir. Randevu talepleriniz, öneri ve geri bildirimleriniz için İletişim sayfamızda yer alan bilgiler üzerinden bizimle iletişime geçebilirsiniz."
 },
 "footer": {
   "aboutText": "Bu web sitesindeki logo ile ilgili tüm bilgi ve fikri mülkiyet hakları Pera Legal & Partners’a aittir.",
@@ -63,7 +63,7 @@
 "practice": {
   "subtitle": "Pera Legal & Partners",
   "title": "Çalışma Alanlarımız",
-  "desc": "Müvekkillerimizin ihtiyaç duyduğu hukuki desteği doğru zamanda, doğru yöntemle ve yüksek standartlarda sunabilmek adına deneyimli avukat kadromuzla güvenilir, etkin ve sonuç odaklı çözümler üretiyoruz.",
+  "desc": "Müvekkillerimizin ihtiyaç duyduğu hukuki desteği, her somut olayın özelliklerini dikkate alarak doğru zamanda ve uygun yöntemlerle sunmayı amaçlıyoruz. Deneyimli avukat kadromuzla, hukuki süreçleri şeffaf, dikkatli ve mevzuata uygun biçimde yürüterek güvenilir ve etkin çözümler üretmeyi esas alıyoruz.Her çalışma alanımızda, müvekkillerimizi süreç boyunca düzenli olarak bilgilendirir; hukuki riskleri öngörerek atılması gereken adımları zamanında planlamaya özen gösteririz.",
   "readMore": "Devamını Oku →"
 },
 "areas": {
@@ -125,7 +125,8 @@
  "teamPreview": {
   "subtitle": "HUKUKİ ÇÖZÜMLERİNİZ İÇİN",
   "title": "Ekibimiz",
-  "desc": "Pera Legal & Partners ekibinde yer alan, konularında uzman, başarılı ve donanımlı avukatlarımız; müvekkillerimize ihtiyaç duydukları hukuki desteği güncel bilgi ve deneyimleriyle güvenilir, şeffaf ve sonuç odaklı bir şekilde sunmaktadır.",
+  "desc": "Pera Legal & Partners bünyesinde görev yapan avukatlarımız, kendi çalışma alanlarında uzmanlaşmış, mesleki birikimi ve güncel hukuki gelişmelere hâkimiyetleriyle öne çıkan hukukçulardan oluşmaktadır. Ekibimiz, müvekkillerimize ihtiyaç duydukları hukuki desteği şeffaf, dikkatli ve mevzuata uygun bir yaklaşımla sunmayı esas alır.",
+  "desc2": "Her dosyada, güncel mevzuat ve yerleşik yargı kararları doğrultusunda hareket eden avukatlarımız, hukuki süreçlerin sağlıklı şekilde yürütülmesini hedefleyerek müvekkillerini süreç boyunca düzenli olarak bilgilendirir.",
   "button": "Ekibimiz"
 },
 "about": {
@@ -133,14 +134,29 @@
   "heroSubtitle": "Pera Legal & Partners — Güven, Etik ve Çözüm Odaklı Hukuk Hizmetleri",
 
   "whoWeAreTitle": "Biz Kimiz?",
-  "whoWeAreP1": "Pera Legal & Partners, farklı hukuk alanlarında uzmanlaşmış avukat kadrosu ile müvekkillerine hızlı, güvenilir ve sonuç odaklı çözümler sunan kurumsal bir hukuk bürosudur.",
-  "whoWeAreP2": "Modern hukuk yaklaşımını etik değerler, şeffaflık ve güçlü iletişim ile harmanlayarak her müvekkilimize profesyonel bir yol haritası sunuyoruz.",
+  "whoWeAreP1": "Pera Legal & Partners, yerli ve yabancı gerçek ve tüzel kişilere yönelik hukuki danışmanlık ve avukatlık hizmetleri sunan, İstanbul Beyoğlu / Taksim merkezli bir hukuk bürosudur. Farklı hukuk disiplinlerinde uzmanlaşmış avukat kadrosu ile müvekkillerinin ticari faaliyetlerinden bireysel hukuki ihtiyaçlarına kadar uzanan süreçlerde kapsamlı hukuki destek sağlamayı amaçlar.Büromuz; başta şirketler hukuku, ticaret hukuku, iş hukuku ve sözleşmeler hukuku olmak üzere, uyuşmazlıkların çözümüne yönelik dava ve alternatif çözüm yolları alanlarında da müvekkillerine hizmet sunmaktadır. Her dosyada, somut olayın özelliklerini dikkate alarak mevzuata ve yerleşik yargı kararlarına uygun, dikkatli ve öngörülebilir bir yaklaşım benimseriz.",
+  "whoWeAreP2": "Pera Legal & Partners, hukuki süreçlerin her aşamasında şeffaf iletişim ve mesleki özen ilkeleri doğrultusunda hareket ederek, müvekkillerine güvenilir ve sürdürülebilir hukuki çözümler sunmayı hedefler.",
 
   "missionTitle": "Misyonumuz",
   "missionText": "Müvekkillerimizin hukuki süreçlerde doğru kararlar almalarını sağlayacak profesyonel, şeffaf ve çözüm odaklı danışmanlık sunmak.",
 
   "visionTitle": "Vizyonumuz",
-  "visionText": "Ulusal ve uluslararası alanda güvenilir, etik değerlere bağlı ve yenilikçi bir hukuk çözüm ortağı olmak."
+  "visionText": "Ulusal ve uluslararası alanda güvenilir, etik değerlere bağlı ve yenilikçi bir hukuk çözüm ortağı olmak.",
+
+"visionBlockTitle": "Kuruluşumuz ve Vizyonumuz",
+  "visionBlockP1": "Pera Legal & Partners, Av. Cenk Akdoğan tarafından; yerli ve yabancı müvekkillerin hukuki ihtiyaçlarına, güncel mevzuat ve mesleki etik ilkeler çerçevesinde dikkatli, öngörülebilir ve etkin çözümler sunma anlayışıyla kurulmuştur. Kuruluşumuzdan itibaren, hukuki süreçlerde profesyonellik, şeffaflık ve güçlü iletişim ilkelerini temel alan bir çalışma yaklaşımı benimsenmiştir.",
+  "visionBlockP2": "Büromuz, her dosyada somut olayın özelliklerini dikkate alarak, hukuki riskleri doğru şekilde değerlendirmeyi ve müvekkillerini süreç boyunca açık biçimde bilgilendirmeyi amaçlar. Hedefimiz; hukuki uyuşmazlıkların ve danışmanlık süreçlerinin, mevzuata uygun ve sürdürülebilir çözümlerle yönetilmesine katkı sağlamaktır.",
+  "visionBlockP3": "Pera Legal & Partners, kurulduğu günden bu yana mesleki etik değerlere bağlılığı, güvenilir çalışma anlayışı ve ekip içi iş birliğini ön planda tutmaktadır. Avukatlarımızın mesleki gelişimini destekleyen, güncel hukuki bilgi ve uygulamaları yakından takip eden yapımızla; hukukun üstünlüğü, adalet ve sorumluluk bilinci doğrultusunda müvekkillerimize nitelikli hukuki hizmet sunmayı vizyon ediniriz.",
+  "valuesTitle": "Değerlerimiz",
+
+  "value1Title": "Güven ve Şeffaflık",
+  "value1Text": "Hukuki süreçlerde müvekkillerimizle açık, anlaşılır ve düzenli iletişim kurmayı esas alırız. Her aşamada bilgilendirme yaparak, hukuki riskleri ve seçenekleri şeffaf biçimde paylaşmayı önceliklendiririz.",
+
+  "value2Title": "Mesleki Özen ve Etik Yaklaşım",
+  "value2Text": "Tüm çalışmalarımızda meslek kurallarına, etik ilkelere ve hukukun üstünlüğüne bağlı hareket ederiz. Her dosyayı somut olayın özelliklerini dikkate alarak, dikkatli ve mevzuata uygun bir yaklaşımla ele alırız.",
+
+  "value3Title": "Uzmanlık ve Sürekli Gelişim",
+  "value3Text": "Avukatlarımızın mesleki gelişimini ve güncel hukuki gelişmeleri yakından takip etmesini destekleriz. Değişen mevzuat ve uygulamalar doğrultusunda bilgi birikimimizi sürekli güncelleyerek müvekkillerimize nitelikli hukuki hizmet sunmayı hedefleriz."
 },
 "practicePage": {
   "hero": "Çalışma Alanlarımız",
@@ -283,7 +299,7 @@
   "muge": {
     "name": "Müge Yavuz",
     "title": "Avukat",
-    "about": "Saint Joseph Fransız Lisesi mezunudur. Bilgi Üniversitesi Hukuk Fakültesini başarıyla bitirmiştir. Ceza hukuku, bilişim hukuku ve şirketler hukuku alanlarında yerel ve uluslararası müvekkillere hizmet vermektedir."
+    "about": "Avukat Müge Yavuz, eğitim hayatına V.K.V Koç Özel ilköğretim Okulu’nda başlamış, İstanbul Saint Joseph Fransız Lisesi’nde devam etmiştir. Lise eğitimi esnasında Paris-Sorbonne Üniversitesi’nde çeşitli eğitimler alarak uluslararası bir perspektif edinmiştir. Üniversite sınavında edindiği yüksek başarı sonucu kazandığı İstanbul Bilgi Üniversitesi Hukuk Fakültesi’ni başarıyla tamamlamıştır.Türkiye’nin önde gelen hukuk bürolarında kazandığı deneyimler sonucu 2022 yılında Müge Yavuz Hukuk Bürosu’nu kurmuştur. Başta Ceza Hukuku, Bilişim Hukuku ve Şirketler Hukuku olmak üzere hukukun birçok alanında yerel ve uluslararası müvekkillerine hukuki destek sağlamaktadır. İleri düzeyde İngilizce ve Fransızca yabancı dillerine sahip olmakla birlikte 2021-2022 yılları arasında İstanbul Barosu’nun Avrupa Birliği Komisyonu’nda Genel Sekreter, Deniz Hukuku Komisyonu’nda ise Genel Sekreter Yardımcısı olarak birçok önemli projelere imza atmıştır."
   },
 
   "hatice": {

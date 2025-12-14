@@ -71,7 +71,11 @@ const { t } = useI18n()
   opacity: 0;
   animation: fadeUp 1.6s ease forwards;
   animation-delay: 0.4s;
+
+  margin-top: 400px;  /* 🔥 İçeriği aşağı kaydırır */
+  margin-right: 800px;
 }
+
 
 /* 🎯 Başlık */
 .content h1 {
