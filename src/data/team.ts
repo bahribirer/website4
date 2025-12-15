@@ -44,13 +44,7 @@ slug: 'halil-cenk-akdogan',
     slug: 'muge-yavuz',
     about: 'team.muge.about'
   },
-   {
-    name: 'team.hakki.name',
-    title: 'team.hakki.title',
-    image: "/assets/person/hakki.webp",
-    slug: 'hakki-taylan-yurtaydın',
-    about: 'team.hakki.about'
-  },
+   
   {
     name: 'team.cansu.name',
     title: 'team.cansu.title',
@@ -115,6 +109,13 @@ slug: 'halil-cenk-akdogan',
     image: "/assets/person/ata.webp",
     slug: 'ata-tasman',
     about: 'team.ata.about'
-  }
+  },
+  {
+    name: 'team.bora.name',
+    title: 'team.bora.title',
+    image: "/assets/person/bora.webp",
+    slug: 'bora-toker',
+    about: 'team.bora.about'
+  },
 ]
 
