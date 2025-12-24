@@ -14,6 +14,7 @@
       <div class="left-text">
         <h2>{{ t("about.whoWeAreTitle") }}</h2>
         <p v-html="t('about.whoWeAreP1')"></p>
+        <p v-html="t('about.whoWeAreP3')"></p>
         <p v-html="t('about.whoWeAreP2')"></p>
       </div>
 

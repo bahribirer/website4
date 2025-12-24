@@ -66,6 +66,8 @@ const goDetail = (key: string) => {
   color: #ffffff;
   padding: 6rem 0 7rem;
   font-family: 'Poppins', sans-serif;
+  
+  
 }
 
 .container {
@@ -111,6 +113,7 @@ const goDetail = (key: string) => {
   font-size: 1rem;
   line-height: 1.8;
   margin-top: 0.5rem;
+  text-align: left;
 }
 
 /* Grid düzeni */
@@ -137,6 +140,7 @@ const goDetail = (key: string) => {
   flex-direction: column;
   justify-content: flex-end;
   cursor: pointer;
+  
 
   background-size: cover;
   background-position: center;
@@ -195,6 +199,8 @@ const goDetail = (key: string) => {
   opacity: 0;
   transform: translateY(15px);
   transition: opacity .4s ease, transform .4s ease;
+  text-align: left;
+  
 }
 
 /* Hover’da fade-in + yukarı kayma */
@@ -213,6 +219,7 @@ const goDetail = (key: string) => {
   color: #fff;
   line-height: 1.3;
   transition: transform .4s ease;
+  
 }
 
 /* Hover’da başlık da biraz yükselir */

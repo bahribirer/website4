@@ -10,7 +10,7 @@
 
       <!-- Orta Açıklama -->
       <div class="middle">
-        <p>{{ t("teamPreview.desc") }}</p>
+        <p>{{ t("teamPreview.desc") }}</p><br>
                 <p>{{ t("teamPreview.desc2") }}</p>
 
       </div>

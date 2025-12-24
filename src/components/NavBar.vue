@@ -4,9 +4,9 @@
       <!-- Logo -->
       <div class="logo">
   <RouterLink to="/" class="logo-group">
-        <img src="/assets/hak/logo1.png" alt="Pera Legal Secondary Logo" class="second-logo" />
+        <img src="/assets/hak/logo4.png" alt="Pera Legal Secondary Logo" class="second-logo" />
 
-    <img src="/assets/hak/logo.png" alt="Pera Legal Logo" />
+    <img src="/assets/hak/logo3.png" alt="Pera Legal Logo" />
   </RouterLink>
 </div>
 
@@ -223,6 +223,7 @@ const openEtahsilat = () => {
   transform: translateZ(0);
   background: transparent !important;
 }
+
 
 .second-logo {
   height: 55px;    /* İkinci logonun boyutunu biraz daha ufak yapabilirsin */
