@@ -52,7 +52,6 @@ const updateHead = () => {
     link: [
       { rel: 'canonical', href: baseUrl + route.path },
       { rel: 'alternate', hreflang: 'tr', href: baseUrl + (route.path === '/' ? '' : route.path) },
-      { rel: 'alternate', hreflang: 'en', href: baseUrl + '/en' + (route.path === '/' ? '' : route.path) },
       { rel: 'alternate', hreflang: 'x-default', href: baseUrl + (route.path === '/' ? '' : route.path) }
     ]
   })

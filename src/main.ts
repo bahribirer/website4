@@ -8,8 +8,12 @@ import 'primeflex/primeflex.css'
 
 // 🔹 i18n import
 import i18n from './i18n'
+import { createHead } from '@unhead/vue/client'
+
+const head = createHead()
 
 createApp(App)
+  .use(head)
   .use(PrimeVue)
   .use(createPinia())
   .use(router)

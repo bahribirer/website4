@@ -1,9 +1,9 @@
 <template>
   <main>
-    <HeroSection />
-    <AboutSection />
-    <PracticeAreas />
-    <TeamPreview />
+    <HeroSection id="home" />
+    <AboutSection id="hakkimizda" />
+    <PracticeAreas id="calisma-alanlarimiz" />
+    <TeamPreview id="ekibimiz" />
 
   </main>
 </template>
