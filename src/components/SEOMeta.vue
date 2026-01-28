@@ -17,17 +17,21 @@ const seoData = computed(() => {
   let title = t('navbar.home') + ' | ' + siteName
   let description = t('hero.toolsSubtitle')
   
-  // Page specific logic (can be expanded)
-  if (route.path.includes('hakkimizda')) {
+  // Page specific logic (prioritize specific segments)
+  const currentPath = route.path.toLowerCase()
+
+  if (currentPath.includes('hakkimizda')) {
     title = t('navbar.about') + ' | ' + siteName
     description = t('aboutpage.desc1').substring(0, 160)
-  } else if (route.path.includes('ekibimiz')) {
+  } else if (currentPath.includes('ekibimiz') || currentPath.includes('/team')) {
     title = t('navbar.team') + ' | ' + siteName
-  } else if (route.path.includes('calisma-alanlarimiz')) {
+  } else if (currentPath.includes('calisma-alanlarimiz') || currentPath.includes('/areas') || currentPath.includes('/practice-areas')) {
     title = t('navbar.areas') + ' | ' + siteName
-  } else if (route.path.includes('iletisim')) {
+  } else if (currentPath.includes('iletisim') || currentPath.includes('/contact')) {
     title = t('navbar.contact') + ' | ' + siteName
-  } else if (route.path.includes('hesaplama-araclari')) {
+  } else if (currentPath.includes('blog')) {
+    title = t('navbar.blog') + ' | ' + siteName
+  } else if (currentPath.includes('hesaplama-araclari')) {
     title = t('navbar.tools') + ' | ' + siteName
   }
 
