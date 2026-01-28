@@ -34,35 +34,25 @@ const seoData = computed(() => {
   return { title, description }
 })
 
-const updateHead = () => {
-  useHead({
-    title: seoData.value.title,
-    meta: [
-      { name: 'description', content: seoData.value.description },
-      { property: 'og:title', content: seoData.value.title },
-      { property: 'og:description', content: seoData.value.description },
-      { property: 'og:url', content: baseUrl + route.path },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: 'https://peralegal.com.tr/assets/pera.png' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: seoData.value.title },
-      { name: 'twitter:description', content: seoData.value.description },
-      { name: 'twitter:image', content: 'https://peralegal.com.tr/assets/pera.png' }
-    ],
-    link: [
-      { rel: 'canonical', href: baseUrl + route.path },
-      { rel: 'alternate', hreflang: 'tr', href: baseUrl + (route.path === '/' ? '' : route.path) },
-      { rel: 'alternate', hreflang: 'x-default', href: baseUrl + (route.path === '/' ? '' : route.path) }
-    ]
-  })
-}
-
-// Initial call
-updateHead()
-
-// Watch for route or locale changes
-watch([() => route.path, () => locale.value], () => {
-  updateHead()
+useHead({
+  title: () => seoData.value.title,
+  meta: [
+    { name: 'description', content: () => seoData.value.description },
+    { property: 'og:title', content: () => seoData.value.title },
+    { property: 'og:description', content: () => seoData.value.description },
+    { property: 'og:url', content: () => baseUrl + route.path },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:image', content: 'https://peralegal.com.tr/assets/pera.png' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: () => seoData.value.title },
+    { name: 'twitter:description', content: () => seoData.value.description },
+    { name: 'twitter:image', content: 'https://peralegal.com.tr/assets/pera.png' }
+  ],
+  link: [
+    { rel: 'canonical', href: () => baseUrl + route.path },
+    { rel: 'alternate', hreflang: 'tr', href: () => baseUrl + (route.path === '/' ? '' : route.path) },
+    { rel: 'alternate', hreflang: 'x-default', href: () => baseUrl + (route.path === '/' ? '' : route.path) }
+  ]
 })
 </script>
 
