@@ -1,16 +1,17 @@
+<script setup>
+import Navbar from '../components/NavBar.vue'
+import Footer from '../components/Footer.vue'
+import SEOMeta from '../components/SEOMeta.vue'
+</script>
+
 <template>
+  <SEOMeta />
   <Navbar />
   <main>
     <RouterView />
   </main>
   <Footer />
 </template>
-
-
-<script setup>
-import Navbar from '../components/NavBar.vue'
-import Footer from '../components/Footer.vue'
-</script>
 <style>
 .layout {
   display: flex;

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://peralegal.com.tr/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://peralegal.com.tr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://peralegal.com.tr/en"/>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Hakkımızda -->
+  <url>
+    <loc>https://peralegal.com.tr/hakkimizda</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://peralegal.com.tr/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://peralegal.com.tr/en/hakkimizda"/>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Ekibimiz -->
+  <url>
+    <loc>https://peralegal.com.tr/ekibimiz</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://peralegal.com.tr/ekibimiz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://peralegal.com.tr/en/ekibimiz"/>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Çalışma Alanlarımız -->
+  <url>
+    <loc>https://peralegal.com.tr/calisma-alanlarimiz</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://peralegal.com.tr/calisma-alanlarimiz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://peralegal.com.tr/en/calisma-alanlarimiz"/>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- İletişim -->
+  <url>
+    <loc>https://peralegal.com.tr/iletisim</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://peralegal.com.tr/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://peralegal.com.tr/en/iletisim"/>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hesaplama Araçları -->
+  <url>
+    <loc>https://peralegal.com.tr/hesaplama-araclari</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://peralegal.com.tr/hesaplama-araclari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://peralegal.com.tr/en/hesaplama-araclari"/>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

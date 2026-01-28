@@ -77,7 +77,7 @@ const { t } = useI18n()
   color: #444;
   margin-bottom: 1rem;
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
 }
 
 .desc strong {

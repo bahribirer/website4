@@ -70,7 +70,7 @@ const { t } = useI18n()
   color: #555;
   font-size: 1rem;
   line-height: 1.8;
-  margin: 0;
+  text-align: justify;
 }
 
 /* Buton */

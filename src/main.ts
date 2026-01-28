@@ -8,9 +8,10 @@ import 'primeflex/primeflex.css'
 
 // 🔹 i18n import
 import i18n from './i18n'
+
 createApp(App)
   .use(PrimeVue)
   .use(createPinia())
   .use(router)
- .use(i18n)
-   .mount('#app')
+  .use(i18n)
+  .mount('#app')

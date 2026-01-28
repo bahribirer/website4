@@ -113,7 +113,7 @@ const goDetail = (key: string) => {
   font-size: 1rem;
   line-height: 1.8;
   margin-top: 0.5rem;
-  text-align: left;
+  text-align: justify;
 }
 
 /* Grid düzeni */

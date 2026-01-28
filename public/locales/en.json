@@ -9,167 +9,147 @@
     "contact": "Contact",
     "tools": "Calculation Tools",
     "etahsilat": "e-Collection",
-        "uyap":"UYAP",
-            "practice":"Practice Areas"
-
-
+    "uyap": "UYAP",
+    "practice": "Practice Areas"
   },
   "hero": {
     "toolsTitle": "Calculation Tools",
     "toolsSubtitle": "Calculate compensation, fees and attorney costs quickly and reliably."
   },
   "aboutpage": {
-  "metaYear": "2025  ISTANBUL",
-  "title": "Pera Legal & Partners",
-  "desc1": "Pera Legal & Partners is a law firm established through the collaboration of experienced attorneys who have provided public legal services for over 20 years and young, dynamic lawyers distinguished by their strong academic backgrounds. With the professional experience of our founding partners and a collaborative team approach, we prioritize providing our clients with clear, transparent, and up-to-date information throughout every stage of the legal process.Together with our team of specialized attorneys and experienced staff, we act in a lawful, diligent, and timely manner in every case to ensure that legal proceedings are managed effectively. We keep our clients informed at each stage, carefully plan the necessary steps, and aim to resolve legal matters in an efficient and reliable way.",
-  "desc2": "Pera Legal & Partners located in the Beyoğlu / Taksim area of Istanbul. For appointment requests, suggestions, or inquiries, please refer to the contact details available on our Contact page."
-},
-
-
-"footer": {
-  "aboutText": "All information and all intellectual property rights related to the logo on this website belong to Pera Legal & Partners.",
-
-  "menusTitle": "Main Menu",
-  "menuHome": "Home",
-  "menuTeam": "Our Team",
-  "menuPractice": "Practice Areas",
-  "menuCareer": "Career",
-  "menuBlog": "Blog",
-  "menuContact": "Contact",
-
-  "hoursTitle": "Working Hours",
-  "mon": "Monday: 09.00 – 18.00",
-  "tue": "Tuesday: 09.00 – 18.00",
-  "wed": "Wednesday: 09.00 – 18.00",
-  "thu": "Thursday: 09.00 – 18.00",
-  "fri": "Friday: 09.00 – 18.00",
-
-  "contactTitle": "Contact",
-  "phone": "0212 660 42 79",
-  "email": "info@peralegal.com.tr",
-  "web": "peralegal.com.tr",
-
-  "addressLine1": "Asmalimescit Neighborhood, Istiklal Street, Korsan Cikmazi",
-  "addressLine2": "No: 2/8 Beyoglu / Istanbul",
-
-  "copy": "© Copyright 2025 — Pera Legal & Partners All Rights Reserved"
-}
-
-,
-"homeHero": {
-  "title": "Deep-rooted experience, reliable solutions"
-},
-"consultation": {
-  "c1": "Reliable Legal Consultancy",
-  "c2": "Legal Process Management",
-  "c3": "Strategic Legal Solutions"
-},
-
-"practice": {
-  "subtitle": "Pera Legal & Partners",
-  "title": "Our Practice Areas",
-  "desc": "We aim to provide the legal support our clients require by carefully considering the specific circumstances of each case and applying the appropriate legal methods at the right time. With our experienced team of attorneys, we conduct legal processes in a transparent, diligent, and law-compliant manner, focusing on delivering reliable and effective solutions.Across all our practice areas, we keep our clients informed throughout the legal process and place particular emphasis on anticipating legal risks and planning the necessary steps in a timely manner.",
-  "readMore": "Read More →"
-},
-"areas": {
-  "ceza": {
-    "title": "Criminal Law",
-    "desc": "Affecting fundamental rights and freedoms. Criminal investigations and prosecutions require strict compliance with procedural rules and legislation, as they may lead to serious legal consequences.\nPera Legal & Partners aims to provide careful and lawful legal assistance to its clients at every stage of criminal investigations and prosecutions. Defense strategies are assessed meticulously in light of the specific circumstances of each case, applicable legislation, and established case law.\nOur primary areas of practice within criminal law include investigation and prosecution procedures, statement and interrogation stages, detention and judicial control measures, criminal trials, enforcement law, and legal remedies. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains our fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the proper conduct of criminal proceedings."
+    "metaYear": "2026  ISTANBUL",
+    "title": "Pera Legal & Partners",
+    "desc1": "Pera Legal & Partners is a law firm established through the collaboration of experienced attorneys who have provided public legal services for over 20 years and young, dynamic lawyers distinguished by their strong academic backgrounds. With the professional experience of our founding partners and a collaborative team approach, we prioritize providing our clients with clear, transparent, and up-to-date information throughout every stage of the legal process.Together with our team of specialized attorneys and experienced staff, we act in a lawful, diligent, and timely manner in every case to ensure that legal proceedings are managed effectively. We keep our clients informed at each stage, carefully plan the necessary steps, and aim to resolve legal matters in an efficient and reliable way.",
+    "desc2": "Pera Legal & Partners located in the Beyoğlu / Taksim area of Istanbul. For appointment requests, suggestions, or inquiries, please refer to the contact details available on our Contact page."
   },
-  "bilişim": {
-    "title": "IT & Cyber Law",
-    "desc": "Information Technology (IT) law governs legal relationships and disputes arising from activities conducted in digital environments and is closely connected to technology, data, and communication-related matters. Due to the rapid and evolving nature of this field, legal processes require careful handling in line with current legislation and practice.\nPera Legal & Partners adopts a diligent and law-compliant approach to matters related to digital platforms, data processing activities, and electronic transactions. Each case is assessed by considering both its legal and technical aspects, with the aim of accurately identifying and managing legal risks.\nOur primary areas of practice within IT law include personal data protection (KVKK), data security and data breaches, disputes arising from internet and social media use, electronic commerce, digital infringements of intellectual and industrial property rights, cybercrimes, and offenses committed against information systems. Throughout these processes, the protection of our clients’ rights and the proper fulfillment of their legal obligations remain a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of up-to-date legal knowledge, technical awareness, and transparent communication, aiming to keep our clients regularly informed and to contribute to the proper and predictable conduct of IT law-related proceedings."
+  "footer": {
+    "aboutText": "All information and all intellectual property rights related to the logo on this website belong to Pera Legal & Partners.",
+    "menusTitle": "Main Menu",
+    "menuHome": "Home",
+    "menuTeam": "Our Team",
+    "menuPractice": "Practice Areas",
+    "menuCareer": "Career",
+    "menuBlog": "Blog",
+    "menuContact": "Contact",
+    "hoursTitle": "Working Hours",
+    "mon": "Monday: 09.00 – 18.00",
+    "tue": "Tuesday: 09.00 – 18.00",
+    "wed": "Wednesday: 09.00 – 18.00",
+    "thu": "Thursday: 09.00 – 18.00",
+    "fri": "Friday: 09.00 – 18.00",
+    "contactTitle": "Contact",
+    "phone": "0212 660 42 79",
+    "email": "info@peralegal.com.tr",
+    "web": "peralegal.com.tr",
+    "addressLine1": "Asmalimescit Neighborhood, Istiklal Street, Korsan Cikmazi",
+    "addressLine2": "No: 2/8 Beyoglu / Istanbul",
+    "copy": "© Copyright 2026 — Pera Legal & Partners All Rights Reserved"
   },
-  "aile": {
-    "title": "Family Law",
-    "desc": "Family law governs legal matters that directly affect individuals’ private lives and family relationships, including marriage, divorce, and the rights and obligations arising from family unity. Due to the sensitive and personal nature of such disputes, legal processes in this field require a careful and considerate approach.\nPera Legal & Partners adopts a lawful and diligent approach in family law matters, taking into account the rights and legitimate interests of the parties involved. Each case is assessed based on its specific circumstances, in line with applicable legislation and established case law.\nOur primary areas of practice within family law include divorce proceedings, custody and personal relationship arrangements, alimony and compensation claims, liquidation of matrimonial property regimes, parentage-related actions, and other disputes arising from family law. Throughout these processes, the protection of our clients’ legal rights and procedural safeguards remains a fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and confidentiality, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of family law proceedings."
+  "homeHero": {
+    "title": "Deep-rooted experience, reliable solutions"
   },
-  "ticaret": {
-    "title": "Commercial Law",
-    "desc": "Commercial law regulates the activities of commercial enterprises, the legal relationships between merchants, and the rights and obligations arising from commercial transactions. Given the dynamic nature of commercial life, legal processes in this field require careful handling in line with current legislation and established case law.\nPera Legal & Partners provides legal support in commercial law matters with the aim of ensuring that commercial activities are conducted in compliance with the law and that commercial disputes are managed effectively. Each matter is assessed by taking into account its specific circumstances, with a focus on identifying legal risks and determining appropriate legal solutions.\nOur primary areas of practice within commercial law include commercial contracts, transactions of commercial enterprises and merchants, unfair competition, commercial receivables, disputes between company shareholders, commercial litigation, and the resolution of commercial disputes. Throughout these processes, the protection of our clients’ commercial interests and procedural safeguards remains a fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and predictability, aiming to keep our clients regularly informed and to contribute to the proper conduct of commercial law proceedings."
+  "consultation": {
+    "c1": "Reliable Legal Consultancy",
+    "c2": "Legal Process Management",
+    "c3": "Strategic Legal Solutions"
   },
-  "iş": {
-    "title": "Labor Law",
-    "desc": "Employment law regulates the relationship between employers and employees, covering working conditions, rights and obligations, and disputes arising from employment contracts. As these regulations directly affect the interests of the parties, legal processes in this field require careful handling in accordance with applicable legislation.\nPera Legal & Partners provides diligent and law-compliant legal support in matters arising from both individual and collective employment relationships. Each case is assessed based on its specific circumstances, with the aim of ensuring that legal processes are conducted properly and effectively.\nOur primary areas of practice within employment law include the drafting and termination of employment contracts, employee and employer receivables, severance and notice compensation, reinstatement actions, occupational accidents and diseases, and employment-related disputes. Throughout these processes, the protection of our clients’ rights and obligations in line with the law remains a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of employment law proceedings."
+  "practice": {
+    "subtitle": "Pera Legal & Partners",
+    "title": "Our Practice Areas",
+    "desc": "We aim to provide the legal support our clients require by carefully considering the specific circumstances of each case and applying the appropriate legal methods at the right time. With our experienced team of attorneys, we conduct legal processes in a transparent, diligent, and law-compliant manner, focusing on delivering reliable and effective solutions.Across all our practice areas, we keep our clients informed throughout the legal process and place particular emphasis on anticipating legal risks and planning the necessary steps in a timely manner.",
+    "readMore": "Read More →"
   },
-  "gayri": {
-    "title": "Real Estate Law",
-    "desc": "Real estate law is a branch of law that regulates the acquisition, use, transfer of immovable properties, and disputes arising from these transactions. Since transactions involving immovable properties carry high economic value, it is crucial that the legal aspects are carefully protected in accordance with the legislation.\nPera Legal & Partners provides legal support to its clients within the scope of property law, aiming to ensure the continuity of legal security in real estate transactions and the effective management of disputes. In each case, the specific characteristics of the case are used together with the relevant land registry, zoning, and legislation.\nOur areas of expertise, which expand the scope of real estate law, include: real estate purchase and sale transactions, title deed transactions, rental relationships, differences related to condominium ownership and site management, real rights, partition lawsuits, expropriation, and unlawful seizures. Throughout the process, we prioritize the protection of our clients' rights and the minimization of legal risks.\nAs Pera Legal & Partners, we operate with policies of transparent communication regarding the law, professional care, and mastery of current legislation. We are committed to ensuring a healthy and forward-looking legal process by keeping our clients informed regularly throughout the proceedings."
+  "areas": {
+    "ceza": {
+      "title": "Criminal Law",
+      "desc": "Affecting fundamental rights and freedoms. Criminal investigations and prosecutions require strict compliance with procedural rules and legislation, as they may lead to serious legal consequences.\nPera Legal & Partners aims to provide careful and lawful legal assistance to its clients at every stage of criminal investigations and prosecutions. Defense strategies are assessed meticulously in light of the specific circumstances of each case, applicable legislation, and established case law.\nOur primary areas of practice within criminal law include investigation and prosecution procedures, statement and interrogation stages, detention and judicial control measures, criminal trials, enforcement law, and legal remedies. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains our fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the proper conduct of criminal proceedings."
+    },
+    "bilişim": {
+      "title": "IT & Cyber Law",
+      "desc": "Information Technology (IT) law governs legal relationships and disputes arising from activities conducted in digital environments and is closely connected to technology, data, and communication-related matters. Due to the rapid and evolving nature of this field, legal processes require careful handling in line with current legislation and practice.\nPera Legal & Partners adopts a diligent and law-compliant approach to matters related to digital platforms, data processing activities, and electronic transactions. Each case is assessed by considering both its legal and technical aspects, with the aim of accurately identifying and managing legal risks.\nOur primary areas of practice within IT law include personal data protection (KVKK), data security and data breaches, disputes arising from internet and social media use, electronic commerce, digital infringements of intellectual and industrial property rights, cybercrimes, and offenses committed against information systems. Throughout these processes, the protection of our clients’ rights and the proper fulfillment of their legal obligations remain a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of up-to-date legal knowledge, technical awareness, and transparent communication, aiming to keep our clients regularly informed and to contribute to the proper and predictable conduct of IT law-related proceedings."
+    },
+    "aile": {
+      "title": "Family Law",
+      "desc": "Family law governs legal matters that directly affect individuals’ private lives and family relationships, including marriage, divorce, and the rights and obligations arising from family unity. Due to the sensitive and personal nature of such disputes, legal processes in this field require a careful and considerate approach.\nPera Legal & Partners adopts a lawful and diligent approach in family law matters, taking into account the rights and legitimate interests of the parties involved. Each case is assessed based on its specific circumstances, in line with applicable legislation and established case law.\nOur primary areas of practice within family law include divorce proceedings, custody and personal relationship arrangements, alimony and compensation claims, liquidation of matrimonial property regimes, parentage-related actions, and other disputes arising from family law. Throughout these processes, the protection of our clients’ legal rights and procedural safeguards remains a fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and confidentiality, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of family law proceedings."
+    },
+    "ticaret": {
+      "title": "Commercial Law",
+      "desc": "Commercial law regulates the activities of commercial enterprises, the legal relationships between merchants, and the rights and obligations arising from commercial transactions. Given the dynamic nature of commercial life, legal processes in this field require careful handling in line with current legislation and established case law.\nPera Legal & Partners provides legal support in commercial law matters with the aim of ensuring that commercial activities are conducted in compliance with the law and that commercial disputes are managed effectively. Each matter is assessed by taking into account its specific circumstances, with a focus on identifying legal risks and determining appropriate legal solutions.\nOur primary areas of practice within commercial law include commercial contracts, transactions of commercial enterprises and merchants, unfair competition, commercial receivables, disputes between company shareholders, commercial litigation, and the resolution of commercial disputes. Throughout these processes, the protection of our clients’ commercial interests and procedural safeguards remains a fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and predictability, aiming to keep our clients regularly informed and to contribute to the proper conduct of commercial law proceedings."
+    },
+    "iş": {
+      "title": "Labor Law",
+      "desc": "Employment law regulates the relationship between employers and employees, covering working conditions, rights and obligations, and disputes arising from employment contracts. As these regulations directly affect the interests of the parties, legal processes in this field require careful handling in accordance with applicable legislation.\nPera Legal & Partners provides diligent and law-compliant legal support in matters arising from both individual and collective employment relationships. Each case is assessed based on its specific circumstances, with the aim of ensuring that legal processes are conducted properly and effectively.\nOur primary areas of practice within employment law include the drafting and termination of employment contracts, employee and employer receivables, severance and notice compensation, reinstatement actions, occupational accidents and diseases, and employment-related disputes. Throughout these processes, the protection of our clients’ rights and obligations in line with the law remains a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of employment law proceedings."
+    },
+    "gayri": {
+      "title": "Real Estate Law",
+      "desc": "Real estate law is a branch of law that regulates the acquisition, use, transfer of immovable properties, and disputes arising from these transactions. Since transactions involving immovable properties carry high economic value, it is crucial that the legal aspects are carefully protected in accordance with the legislation.\nPera Legal & Partners provides legal support to its clients within the scope of property law, aiming to ensure the continuity of legal security in real estate transactions and the effective management of disputes. In each case, the specific characteristics of the case are used together with the relevant land registry, zoning, and legislation.\nOur areas of expertise, which expand the scope of real estate law, include: real estate purchase and sale transactions, title deed transactions, rental relationships, differences related to condominium ownership and site management, real rights, partition lawsuits, expropriation, and unlawful seizures. Throughout the process, we prioritize the protection of our clients' rights and the minimization of legal risks.\nAs Pera Legal & Partners, we operate with policies of transparent communication regarding the law, professional care, and mastery of current legislation. We are committed to ensuring a healthy and forward-looking legal process by keeping our clients informed regularly throughout the proceedings."
+    },
+    "miras": {
+      "title": "Inheritance Law",
+      "desc": "Inheritance law governs the transfer of a person’s estate to legal and appointed heirs following their death, as well as the rights and obligations arising from this process. Due to the sensitive nature of inheritance matters, legal proceedings in this field require careful and considerate handling.\nPera Legal & Partners provides legal support in inheritance law matters with the aim of protecting the rights of heirs and resolving disputes arising from inheritance relationships in accordance with applicable legislation. Each matter is assessed comprehensively, taking into account its specific circumstances.\nOur primary areas of practice within inheritance law include distribution of inheritance, determination and administration of the estate, drafting and annulment of wills, disinheritance, reduction actions, renunciation of inheritance, dissolution of co-ownership (partition actions), and other disputes arising from inheritance law. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and confidentiality, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of inheritance law proceedings."
+    },
+    "idare": {
+      "title": "Administrative Law",
+      "desc": "Administrative law governs the activities of public authorities, administrative acts, and disputes arising from such acts. The lawfulness and judicial review of administrative actions are essential for the protection of individuals’ rights and freedoms.\nPera Legal & Partners adopts a diligent and law-compliant approach in administrative law matters, assessing disputes arising from administrative acts and actions in accordance with applicable legislation and established case law. Each matter is evaluated by considering the legal basis, procedure, and consequences of the administrative act in light of the specific circumstances of the case.\nOur primary areas of practice within administrative law include annulment of administrative acts, full remedy actions, disputes related to public procurement processes, disciplinary proceedings, zoning and permit matters, administrative actions concerning public officials, and administrative sanctions. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains a fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the proper and predictable conduct of administrative law proceedings."
+    },
+    "saglık": {
+      "title": "Health Law",
+      "desc": "Health law governs the provision of healthcare services, the rights and obligations of patients and healthcare professionals, and disputes arising from healthcare practices. Given the nature and potential consequences of medical interventions, legal processes in this field require careful handling in accordance with applicable legislation.\nPera Legal & Partners adopts a diligent and law-compliant approach in health law matters, assessing legal processes arising from healthcare services in line with relevant legislation and established case law. Each matter is evaluated by considering both its legal and medical aspects.\nOur primary areas of practice within health law include liability arising from medical interventions, patient rights, legal responsibility of physicians and healthcare professionals, disputes involving healthcare institutions, malpractice allegations, disciplinary proceedings, and disputes arising from healthcare legislation. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, confidentiality, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of health law proceedings."
+    },
+    "icra": {
+      "title": "Enforcement & Bankruptcy Law",
+      "desc": "Enforcement and bankruptcy law governs the collection of receivables, restructuring of debts, and the resolution of disputes arising from debt relationships through compulsory enforcement mechanisms. As these processes may have significant financial and legal consequences for both creditors and debtors, they must be handled carefully and in compliance with applicable legislation.\nPera Legal & Partners provides legal support in enforcement and bankruptcy law matters with the aim of managing receivables and debt relationships within the legal framework. Each matter is assessed by taking into account its specific circumstances, with a focus on ensuring that enforcement processes are conducted effectively.\nOur primary areas of practice within enforcement and bankruptcy law include non-judicial and judicial enforcement proceedings, attachment procedures, bankruptcy processes, concordat proceedings, objections to debt and enforcement actions, negative declaratory actions, restitution claims, and other disputes arising from enforcement law. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains a fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the proper and predictable conduct of enforcement and bankruptcy proceedings."
+    },
+    "sozlesme": {
+      "title": "Contract Law",
+      "desc": "Contract law regulates the rights and obligations arising from agreements entered into between individuals and legal entities. Legal risks that may arise during the drafting, interpretation, and performance of contracts can lead to significant consequences for the parties involved.\nPera Legal & Partners provides legal support in contract law matters with the aim of ensuring that contracts are drafted in a lawful, clear, and predictable manner and that disputes arising from contractual relationships are managed effectively. Each matter is assessed comprehensively, taking into account the nature of the contract and the legal positions of the parties.\nOur primary areas of practice within contract law include the drafting and review of commercial and ordinary contracts, contract negotiations, breach and termination of contracts, compensation claims, disputes arising from contracts, and contract-based litigation. Throughout these processes, the protection of our clients’ rights and the proper fulfillment of contractual obligations remain a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of contract law proceedings"
+    },
+    "vatan": {
+      "title": "Citizenship Law",
+      "desc": "Citizenship law governs the legal bond between individuals and a state, as well as the rights and obligations arising from such status. Matters relating to the acquisition, loss, and revocation of citizenship are carried out within the framework of administrative procedures and applicable legislation.\nPera Legal & Partners provides legal support in citizenship law matters with the aim of ensuring that application processes are conducted in compliance with the law and that disputes arising from administrative decisions are managed effectively. Each matter is assessed by considering the specific circumstances of the case together with relevant administrative regulations.\nOur primary areas of practice within citizenship law include acquisition of Turkish citizenship, exceptional citizenship applications, citizenship through marriage, loss and cancellation of citizenship, administrative application and objection procedures, and administrative litigation arising from citizenship-related matters. Throughout these processes, the protection of our clients’ rights and the lawful conduct of procedures remain a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of citizenship law proceedings"
+    },
+    "sigorta": {
+      "title": "Insurance Law",
+      "desc": "Insurance law governs the rights and obligations arising from insurance contracts and regulates the legal relationships between insurers, policyholders, and insured parties. As insurance disputes often involve technical and financial aspects, legal processes in this field must be handled carefully and in compliance with applicable legislation.\nPera Legal & Partners provides legal support in insurance law matters with the aim of assessing insurance contracts, determining the scope of coverage, and resolving disputes arising from insurance relationships. Each matter is evaluated by taking into account the provisions of the insurance contract and the specific circumstances of the case.\nOur primary areas of practice within insurance law include disputes arising from insurance contracts, claims for damages and compensation, recourse actions, lawsuits against insurance companies, compulsory insurance schemes, property and liability insurance, and insurance arbitration proceedings. Throughout these processes, the protection of our clients’ rights and the lawful assessment of claims remain a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of insurance law proceedings."
+    }
   },
-  "miras": {
-    "title": "Inheritance Law",
-    "desc": "Inheritance law governs the transfer of a person’s estate to legal and appointed heirs following their death, as well as the rights and obligations arising from this process. Due to the sensitive nature of inheritance matters, legal proceedings in this field require careful and considerate handling.\nPera Legal & Partners provides legal support in inheritance law matters with the aim of protecting the rights of heirs and resolving disputes arising from inheritance relationships in accordance with applicable legislation. Each matter is assessed comprehensively, taking into account its specific circumstances.\nOur primary areas of practice within inheritance law include distribution of inheritance, determination and administration of the estate, drafting and annulment of wills, disinheritance, reduction actions, renunciation of inheritance, dissolution of co-ownership (partition actions), and other disputes arising from inheritance law. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and confidentiality, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of inheritance law proceedings."
+  "teamPreview": {
+    "subtitle": "FOR YOUR LEGAL SOLUTIONS",
+    "title": "Our Team",
+    "desc": "The attorneys at Pera Legal & Partners consist of legal professionals who are specialized in their respective practice areas and distinguished by their professional experience and up-to-date knowledge of legal developments. Our team is committed to providing the legal support our clients require in a transparent, diligent, and law-compliant manner.",
+    "desc2": "In every matter, our attorneys act in accordance with current legislation and established case law, aiming to ensure that legal processes are conducted effectively while keeping clients informed throughout each stage of the process.",
+    "button": "Our Team"
   },
-  "idare": {
-    "title": "Administrative Law",
-    "desc": "Administrative law governs the activities of public authorities, administrative acts, and disputes arising from such acts. The lawfulness and judicial review of administrative actions are essential for the protection of individuals’ rights and freedoms.\nPera Legal & Partners adopts a diligent and law-compliant approach in administrative law matters, assessing disputes arising from administrative acts and actions in accordance with applicable legislation and established case law. Each matter is evaluated by considering the legal basis, procedure, and consequences of the administrative act in light of the specific circumstances of the case.\nOur primary areas of practice within administrative law include annulment of administrative acts, full remedy actions, disputes related to public procurement processes, disciplinary proceedings, zoning and permit matters, administrative actions concerning public officials, and administrative sanctions. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains a fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the proper and predictable conduct of administrative law proceedings."
+  "about": {
+    "heroTitle": "About Us",
+    "heroSubtitle": "Pera Legal & Partners — Trust, Ethics and Solution-Oriented Legal Services",
+    "whoWeAreTitle": "Who Are We?",
+    "whoWeAreP1": "Pera Legal & Partners is an Istanbul-based law firm located in the Beyoğlu / Taksim area, providing legal consultancy and attorney services to both domestic and foreign individuals and legal entities. With a team of attorneys specialized in various fields of law, the firm aims to offer comprehensive legal support covering both commercial activities and individual legal matters.",
+    "whoWeAreP3": "The firm primarily advises clients in areas such as corporate law, commercial law, employment law, and contract law, while also representing clients in dispute resolution processes, including litigation and alternative dispute resolution mechanisms. In every matter, we adopt a careful and predictable approach in line with applicable legislation and established case law, taking into account the specific circumstances of each case.",
+    "whoWeAreP2": "Pera Legal & Partners acts in accordance with the principles of transparency and professional diligence at every stage of the legal process, with the aim of delivering reliable and sustainable legal solutions to its clients.",
+    "missionTitle": "Our Mission",
+    "missionText": "To provide professional, transparent and solution-oriented legal consultancy that enables clients to make the right decisions in their legal processes.",
+    "visionTitle": "Our Vision",
+    "visionText": "To be a reliable, ethical and innovative legal solution partner on both national and international platforms.",
+    "visionBlockTitle": "Our Foundation and Vision",
+    "visionBlockP1": "Pera Legal & Partners was founded by Attorney Cenk Akdoğan with the aim of providing careful, predictable, and effective legal solutions to the legal needs of both domestic and foreign clients, in accordance with current legislation and professional ethical standards. From the beginning, the firm has adopted a professional approach anchored in transparency, diligence, and strong communication throughout all legal processes.",
+    "visionBlockP2": "The firm aims to accurately assess legal risks in every matter and to keep clients clearly informed at each stage of their legal procedures. Our objective is to contribute to the proper and sustainable management of legal disputes and consultancy matters in accordance with the law.",
+    "visionBlockP3": "Since its establishment, Pera Legal & Partners has consistently upheld its commitment to professional ethics, a reliable working methodology, and a collaborative team culture. By supporting the continuous professional development of its attorneys and following current legal practices closely, the firm maintains a vision of delivering high-quality legal services in line with the principles of the rule of law, justice, and social responsibility.",
+    "valuesTitle": "Our Values",
+    "value1Title": "Trust and Transparency",
+    "value1Text": "We prioritize clear, understandable, and consistent communication with our clients throughout legal processes. By providing regular updates at every stage, we aim to share legal risks and available options in a transparent manner.",
+    "value2Title": "Professional Diligence and Ethical Approach",
+    "value2Text": "In all our work, we act in strict compliance with professional rules, ethical principles, and the rule of law. Each matter is handled with care, taking into account the specific circumstances of the case and applicable legislation.",
+    "value3Title": "Expertise and Continuous Development",
+    "value3Text": "We support the professional development of our attorneys and closely follow current legal developments. By continuously updating our knowledge in line with evolving legislation and practice, we aim to deliver high-quality legal services to our clients."
   },
-  "saglık": {
-    "title": "Health Law",
-    "desc": "Health law governs the provision of healthcare services, the rights and obligations of patients and healthcare professionals, and disputes arising from healthcare practices. Given the nature and potential consequences of medical interventions, legal processes in this field require careful handling in accordance with applicable legislation.\nPera Legal & Partners adopts a diligent and law-compliant approach in health law matters, assessing legal processes arising from healthcare services in line with relevant legislation and established case law. Each matter is evaluated by considering both its legal and medical aspects.\nOur primary areas of practice within health law include liability arising from medical interventions, patient rights, legal responsibility of physicians and healthcare professionals, disputes involving healthcare institutions, malpractice allegations, disciplinary proceedings, and disputes arising from healthcare legislation. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, confidentiality, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of health law proceedings."
+  "practicePage": {
+    "hero": "Practice Areas",
+    "subtitle": "Pera Legal & Partners Law Firm",
+    "title": "Practice Areas",
+    "desc": "Here are the main areas in which our expert lawyers provide legal services according to client needs:"
   },
-  "icra": {
-    "title": "Enforcement & Bankruptcy Law",
-    "desc": "Enforcement and bankruptcy law governs the collection of receivables, restructuring of debts, and the resolution of disputes arising from debt relationships through compulsory enforcement mechanisms. As these processes may have significant financial and legal consequences for both creditors and debtors, they must be handled carefully and in compliance with applicable legislation.\nPera Legal & Partners provides legal support in enforcement and bankruptcy law matters with the aim of managing receivables and debt relationships within the legal framework. Each matter is assessed by taking into account its specific circumstances, with a focus on ensuring that enforcement processes are conducted effectively.\nOur primary areas of practice within enforcement and bankruptcy law include non-judicial and judicial enforcement proceedings, attachment procedures, bankruptcy processes, concordat proceedings, objections to debt and enforcement actions, negative declaratory actions, restitution claims, and other disputes arising from enforcement law. Throughout these processes, the protection of our clients’ rights and procedural safeguards remains a fundamental priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the proper and predictable conduct of enforcement and bankruptcy proceedings."
-  },
-  "sozlesme": {
-    "title": "Contract Law",
-    "desc": "Contract law regulates the rights and obligations arising from agreements entered into between individuals and legal entities. Legal risks that may arise during the drafting, interpretation, and performance of contracts can lead to significant consequences for the parties involved.\nPera Legal & Partners provides legal support in contract law matters with the aim of ensuring that contracts are drafted in a lawful, clear, and predictable manner and that disputes arising from contractual relationships are managed effectively. Each matter is assessed comprehensively, taking into account the nature of the contract and the legal positions of the parties.\nOur primary areas of practice within contract law include the drafting and review of commercial and ordinary contracts, contract negotiations, breach and termination of contracts, compensation claims, disputes arising from contracts, and contract-based litigation. Throughout these processes, the protection of our clients’ rights and the proper fulfillment of contractual obligations remain a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of contract law proceedings"
-  },
-  "vatan": {
-    "title": "Citizenship Law",
-    "desc": "Citizenship law governs the legal bond between individuals and a state, as well as the rights and obligations arising from such status. Matters relating to the acquisition, loss, and revocation of citizenship are carried out within the framework of administrative procedures and applicable legislation.\nPera Legal & Partners provides legal support in citizenship law matters with the aim of ensuring that application processes are conducted in compliance with the law and that disputes arising from administrative decisions are managed effectively. Each matter is assessed by considering the specific circumstances of the case together with relevant administrative regulations.\nOur primary areas of practice within citizenship law include acquisition of Turkish citizenship, exceptional citizenship applications, citizenship through marriage, loss and cancellation of citizenship, administrative application and objection procedures, and administrative litigation arising from citizenship-related matters. Throughout these processes, the protection of our clients’ rights and the lawful conduct of procedures remain a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of citizenship law proceedings"
-  },
-  "sigorta": {
-    "title": "Insurance Law",
-    "desc": "Insurance law governs the rights and obligations arising from insurance contracts and regulates the legal relationships between insurers, policyholders, and insured parties. As insurance disputes often involve technical and financial aspects, legal processes in this field must be handled carefully and in compliance with applicable legislation.\nPera Legal & Partners provides legal support in insurance law matters with the aim of assessing insurance contracts, determining the scope of coverage, and resolving disputes arising from insurance relationships. Each matter is evaluated by taking into account the provisions of the insurance contract and the specific circumstances of the case.\nOur primary areas of practice within insurance law include disputes arising from insurance contracts, claims for damages and compensation, recourse actions, lawsuits against insurance companies, compulsory insurance schemes, property and liability insurance, and insurance arbitration proceedings. Throughout these processes, the protection of our clients’ rights and the lawful assessment of claims remain a key priority.\nAt Pera Legal & Partners, we act in accordance with the principles of transparent communication, professional diligence, and up-to-date legal knowledge, aiming to keep our clients regularly informed and to contribute to the careful and predictable conduct of insurance law proceedings."
-  }
-
-},
- "teamPreview": {
-  "subtitle": "FOR YOUR LEGAL SOLUTIONS",
-  "title": "Our Team",
-  "desc": "The attorneys at Pera Legal & Partners consist of legal professionals who are specialized in their respective practice areas and distinguished by their professional experience and up-to-date knowledge of legal developments. Our team is committed to providing the legal support our clients require in a transparent, diligent, and law-compliant manner.",
-  "desc2":"In every matter, our attorneys act in accordance with current legislation and established case law, aiming to ensure that legal processes are conducted effectively while keeping clients informed throughout each stage of the process.",
-  "button": "Our Team"
-},
-"about": {
-  "heroTitle": "About Us",
-  "heroSubtitle": "Pera Legal & Partners — Trust, Ethics and Solution-Oriented Legal Services",
-
-  "whoWeAreTitle": "Who Are We?",
-  "whoWeAreP1": "Pera Legal & Partners is an Istanbul-based law firm located in the Beyoğlu / Taksim area, providing legal consultancy and attorney services to both domestic and foreign individuals and legal entities. With a team of attorneys specialized in various fields of law, the firm aims to offer comprehensive legal support covering both commercial activities and individual legal matters."
-,  "whoWeAreP3": "The firm primarily advises clients in areas such as corporate law, commercial law, employment law, and contract law, while also representing clients in dispute resolution processes, including litigation and alternative dispute resolution mechanisms. In every matter, we adopt a careful and predictable approach in line with applicable legislation and established case law, taking into account the specific circumstances of each case.",
-  "whoWeAreP2": "Pera Legal & Partners acts in accordance with the principles of transparency and professional diligence at every stage of the legal process, with the aim of delivering reliable and sustainable legal solutions to its clients.",
-
-  "missionTitle": "Our Mission",
-  "missionText": "To provide professional, transparent and solution-oriented legal consultancy that enables clients to make the right decisions in their legal processes.",
-
-  "visionTitle": "Our Vision",
-  "visionText": "To be a reliable, ethical and innovative legal solution partner on both national and international platforms.",
-  "visionBlockTitle": "Our Foundation and Vision",
-  "visionBlockP1": "Pera Legal & Partners was founded by Attorney Cenk Akdoğan with the aim of providing careful, predictable, and effective legal solutions to the legal needs of both domestic and foreign clients, in accordance with current legislation and professional ethical standards. From the beginning, the firm has adopted a professional approach anchored in transparency, diligence, and strong communication throughout all legal processes.",
-  "visionBlockP2": "The firm aims to accurately assess legal risks in every matter and to keep clients clearly informed at each stage of their legal procedures. Our objective is to contribute to the proper and sustainable management of legal disputes and consultancy matters in accordance with the law.",
-  "visionBlockP3": "Since its establishment, Pera Legal & Partners has consistently upheld its commitment to professional ethics, a reliable working methodology, and a collaborative team culture. By supporting the continuous professional development of its attorneys and following current legal practices closely, the firm maintains a vision of delivering high-quality legal services in line with the principles of the rule of law, justice, and social responsibility.",
-  "valuesTitle": "Our Values",
-
-  "value1Title": "Trust and Transparency",
-  "value1Text": "We prioritize clear, understandable, and consistent communication with our clients throughout legal processes. By providing regular updates at every stage, we aim to share legal risks and available options in a transparent manner.",
-
-  "value2Title": "Professional Diligence and Ethical Approach",
-  "value2Text": "In all our work, we act in strict compliance with professional rules, ethical principles, and the rule of law. Each matter is handled with care, taking into account the specific circumstances of the case and applicable legislation.",
-
-  "value3Title": "Expertise and Continuous Development",
-  "value3Text": "We support the professional development of our attorneys and closely follow current legal developments. By continuously updating our knowledge in line with evolving legislation and practice, we aim to deliver high-quality legal services to our clients."
-
-},
-"practicePage": {
-  "hero": "Practice Areas",
-  "subtitle": "Pera Legal & Partners Law Firm",
-  "title": "Practice Areas",
-  "desc": "Here are the main areas in which our expert lawyers provide legal services according to client needs:"
-},
- "career": {
+  "career": {
     "hero": "Career",
     "joinTitle": "JOIN US",
     "p1": "As Pera Legal & Partners Law Firm, we are seeking dynamic and talented team members for the positions of <strong>lawyer, trainee lawyer</strong> and <strong>legal consultant</strong> in line with our future goals.",
@@ -185,33 +165,25 @@
     "popupText": "Our team will contact you as soon as possible.",
     "ok": "OK",
     "error": "An error occurred, please try again.",
-      "file": "Choose File"
-
+    "file": "Choose File"
   },
- 
-"contact": {
-     "hero": "Contact",
-  "subtitle": "FOR DETAILED INFORMATION",
-  "title": "Get in Touch With Us",
-  "desc": "You can contact us easily using the information below to learn more about our services and working conditions.",
-
-  "addressTitle": "Address",
-  "address": "Asmalımescit Neighborhood, Istiklal Street, Korsan Çıkmazı,<br>No: 2/8 Beyoğlu / Istanbul",
-
-  "phoneTitle": "Phone",
-  "phone": "+90 (212) 660 42 79",
-
-  "emailTitle": "Email",
-  "email": "info@peralegal.com.tr",
-
-  "hoursTitle": "Working Hours",
-  "hours": "Monday – Friday: 09:00 – 18:00"
-},
-
+  "contact": {
+    "hero": "Contact",
+    "subtitle": "FOR DETAILED INFORMATION",
+    "title": "Get in Touch With Us",
+    "desc": "You can contact us easily using the information below to learn more about our services and working conditions.",
+    "addressTitle": "Address",
+    "address": "Asmalımescit Neighborhood, Istiklal Street, Korsan Çıkmazı,<br>No: 2/8 Beyoğlu / Istanbul",
+    "phoneTitle": "Phone",
+    "phone": "+90 (212) 660 42 79",
+    "emailTitle": "Email",
+    "email": "info@peralegal.com.tr",
+    "hoursTitle": "Working Hours",
+    "hours": "Monday – Friday: 09:00 – 18:00"
+  },
   "toolsPage": {
     "heroTitle": "Calculation Tools",
     "heroSubtitle": "Calculate compensation, fees and attorney costs quickly and reliably.",
-
     "carLossTitle": "Vehicle Value Loss Calculator",
     "carValue": "Market Value (₺):",
     "carValuePlaceholder": "Enter vehicle value",
@@ -227,179 +199,139 @@
     "repeatDamage": "Has the same area been damaged before?",
     "yes": "Yes",
     "no": "No",
-
     "attorneyTitle": "Attorney Fee Calculator",
     "courtType": "Select Court Type:",
     "amount": "Enter Amount (₺):",
     "amountPlaceholder": "Enter amount",
-
     "noticeTitle": "Notice Compensation Calculator",
     "grossSalary": "Enter Gross Salary:",
     "grossSalaryPlaceholder": "Enter gross salary",
     "startDate": "Start Date:",
     "endDate": "End Date:",
-
     "severanceTitle": "Severance Pay Calculator",
     "severanceStartDate": "Start Date:",
     "severanceEndDate": "End Date:",
     "severanceGross": "Gross Salary (₺):",
     "severanceGrossPlaceholder": "Enter gross salary",
-
     "tapuTitle": "Title Deed Fee Calculator",
     "tapuType": "Calculation Type:",
     "tapuOption1": "Calculate Fee by Sale Price",
     "tapuOption2": "Calculate Sale Price by Fee",
     "tapuPrice": "Price Information (₺):",
     "tapuPricePlaceholder": "Enter price",
-
     "islahTitle": "Islah Fee Calculator",
     "islahAmount": "Increased Amount (₺):",
     "islahAmountPlaceholder": "Enter amount",
-
     "calculate": "CALCULATE",
     "clear": "CLEAR",
-
     "modalTitle": "Calculation",
     "modalText": "The calculation module will be activated very soon. The system is currently under development.",
     "ok": "OK"
   },
   "popup": {
-  "title": "e-Collection Module",
-  "desc": "The e-collection system will be activated very soon. It is currently under development.",
-  "close": "Close"
-}
-
-,
-"team": {
-  "halil": {
-    "name": "Halil Cenk Akdoğan",
-    "title": "Attorney at Law",
-    "about": "He graduated from Eastern Mediterranean University in 2004. Following his graduation, he first practiced law in İzmir and has been working independently in his own office in Istanbul since 2012. Throughout his career, he has achieved significant success especially in administrative law, family law, commercial law, corporate law, and enforcement & bankruptcy law. His arguments and legal opinions in many cases he won have been adopted by high courts and turned into precedent-setting decisions."
+    "title": "e-Collection Module",
+    "desc": "The e-collection system will be activated very soon. It is currently under development.",
+    "close": "Close"
   },
-
-  "muhammed": {
-    "name": "Muhammed Murat Kaplan",
-    "title": "Attorney at Law",
-    "about": "After completing his legal education at Istanbul Beykent University in 2021, he began his legal internship. Immediately after his internship, he continued his practice independently. He plays an active role particularly in administrative law, civil society law, corporate law, and enforcement & bankruptcy law. He specializes in resolving disputes arising from administrative acts, ensuring compliance for NGOs such as associations and foundations, overseeing business transfers, mergers and liquidations, and the rapid and effective collection of commercial receivables."
+  "team": {
+    "halil": {
+      "name": "Halil Cenk Akdoğan",
+      "title": "Attorney at Law",
+      "about": "He graduated from Eastern Mediterranean University in 2004. Following his graduation, he first practiced law in İzmir and has been working independently in his own office in Istanbul since 2012. Throughout his career, he has achieved significant success especially in administrative law, family law, commercial law, corporate law, and enforcement & bankruptcy law. His arguments and legal opinions in many cases he won have been adopted by high courts and turned into precedent-setting decisions."
+    },
+    "muhammed": {
+      "name": "Muhammed Murat Kaplan",
+      "title": "Attorney at Law",
+      "about": "After completing his legal education at Istanbul Beykent University in 2021, he began his legal internship. Immediately after his internship, he continued his practice independently. He plays an active role particularly in administrative law, civil society law, corporate law, and enforcement & bankruptcy law. He specializes in resolving disputes arising from administrative acts, ensuring compliance for NGOs such as associations and foundations, overseeing business transfers, mergers and liquidations, and the rapid and effective collection of commercial receivables."
+    },
+    "recai": {
+      "name": "Recai Aytaç Akbay",
+      "title": "Attorney at Law",
+      "about": "He graduated from Ankara University Faculty of Law in 1982 and began his judicial career as a judge in 1986. During his tenure, he presided over various courts including civil courts of first instance, commercial courts, civil courts of peace, enforcement courts, and high criminal courts. After retiring in 2022 following more than 30 years of judicial service, he began practicing as an attorney, offering clients practical and solution-oriented legal services by combining his long-standing judicial experience with his legal practice."
+    },
+    "tolga": {
+      "name": "Tolga Erkoçkar",
+      "title": "Atty. & Mediator",
+      "about": "He completed his secondary education at Mimar Sinan High School and then graduated from Marmara University Faculty of Law. In 2014, he also earned a degree from Marmara University's Faculty of Communication, Department of Journalism. After establishing his own law office, he completed his LL.M. at Kadir Has University. He was later accepted into Galatasaray University's PhD program, where he has completed the coursework and proficiency stages, continuing his dissertation titled 'Employer’s Obligation of Non-Discrimination and Equal Pay for Equal Work'. He provides consultancy mainly in labor law, contract law, and commercial law. He speaks professional-level English and has one published book and one peer-reviewed article."
+    },
+    "ayca": {
+      "name": "Suzan Ayça Nur Uğur",
+      "title": "Attorney at Law",
+      "about": "She completed her legal education at Girne American University in 2020. During her studies, she participated in voluntary internships in Ankara, Cyprus, and Germany. After completing her legal internship, she worked at a leading law firm in Türkiye. During this time, she represented administrative authorities in many important public cases. She also gained experience and specialized in administrative law, criminal law, as well as enforcement and bankruptcy law, civil law, corporate law, and commercial law, aiming to resolve all disputes practically and positively."
+    },
+    "cansu": {
+      "name": "Cansu Işıksal",
+      "title": "Atty. & Mediator",
+      "about": "She completed her secondary education at Mimar Sinan High School and later graduated from Marmara University Faculty of Law. She also holds a degree from Marmara University Faculty of Communication, Department of Journalism. After completing her legal internship, she founded her own practice and earned her LL.M. from Kadir Has University. She specializes in labor law, contract law, and commercial law and provides consultancy in various areas of private law."
+    },
+    "muge": {
+      "name": "Müge Yavuz",
+      "title": "Attorney at Law",
+      "about": "Attorney Müge Yavuz began her education at V.K.V. Koç Private Primary School and continued at Istanbul Saint Joseph French High School. During her high school years, she gained an international perspective by taking various courses at Paris-Sorbonne University. She successfully completed her studies at Istanbul Bilgi University Faculty of Law, having achieved high success in the university entrance exam.Following her experience at leading law firms in Turkey, she founded Müge Yavuz Law Office in 2022. She provides legal support to local and international clients in many areas of law, primarily Criminal Law, Information Technology Law, and Corporate Law. Fluent in English and French, she also served as the Secretary General of the European Union Commission and the Deputy Secretary General of the Maritime Law Commission of the Istanbul Bar Association between 2021-2022, contributing to numerous important projects."
+    },
+    "hatice": {
+      "name": "Hatice Yazar",
+      "title": "Attorney at Law",
+      "about": "She graduated from Marmara University Faculty of Law in 2015. For over seven years, she has provided legal consultancy to her clients in criminal law, enforcement & bankruptcy law, family law, and labor law."
+    },
+    "furkan": {
+      "name": "Furkan Uslu",
+      "title": "Attorney at Law",
+      "about": "He graduated from Istanbul Beykent University in 2024. He is currently continuing his compulsory legal internship, gaining experience in practical areas of the profession."
+    },
+    "bora": {
+      "name": "Bora Batuhan Toker",
+      "title": "Trainee Lawyer",
+      "about": "He graduated from Şişli Terakki High School. He completed her undergraduate education at Istanbul Bilgi University. Subsequently, he began her legal internship and continues to gain experience in the practical areas of the profession as a trainee lawyer at Pera Legal & Partners."
+    },
+    "selin": {
+      "name": "Selin Alçık",
+      "title": "Attorney at Law",
+      "about": "She was admitted to Maltepe University Faculty of Law with a scholarship. After graduating, she completed her legal internship in 2024 at one of the leading law firms in Turkey. She speaks advanced English and has specialized in administrative law, enforcement & bankruptcy law, civil law, and corporate law."
+    },
+    "hayrun": {
+      "name": "Hayrunnisa Neslihan Varlı",
+      "title": "Attorney at Law",
+      "about": "She completed her undergraduate and graduate studies at Istanbul Beykent University Faculty of Law. With an academic background in private law, she focused particularly on international trade law, transport law, and contract law. She currently resides in Germany and actively practices law in both Turkey and Germany, offering consultancy in private law, international trade law, and immigration law."
+    },
+    "ata": {
+      "name": "Ata Taşman",
+      "title": "Legal Consultant",
+      "about": "After graduating from Terakki Foundation Schools, he was admitted to the University of Exeter Faculty of Law in the United Kingdom and graduated in 2023. He gained experience in various companies and his own ventures and also served in multiple United Nations organizations. He currently works as a legal consultant, providing comprehensive and solution-oriented services in international contracts and cross-border commercial relations."
+    }
   },
-
-  "recai": {
-    "name": "Recai Aytaç Akbay",
-    "title": "Attorney at Law",
-    "about": "He graduated from Ankara University Faculty of Law in 1982 and began his judicial career as a judge in 1986. During his tenure, he presided over various courts including civil courts of first instance, commercial courts, civil courts of peace, enforcement courts, and high criminal courts. After retiring in 2022 following more than 30 years of judicial service, he began practicing as an attorney, offering clients practical and solution-oriented legal services by combining his long-standing judicial experience with his legal practice."
+  "teamPage": {
+    "aboutTitle": "About",
+    "hero": "Our Team",
+    "subtitle": "Pera Legal & Partners",
+    "title": "Our Expert Staff",
+    "desc": "With our experienced and solution-oriented attorneys who are experts in their fields, we offer effective, reliable, and professional legal support in all areas of law."
   },
-
-  "tolga": {
-    "name": "Tolga Erkoçkar",
-    "title": "Atty. & Mediator",
-    "about": "He completed his secondary education at Mimar Sinan High School and then graduated from Marmara University Faculty of Law. In 2014, he also earned a degree from Marmara University's Faculty of Communication, Department of Journalism. After establishing his own law office, he completed his LL.M. at Kadir Has University. He was later accepted into Galatasaray University's PhD program, where he has completed the coursework and proficiency stages, continuing his dissertation titled 'Employer’s Obligation of Non-Discrimination and Equal Pay for Equal Work'. He provides consultancy mainly in labor law, contract law, and commercial law. He speaks professional-level English and has one published book and one peer-reviewed article."
-  },
-   "ayca": {
-    "name": "Suzan Ayça Nur Uğur",
-    "title": "Attorney at Law",
-    "about": "She completed her legal education at Girne American University in 2020. During her studies, she participated in voluntary internships in Ankara, Cyprus, and Germany. After completing her legal internship, she worked at a leading law firm in Türkiye. During this time, she represented administrative authorities in many important public cases. She also gained experience and specialized in administrative law, criminal law, as well as enforcement and bankruptcy law, civil law, corporate law, and commercial law, aiming to resolve all disputes practically and positively."
-  },
-
-  "cansu": {
-    "name": "Cansu Işıksal",
-    "title": "Atty. & Mediator",
-    "about": "She completed her secondary education at Mimar Sinan High School and later graduated from Marmara University Faculty of Law. She also holds a degree from Marmara University Faculty of Communication, Department of Journalism. After completing her legal internship, she founded her own practice and earned her LL.M. from Kadir Has University. She specializes in labor law, contract law, and commercial law and provides consultancy in various areas of private law."
-  },
-
-  "muge": {
-    "name": "Müge Yavuz",
-    "title": "Attorney at Law",
-    "about": "Attorney Müge Yavuz began her education at V.K.V. Koç Private Primary School and continued at Istanbul Saint Joseph French High School. During her high school years, she gained an international perspective by taking various courses at Paris-Sorbonne University. She successfully completed her studies at Istanbul Bilgi University Faculty of Law, having achieved high success in the university entrance exam.Following her experience at leading law firms in Turkey, she founded Müge Yavuz Law Office in 2022. She provides legal support to local and international clients in many areas of law, primarily Criminal Law, Information Technology Law, and Corporate Law. Fluent in English and French, she also served as the Secretary General of the European Union Commission and the Deputy Secretary General of the Maritime Law Commission of the Istanbul Bar Association between 2021-2022, contributing to numerous important projects."
-  },
-
-  "hatice": {
-    "name": "Hatice Yazar",
-    "title": "Attorney at Law",
-    "about": "She graduated from Marmara University Faculty of Law in 2015. For over seven years, she has provided legal consultancy to her clients in criminal law, enforcement & bankruptcy law, family law, and labor law."
-  },
-
-  "furkan": {
-    "name": "Furkan Uslu",
-    "title": "Attorney at Law",
-    "about": "He graduated from Istanbul Beykent University in 2024. He is currently continuing his compulsory legal internship, gaining experience in practical areas of the profession."
-  },
-  "bora": {
-    "name": "Bora Batuhan Toker",
-    "title": "Trainee Lawyer",
-    "about": "He graduated from Şişli Terakki High School. He completed her undergraduate education at Istanbul Bilgi University. Subsequently, he began her legal internship and continues to gain experience in the practical areas of the profession as a trainee lawyer at Pera Legal & Partners."
-  },
-
-  "selin": {
-    "name": "Selin Alçık",
-    "title": "Attorney at Law",
-    "about": "She was admitted to Maltepe University Faculty of Law with a scholarship. After graduating, she completed her legal internship in 2024 at one of the leading law firms in Turkey. She speaks advanced English and has specialized in administrative law, enforcement & bankruptcy law, civil law, and corporate law."
-  },
-
-  "hayrun": {
-    "name": "Hayrunnisa Neslihan Varlı",
-    "title": "Attorney at Law",
-    "about": "She completed her undergraduate and graduate studies at Istanbul Beykent University Faculty of Law. With an academic background in private law, she focused particularly on international trade law, transport law, and contract law. She currently resides in Germany and actively practices law in both Turkey and Germany, offering consultancy in private law, international trade law, and immigration law."
-  },
-
-  
-
-  "ata": {
-    "name": "Ata Taşman",
-    "title": "Legal Consultant",
-    "about": "After graduating from Terakki Foundation Schools, he was admitted to the University of Exeter Faculty of Law in the United Kingdom and graduated in 2023. He gained experience in various companies and his own ventures and also served in multiple United Nations organizations. He currently works as a legal consultant, providing comprehensive and solution-oriented services in international contracts and cross-border commercial relations."
+  "blog": {
+    "heroTitle": "Blog",
+    "sectionTitle": "Our Blog Posts",
+    "readMore": "Read More",
+    "categories": "Categories",
+    "months": {
+      "Ekim": "October",
+      "Eylül": "September"
+    },
+    "categoriesList": {
+      "ceza": "Criminal Law",
+      "bilişim": "IT Law",
+      "aile": "Family Law",
+      "ticaret": "Commercial Law",
+      "iş": "Labour Law",
+      "gayri": "Real Estate Law",
+      "miras": "Inheritance Law",
+      "idare": "Administrative Law",
+      "saglık": "Health Law",
+      "icra": "Enforcement & Bankruptcy Law",
+      "sozlesme": "Contracts Law",
+      "vatan": "Citizenship Law",
+      "sigorta": "Insurance Law"
+    },
+    "comingSoonTitle": "Coming Soon",
+    "comingSoonDesc": "Our blog page will soon be available with professional legal insights and updated analyses."
   }
-},
-"teamPage": {
-  "aboutTitle": "About",
-  "hero": "Our Team",
-  "subtitle": "Pera Legal & Partners",
-  "title": "Our Expert Staff",
-  "desc": "With our experienced and solution-oriented attorneys who are experts in their fields, we offer effective, reliable, and professional legal support in all areas of law."
-},
-"blog": {
-  "heroTitle": "Blog",
-  "sectionTitle": "Our Blog Posts",
-  "readMore": "Read More",
-  "categories": "Categories",
-
-  "months": {
-    "Ekim": "October",
-    "Eylül": "September"
-  },
-
-  "categoriesList": {
-  "ceza": "Criminal Law",
-  "bilişim": "IT Law",
-  "aile": "Family Law",
-  "ticaret": "Commercial Law",
-  "iş": "Labour Law",
-  "gayri": "Real Estate Law",
-  "miras": "Inheritance Law",
-  "idare": "Administrative Law",
-  "saglık": "Health Law",
-  "icra": "Enforcement & Bankruptcy Law",
-  "sozlesme": "Contracts Law",
-  "vatan": "Citizenship Law",
-  "sigorta": "Insurance Law"
-},
-"comingSoonTitle": "Coming Soon",
-"comingSoonDesc": "Our blog page will soon be available with professional legal insights and updated analyses."
-
 }
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-}
- 
