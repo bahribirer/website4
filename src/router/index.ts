@@ -12,12 +12,12 @@ const routes = [
     component: DefaultLayout,
     children: [
       { path: '', name: 'Home', component: HomePage },
-      { path: 'hakkimizda', alias: ['/about', '/about-us'], component: () => import('../pages/Hakkimizda.vue') },
-      { path: 'ekibimiz', alias: ['/team', '/our-team'], component: () => import('../pages/TeamPage.vue') },
-      { path: 'calisma-alanlarimiz', alias: ['/practice-areas', '/areas'], component: () => import('../pages/PracticeAreasPage.vue') },
-      { path: 'iletisim', alias: ['/contact'], component: () => import('../pages/ContactPage.vue') },
-      { path: 'blog', component: () => import('../pages/BlogPage.vue') },
-      { path: 'hesaplama-araclari', component: () => import('../pages/HesaplamaAraclariPage.vue') },
+      { path: 'hakkimizda', alias: ['/about', '/about-us', '/en/hakkimizda'], component: () => import('../pages/Hakkimizda.vue') },
+      { path: 'ekibimiz', alias: ['/team', '/our-team', '/en/ekibimiz'], component: () => import('../pages/TeamPage.vue') },
+      { path: 'calisma-alanlarimiz', alias: ['/practice-areas', '/areas', '/en/calisma-alanlarimiz'], component: () => import('../pages/PracticeAreasPage.vue') },
+      { path: 'iletisim', alias: ['/contact', '/en/iletisim'], component: () => import('../pages/ContactPage.vue') },
+      { path: 'blog', alias: ['/en/blog'], component: () => import('../pages/BlogPage.vue') },
+      { path: 'hesaplama-araclari', alias: ['/en/hesaplama-araclari'], component: () => import('../pages/HesaplamaAraclariPage.vue') },
     ],
   },
   { path: '/:pathMatch(.*)*', redirect: '/' }
