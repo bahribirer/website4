@@ -26,8 +26,8 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'team.halil.name',
     title: 'team.halil.title',
-image: "/assets/person/halil.webp",    
-slug: 'halil-cenk-akdogan',
+    image: "/assets/person/halil.webp",
+    slug: 'halil-cenk-akdogan',
     about: 'team.halil.about'
   },
   {
@@ -44,11 +44,11 @@ slug: 'halil-cenk-akdogan',
     slug: 'muge-yavuz',
     about: 'team.muge.about'
   },
-   
+
   {
     name: 'team.cansu.name',
     title: 'team.cansu.title',
-    image: "/assets/person/cansu.webp",
+    image: "",
     slug: 'cansu-ısıksal',
     about: 'team.cansu.about'
   },
@@ -66,7 +66,7 @@ slug: 'halil-cenk-akdogan',
     slug: 'muhammed-murat-kaplan',
     about: 'team.muhammed.about'
   },
-   {
+  {
     name: 'team.hayrun.name',
     title: 'team.hayrun.title',
     image: "/assets/person/hayrun.webp",
@@ -80,7 +80,7 @@ slug: 'halil-cenk-akdogan',
     slug: 'tolga-erkockar',
     about: 'team.tolga.about'
   },
-   {
+  {
     name: 'team.ayca.name',
     title: 'team.ayca.title',
     image: "/assets/person/ayca.webp",
@@ -94,15 +94,15 @@ slug: 'halil-cenk-akdogan',
     slug: 'selin-alcık',
     about: 'team.selin.about'
   },
- {
+  {
     name: 'team.furkan.name',
     title: 'team.furkan.title',
     image: "/assets/person/furkan.webp",
     slug: 'furkan-uslu',
     about: 'team.furkan.about'
   },
-  
- 
+
+
   {
     name: 'team.ata.name',
     title: 'team.ata.title',

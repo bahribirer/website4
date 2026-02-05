@@ -25,7 +25,10 @@
           @click="goProfile(member.slug)"
         >
           <div class="image-wrapper">
-            <img :src="member.image" :alt="t(member.name)" />
+            <img v-if="member.image" :src="member.image" :alt="t(member.name)" />
+            <div v-else class="placeholder-icon">
+              <i class="pi pi-user" style="font-size: 4rem; color: #b01c1c;"></i>
+            </div>
           </div>
 
           <div class="info">
@@ -189,6 +192,15 @@ background: url('/assets/herosection/ekip.jpg') center/cover no-repeat;
 
 .card:hover img {
   transform: scale(1.07);
+}
+
+.placeholder-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
 }
 
 /* === TEXTS === */

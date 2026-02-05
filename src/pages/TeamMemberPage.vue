@@ -4,7 +4,10 @@
 
       <!-- ÜST PROFİL -->
       <div class="profile-card">
-        <img :src="member.image" :alt="t(member.name)" class="photo" />
+        <img v-if="member.image" :src="member.image" :alt="t(member.name)" class="photo" />
+        <div v-else class="photo placeholder-icon">
+          <i class="pi pi-user" style="font-size: 5rem; color: #b01c1c;"></i>
+        </div>
 
         <div class="info">
           <h1>{{ t(member.name) }}</h1>
@@ -84,6 +87,14 @@ const member = teamMembers.find(m => m.slug === slug) || null
   border-radius: 14px;
   object-fit: cover;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.placeholder-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: 4px solid rgba(176, 28, 28, 0.1);
 }
 
 .info h1 {
