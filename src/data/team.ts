@@ -38,28 +38,6 @@ export const teamMembers: TeamMember[] = [
     about: 'team.recai.about'
   },
   {
-    name: 'team.muge.name',
-    title: 'team.muge.title',
-    image: "/assets/person/muge.webp",
-    slug: 'muge-yavuz',
-    about: 'team.muge.about'
-  },
-
-  {
-    name: 'team.cansu.name',
-    title: 'team.cansu.title',
-    image: "",
-    slug: 'cansu-ısıksal',
-    about: 'team.cansu.about'
-  },
-  {
-    name: 'team.hatice.name',
-    title: 'team.hatice.title',
-    image: "/assets/person/hatice.webp",
-    slug: 'hatice-yazar',
-    about: 'team.hatice.about'
-  },
-  {
     name: 'team.muhammed.name',
     title: 'team.muhammed.title',
     image: "/assets/person/muh.webp",
@@ -67,18 +45,11 @@ export const teamMembers: TeamMember[] = [
     about: 'team.muhammed.about'
   },
   {
-    name: 'team.hayrun.name',
-    title: 'team.hayrun.title',
-    image: "/assets/person/hayrun.webp",
-    slug: 'hayrunnisa-neslihan-varli',
-    about: 'team.hayrun.about'
-  },
-  {
-    name: 'team.tolga.name',
-    title: 'team.tolga.title',
-    image: "/assets/person/tolga.webp",
-    slug: 'tolga-erkockar',
-    about: 'team.tolga.about'
+    name: 'team.muge.name',
+    title: 'team.muge.title',
+    image: "/assets/person/muge.webp",
+    slug: 'muge-yavuz',
+    about: 'team.muge.about'
   },
   {
     name: 'team.ayca.name',
@@ -88,6 +59,13 @@ export const teamMembers: TeamMember[] = [
     about: 'team.ayca.about'
   },
   {
+    name: 'team.furkan.name',
+    title: 'team.furkan.title',
+    image: "/assets/person/furkan.webp",
+    slug: 'furkan-uslu',
+    about: 'team.furkan.about'
+  },
+  {
     name: 'team.selin.name',
     title: 'team.selin.title',
     image: "/assets/person/selin.webp",
@@ -95,20 +73,39 @@ export const teamMembers: TeamMember[] = [
     about: 'team.selin.about'
   },
   {
-    name: 'team.furkan.name',
-    title: 'team.furkan.title',
-    image: "/assets/person/furkan.webp",
-    slug: 'furkan-uslu',
-    about: 'team.furkan.about'
-  },
-
-
-  {
     name: 'team.ata.name',
     title: 'team.ata.title',
     image: "/assets/person/ata.webp",
     slug: 'ata-tasman',
     about: 'team.ata.about'
+  },
+  {
+    name: 'team.cansu.name',
+    title: 'team.cansu.title',
+    image: "",
+    slug: 'cansu-ısıksal',
+    about: 'team.cansu.about'
+  },
+   {
+    name: 'team.tolga.name',
+    title: 'team.tolga.title',
+    image: "/assets/person/tolga.webp",
+    slug: 'tolga-erkockar',
+    about: 'team.tolga.about'
+  },
+  {
+    name: 'team.hatice.name',
+    title: 'team.hatice.title',
+    image: "/assets/person/hatice.webp",
+    slug: 'hatice-yazar',
+    about: 'team.hatice.about'
+  },
+  {
+    name: 'team.hayrun.name',
+    title: 'team.hayrun.title',
+    image: "/assets/person/hayrun.webp",
+    slug: 'hayrunnisa-neslihan-varli',
+    about: 'team.hayrun.about'
   },
   {
     name: 'team.bora.name',
