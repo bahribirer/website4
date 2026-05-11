@@ -117,5 +117,12 @@ export const teamMembers: TeamMember[] = [
     slug: 'bora-toker',
     about: 'team.bora.about'
   },
+  {
+    name: 'team.sevan.name',
+    title: 'team.sevan.title',
+    image: "/assets/person/sevan.webp",
+    slug: 'sevan-toker',
+    about: 'team.sevan.about'
+  },
 ]
 
