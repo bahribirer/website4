@@ -33,7 +33,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'team.recai.name',
     title: 'team.recai.title',
-    image: "/assets/person/recai.webp",
+    image: "",
     slug: 'recai-aytac-akbay',
     about: 'team.recai.about'
   },
