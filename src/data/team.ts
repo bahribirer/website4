@@ -38,18 +38,18 @@ export const teamMembers: TeamMember[] = [
     about: 'team.recai.about'
   },
   {
-    name: 'team.muhammed.name',
-    title: 'team.muhammed.title',
-    image: "/assets/person/muh.webp",
-    slug: 'muhammed-murat-kaplan',
-    about: 'team.muhammed.about'
-  },
-  {
     name: 'team.muge.name',
     title: 'team.muge.title',
     image: "/assets/person/muge.webp",
     slug: 'muge-yavuz',
     about: 'team.muge.about'
+  },
+  {
+    name: 'team.muhammed.name',
+    title: 'team.muhammed.title',
+    image: "/assets/person/muh.webp",
+    slug: 'muhammed-murat-kaplan',
+    about: 'team.muhammed.about'
   },
   {
     name: 'team.ayca.name',
